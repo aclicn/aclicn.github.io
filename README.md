@@ -2,7 +2,7 @@
 
 文獻評述、註解書目、延伸閱讀與全文 PDF 彙整。
 
-預定網站：https://aclicn.github.io/
+網站：https://aclicn.github.io/ai-responsibility/
 
 ## 文件
 
@@ -26,4 +26,4 @@ git push
 
 GitHub Pages 設定：`Deploy from a branch`、`main`、`/docs`。網站無需 JavaScript；PDF ZIP 保存在儲存庫，由首頁連結下載。
 
-本機預覽：`python -m http.server 8000 --directory docs`，開啟 http://localhost:8000/。
+本機預覽：`python -m http.server 8000 --directory docs`，開啟 http://localhost:8000/ai-responsibility/。舊的首頁及文件網址會自動導向新位置。

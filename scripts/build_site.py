@@ -9,7 +9,8 @@ from markdown.extensions import Extension
 from markdown.inlinepatterns import InlineProcessor
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "docs"
+PAGES = ROOT / "docs"
+OUT = PAGES / "ai-responsibility"
 REPO = "https://github.com/aclicn/aclicn.github.io"
 DOCUMENTS = [
     ("AI-research-accountability-literature-review", "文獻評述與統整觀點", "從研究各階段的 AI 使用出發，整理責任歸屬、理解與驗證的論點。"),
@@ -60,7 +61,7 @@ def shell(title, content, active="", toc=""):
 
 
 def build():
-    OUT.mkdir(exist_ok=True)
+    OUT.mkdir(parents=True, exist_ok=True)
     for slug, label, _ in DOCUMENTS:
         source = (ROOT / f"{slug}.md").read_text(encoding="utf-8-sig")
         md = markdown.Markdown(extensions=["extra", "toc", Links()], extension_configs={"toc": {"toc_depth": "2-3"}})
@@ -77,7 +78,19 @@ def build():
 <ol class="document-list">{entries}</ol>
 <section class="downloads"><h2>全文資料</h2><ul>{archives}</ul></section>'''
     (OUT / 'index.html').write_text(shell('AI 在研究中的使用與責任歸屬', home), encoding="utf-8")
-    (OUT / '.nojekyll').touch()
+    (PAGES / '.nojekyll').touch()
+    # Keep previously published URLs working after moving the reading site.
+    for filename in ['index.html', *(slug + '.html' for slug, _, _ in DOCUMENTS)]:
+        target = 'ai-responsibility/' + ('' if filename == 'index.html' else filename)
+        redirect = f'''<!doctype html>
+<html lang="zh-Hant-TW"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url={target}">
+<link rel="canonical" href="https://aclicn.github.io/{target}">
+<title>AI 研究責任 · 網址已更新</title></head>
+<body><p>網站已移至 <a href="{target}">AI 研究責任</a>。</p></body></html>
+'''
+        (PAGES / filename).write_text(redirect, encoding='utf-8')
     print(f"Built {len(DOCUMENTS) + 1} HTML pages in {OUT}")
 
 
