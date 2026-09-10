@@ -2,6 +2,8 @@
 
 Compiled: 2026-09-10
 
+[📄 References still needed: PDF request list to share with colleagues](https://aclicn.github.io/ai-responsibility/pdf-request-list.html)
+
 The starting papers are van Zoonen, Morgan-Thomas and Tursunbayeva (2026) and Tang (2025). Their shared questions concern who can answer for scholarly claims and whether researchers retain their own judgment and understanding when AI enters knowledge production. The papers are grouped into four themes and ranked within each theme; priority papers are marked **[Essential reading]**.
 
 The original bibliography uses APA 7 and reports that author and publication metadata came from Crossref and arXiv, and that DOI and retraction checks were conducted through Scite. Those checks were not repeated for this language split. The correction to Gerlich (2025) and the erratum to Kaebnick et al. (2023) remain noted. Summaries follow official abstracts where available. For five papers (Lin 2024; Messeri and Crockett 2024; Lee et al. 2025; Brown and Marsden 2026; Colangelo and Galli 2026), the original source notes incomplete abstract access and reliance on prior understanding or brief abstracts. Entry-level caveats are retained; check the full text before citing.

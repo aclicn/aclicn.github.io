@@ -2,6 +2,8 @@
 
 整理日期：2026-09-10
 
+[📄 尚未取得全文的文獻：PDF 協助取得清單（英文，可轉寄同事）](https://aclicn.github.io/ai-responsibility/pdf-request-list.html)
+
 起點文獻為 van Zoonen, Morgan-Thomas & Tursunbayeva (2026) 與 Tang (2025)，兩篇的交集是：AI 進入學術知識生產後，誰能為主張負責，以及研究者的判斷與理解是否被掏空。以下依四大主題分組，每一主題內依重要性排序，最重要者標示 **【必讀】**。
 
 書目格式為 APA 7。作者、卷期、頁碼取自 Crossref 與 arXiv 的官方紀錄，DOI 皆經 Scite 資料庫核對，未見撤稿；Gerlich (2025) 有一則表格勘誤、Kaebnick et al. (2023) 有一則 erratum，已註記。摘要依各篇官方摘要撰寫；五篇（Lin 2024、Messeri & Crockett 2024、Lee et al. 2025、Brown & Marsden 2026、Colangelo & Galli 2026）資料庫未提供完整摘要，摘要依我對該文的既有理解或簡短摘要撰寫，已於該條標註「未依官方摘要」，引用前請自行核對全文。
