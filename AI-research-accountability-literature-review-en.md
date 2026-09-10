@@ -2,6 +2,8 @@
 
 Compiled: 2026-09-10
 
+This review explores how researchers can make extensive use of AI while retaining their own understanding and judgment and taking responsibility for research content. It examines authorship and the defensibility of claims, policies on AI use and disclosure, and risks such as illusions of understanding, cognitive offloading, overreliance, and impaired learning. It compares arguments for and against permitting AI use at every stage of research, distinguishing improvements in output from genuine understanding. It then considers how to put lab principles into practice through confidentiality boundaries, records of AI use, verification of references and analyses, journal requirements, and the development of students' and postdoctoral researchers' capabilities, leading to proposed implementation guidelines.
+
 ## About this document
 
 This page preserves the original English summary. It is shorter than the [Chinese review](AI-research-accountability-literature-review.md), which includes the detailed synthesis and draft implementation notes. Article-by-article annotations have been removed from the review; references and abstracts are available in the separate [annotated bibliography](annotated-bibliography-AI-accountability-epistemics-en.md).
