@@ -8,7 +8,7 @@ The original bibliography uses APA 7 and reports that author and publication met
 
 The ranking reflects the compiler's judgment about relevance to the starting papers, foundational importance within a theme, and breadth of citation. It is not an objective measure.
 
-PDF status (checked against the project's ZIP archives on 2026-09-10): ✅ PDF included (27 papers); ❌ PDF not obtained (12 papers); ⚠️ previously recorded as obtained but absent from the project's archives (1 paper: Kosmyna et al., 2025). These symbols describe the available files and existing acquisition records, not present-day publisher access. Included files may be preprints or author manuscripts. Every paper has a DOI link.
+PDF status (checked against the project's PDF folders and ZIP archives on 2026-09-10): ✅ PDF included (28 papers); ❌ PDF not obtained (12 papers). Kosmyna et al. (2025) is now included as arXiv v2 at `pdfs/2506.08872v2.pdf`; this file is not part of the original ZIP archives. These symbols describe the available files and existing acquisition records, not present-day publisher access. Included files may be preprints or author manuscripts. Every paper has a DOI link.
 
 PDF collections: [Part 1 (ZIP)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs-fulltext-part1.zip) · [Part 2 (ZIP)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs-fulltext-part2.zip)
 
@@ -198,7 +198,7 @@ Related to Tang's second and third concerns: cognitive dulling and AI dependency
 
 ### C4.
 
-⚠️ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872)
+✅ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872) · [PDF (v2)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs/2506.08872v2.pdf)
 
 - Preprint. Fifty-four participants wrote essays in LLM, search-engine or brain-only conditions over three sessions, with a fourth crossover session (n = 18). EEG showed the strongest, most distributed connectivity in the brain-only group and the weakest in the LLM group; LLM-to-brain participants showed reduced alpha and beta connectivity; LLM users reported the lowest essay ownership and struggled to quote their own work. Framed as "cognitive debt". A methodological commentary exists (Stanković et al., 2026) and should be read alongside.
 
@@ -318,7 +318,7 @@ Related to Tang's second and third concerns: cognitive dulling and AI dependency
 
 ✅ Kim, S. S. Y., Vaughan, J. W., Liao, Q. V., Lombrozo, T., & Russakovsky, O. (2025). Fostering appropriate reliance on large language models: The role of explanations, sources, and inconsistencies. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*, 1–19. [DOI: 10.1145/3706598.3714020](https://doi.org/10.1145/3706598.3714020)
 
-⚠️ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872)
+✅ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872) · [PDF (v2)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs/2506.08872v2.pdf)
 
 ❌ LaFlamme, M., & Meyers, N. (2026). Enacting AI disclosure in scholarly publishing. *American Ethnologist*, *53*(2), 132–135. [DOI: 10.1111/amet.70084](https://doi.org/10.1111/amet.70084)
 

@@ -21,8 +21,9 @@
 
 - [part1：13 篇 PDF](pdfs/part1/)
 - [part2：14 篇 PDF](pdfs/part2/)
+- [Kosmyna et al. (2025)：Your Brain on ChatGPT，arXiv v2](pdfs/2506.08872v2.pdf)（另行下載，不在原有 ZIP 中）
 
-[PDF 協助取得清單（英文 HTML，可轉寄）](docs/ai-responsibility/pdf-request-list.html)：列出尚未取得的 12 篇文獻，附完整書目與 DOI；另列 1 篇原紀錄已取得但目前未收錄的檔案。HTML 內含樣式，可直接作為附件寄給同事；執行網站建置時會依英文註解書目的狀態重新產生。
+[PDF 協助取得清單（英文 HTML，可轉寄）](docs/ai-responsibility/pdf-request-list.html)：列出尚未取得的 12 篇文獻，附完整書目與 DOI。HTML 內含樣式，可直接作為附件寄給同事；執行網站建置時會依英文註解書目的狀態重新產生。
 
 ## 更新網站
 

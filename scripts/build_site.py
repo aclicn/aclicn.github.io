@@ -99,6 +99,7 @@ def build():
             published.append(slug + '.html')
         entries = ''.join(f'<li><span class="number">0{i}</span><div><h2><a href="{filename(base, language)}.html">{labels[int(en)]} →</a></h2><p>{descriptions[int(en)]}</p></div></li>' for i, (base, labels, descriptions) in enumerate(DOCUMENTS, 1))
         downloads = f'<li><a href="pdf-request-list.html">{tr("PDF 協助取得清單（英文，可轉寄）", "PDF request list for colleagues")}</a></li>'
+        downloads += f'<li><a href="{REPO}/tree/main/pdfs">{tr("全部 PDF", "All PDF files")} ({len(list((ROOT / "pdfs").rglob("*.pdf")))})</a></li>'
         downloads += ''.join(f'<li><a href="{REPO}/tree/main/pdfs/part{i}">{tr("單篇 PDF · 第", "Individual PDFs · Part")} {i}</a></li>' for i in (1, 2))
         archives = ''.join(f'<li><a href="{REPO}/raw/refs/heads/main/{path.name}">{tr("全文 PDF 彙整 · 第", "PDF archive · Part")} {i}（ZIP, {path.stat().st_size / 1024 / 1024:.1f} MB）↓</a></li>' for i, path in enumerate(sorted(ROOT.glob('pdfs-fulltext-part*.zip')), 1))
         home = f'''<section class="intro"><p class="eyebrow">{tr('研究實踐 / 責任歸屬 / 認識論', 'RESEARCH PRACTICE / ACCOUNTABILITY / EPISTEMOLOGY')}</p>

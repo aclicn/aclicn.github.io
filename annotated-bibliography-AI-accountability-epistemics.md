@@ -8,7 +8,7 @@
 
 排序的依據是：與兩篇起點文獻的論證關係、在該主題中的奠基地位、以及被引用的廣度。這是我的判斷，不是客觀指標。
 
-PDF 圖示（2026-09-10 核對本專案兩份 ZIP）：✅ 已收錄 PDF（27 篇）；❌ 未取得 PDF（12 篇）；⚠️ 原紀錄稱已取得，但本專案 ZIP 未收錄（1 篇：Kosmyna et al., 2025）。圖示依目前檔案與既有取得紀錄標示，不代表現在是否能從出版社下載；收錄版本可能為預印本或作者手稿。所有文章均附 DOI 連結。
+PDF 圖示（2026-09-10 核對本專案 PDF 資料夾與兩份 ZIP）：✅ 已收錄 PDF（28 篇）；❌ 未取得 PDF（12 篇）。Kosmyna et al. (2025) 已補入 arXiv v2，存於 `pdfs/2506.08872v2.pdf`，未包含在原有 ZIP 中。圖示依目前檔案與既有取得紀錄標示，不代表現在是否能從出版社下載；收錄版本可能為預印本或作者手稿。所有文章均附 DOI 連結。
 
 PDF 彙整下載：[第 1 部分（ZIP）](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs-fulltext-part1.zip) · [第 2 部分（ZIP）](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs-fulltext-part2.zip)
 
@@ -198,7 +198,7 @@ PDF 彙整下載：[第 1 部分（ZIP）](https://github.com/aclicn/aclicn.gith
 
 ### C4.
 
-⚠️ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872)
+✅ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872) · [PDF (v2)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs/2506.08872v2.pdf)
 
 - 預印本。54 名受試者分為 LLM、搜尋引擎、純腦力三組各寫三次作文，第四次交換條件（18 人完成）。EEG 顯示純腦力組的腦網路連結最強且最分散，LLM 組最弱；LLM 轉純腦力者 alpha 與 beta 連結降低；LLM 組的作文擁有感最低，也最難正確引述自己的文字。作者以「認知債務」概括。已有方法學評論（Stanković et al., 2026, https://doi.org/10.48550/arxiv.2601.00856），引用時宜一併參考。
 
@@ -318,7 +318,7 @@ PDF 彙整下載：[第 1 部分（ZIP）](https://github.com/aclicn/aclicn.gith
 
 ✅ Kim, S. S. Y., Vaughan, J. W., Liao, Q. V., Lombrozo, T., & Russakovsky, O. (2025). Fostering appropriate reliance on large language models: The role of explanations, sources, and inconsistencies. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*, 1–19. [DOI: 10.1145/3706598.3714020](https://doi.org/10.1145/3706598.3714020)
 
-⚠️ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872)
+✅ Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. [DOI: 10.48550/arxiv.2506.08872](https://doi.org/10.48550/arxiv.2506.08872) · [PDF (v2)](https://github.com/aclicn/aclicn.github.io/raw/refs/heads/main/pdfs/2506.08872v2.pdf)
 
 ❌ LaFlamme, M., & Meyers, N. (2026). Enacting AI disclosure in scholarly publishing. *American Ethnologist*, *53*(2), 132–135. [DOI: 10.1111/amet.70084](https://doi.org/10.1111/amet.70084)
 
