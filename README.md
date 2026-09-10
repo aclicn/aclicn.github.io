@@ -1,14 +1,17 @@
 # Responsible AI：研究中的 AI 使用與責任歸屬
 
-文獻評述、註解書目、延伸閱讀與全文 PDF 彙整。
+文獻評述、註解書目與全文 PDF 彙整。中文與英文各自提供 Markdown 及 HTML。
 
 網站：https://aclicn.github.io/ai-responsibility/
 
 ## 文件
 
-- [文獻評述與統整觀點](AI-research-accountability-literature-review.md)
-- [註解書目](annotated-bibliography-AI-accountability-epistemics.md)
-- [延伸閱讀](reading-list-AI-accountability-epistemics.md)
+| 文件 | 繁體中文 | English |
+| --- | --- | --- |
+| 文獻評述 | [Markdown](AI-research-accountability-literature-review.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-research-accountability-literature-review.html) | [Markdown](AI-research-accountability-literature-review-en.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-research-accountability-literature-review-en.html) |
+| 註解書目 | [Markdown](annotated-bibliography-AI-accountability-epistemics.md) · [HTML](https://aclicn.github.io/ai-responsibility/annotated-bibliography-AI-accountability-epistemics.html) | [Markdown](annotated-bibliography-AI-accountability-epistemics-en.md) · [HTML](https://aclicn.github.io/ai-responsibility/annotated-bibliography-AI-accountability-epistemics-en.html) |
+
+文獻評述只保留統整觀點；英文版保留原稿較精簡的英文摘要。逐篇摘要集中在獨立註解書目，兩種語言各保留 40 篇文章及 DOI、PDF 狀態。
 
 原始 Markdown 為內容來源；HTML 版本保留原文。網站轉換不代表另行查核文獻或原文中的查核聲明。
 
