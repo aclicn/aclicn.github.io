@@ -12,6 +12,13 @@
 
 原始 Markdown 為內容來源；HTML 版本保留原文。網站轉換不代表另行查核文獻或原文中的查核聲明。
 
+## PDF 全文
+
+兩份 ZIP 的 PDF 已分別解壓，可直接在 GitHub 開啟或下載單篇檔案：
+
+- [part1：13 篇 PDF](pdfs/part1/)
+- [part2：14 篇 PDF](pdfs/part2/)
+
 ## 更新網站
 
 編輯根目錄的 Markdown 後，重新產生 HTML，將來源與 `docs/` 一起提交：
