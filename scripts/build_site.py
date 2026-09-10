@@ -7,6 +7,7 @@ import xml.etree.ElementTree as etree
 import markdown
 from markdown.extensions import Extension
 from markdown.inlinepatterns import InlineProcessor
+from build_pdf_request import build_pdf_request
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGES = ROOT / "docs"
@@ -97,7 +98,8 @@ def build():
             (OUT / f"{slug}.html").write_text(shell(title, toolbar + '<article>' + body + '</article>', base, md.toc, language), encoding="utf-8")
             published.append(slug + '.html')
         entries = ''.join(f'<li><span class="number">0{i}</span><div><h2><a href="{filename(base, language)}.html">{labels[int(en)]} →</a></h2><p>{descriptions[int(en)]}</p></div></li>' for i, (base, labels, descriptions) in enumerate(DOCUMENTS, 1))
-        downloads = ''.join(f'<li><a href="{REPO}/tree/main/pdfs/part{i}">{tr("單篇 PDF · 第", "Individual PDFs · Part")} {i}</a></li>' for i in (1, 2))
+        downloads = f'<li><a href="pdf-request-list.html">{tr("PDF 協助取得清單（英文，可轉寄）", "PDF request list for colleagues")}</a></li>'
+        downloads += ''.join(f'<li><a href="{REPO}/tree/main/pdfs/part{i}">{tr("單篇 PDF · 第", "Individual PDFs · Part")} {i}</a></li>' for i in (1, 2))
         archives = ''.join(f'<li><a href="{REPO}/raw/refs/heads/main/{path.name}">{tr("全文 PDF 彙整 · 第", "PDF archive · Part")} {i}（ZIP, {path.stat().st_size / 1024 / 1024:.1f} MB）↓</a></li>' for i, path in enumerate(sorted(ROOT.glob('pdfs-fulltext-part*.zip')), 1))
         home = f'''<section class="intro"><p class="eyebrow">{tr('研究實踐 / 責任歸屬 / 認識論', 'RESEARCH PRACTICE / ACCOUNTABILITY / EPISTEMOLOGY')}</p>
 <h1>{tr('AI 在研究中的使用<br>與責任歸屬', 'AI in research<br>and accountability')}</h1>
@@ -121,7 +123,8 @@ def build():
 <body><p>網站已移至 <a href="{target}">AI 研究責任</a>。</p></body></html>
 '''
         (PAGES / page).write_text(redirect, encoding='utf-8')
-    print(f"Built {len(published)} HTML pages in {OUT}")
+    build_pdf_request()
+    print(f"Built {len(published)} document/index pages and the PDF request list in {OUT}")
 
 
 if __name__ == '__main__':

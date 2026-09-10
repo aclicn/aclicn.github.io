@@ -22,6 +22,8 @@
 - [part1：13 篇 PDF](pdfs/part1/)
 - [part2：14 篇 PDF](pdfs/part2/)
 
+[PDF 協助取得清單（英文 HTML，可轉寄）](docs/ai-responsibility/pdf-request-list.html)：列出尚未取得的 12 篇文獻，附完整書目與 DOI；另列 1 篇原紀錄已取得但目前未收錄的檔案。HTML 內含樣式，可直接作為附件寄給同事；執行網站建置時會依英文註解書目的狀態重新產生。
+
 ## 更新網站
 
 編輯根目錄的 Markdown 後，重新產生 HTML，將來源與 `docs/` 一起提交：
