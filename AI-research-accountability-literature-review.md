@@ -1,0 +1,654 @@
+# AI 在研究各階段的使用與責任歸屬：文獻評述與統整觀點
+
+整理日期：2026-09-10
+
+## 這份文件是什麼
+
+這是前一份註解書目的深化版。與前一版的差別有三點。第一，我嘗試取得每一篇的全文 PDF：40 篇中有 28 篇取得（含你原本上傳的兩篇），全文另存於同名資料夾 `pdfs/`；11 篇只有官方摘要；1 篇（Brown & Marsden, 2026, *Addiction*）既無全文也無摘要，依你的指示排除，現存 39 篇。第二，取得全文的 28 篇，重點介紹與評論是讀完全文後寫的，並附頁碼或段落名稱的引文；只有摘要的 11 篇，介紹依摘要撰寫，評論則只能就摘要所呈現的論證與研究設計來談，深度有限，每條都標明「僅依摘要」。第三，文件開頭多了一節統整觀點，把 39 篇的論述放在你的立場旁邊檢視。
+
+你的立場，以下簡稱「實驗室原則」：
+
+> 我的研究團隊成員可以儘量使用 AI 在研究的各階段，但是自己要能為內容的真實性與正確性負責，也要能解釋所有生成的內容。
+
+### 全文取得方式與限制
+
+全文來源為 Unpaywall、Europe PMC、arXiv、機構典藏（Glasgow eprints、eScholarship）與出版社的 OA 連結。Wiley、Sage、MDPI、Springer、BMJ、ACM、JAMA 的網站對自動下載有機器人防護，從這個工作環境無法通過；你的電腦端的連線這次也無法使用，所以 Lindebaum & Fleming、Hosseini et al.、Gerlich、Ganjavi et al.、Fecher et al.、Heersmink et al.、Bottazzi Grifoni & Ferrario 這幾篇雖然是 OA，這裡拿不到，你在校園網路直接點 DOI 應該都能下載。Messeri & Crockett（*Nature*）、Nabavi et al.、LaFlamme & Meyers、Flanagin et al. 是付費文章，需經圖書館。
+
+三篇取得的是預印本或作者手稿而非正式版：Lin (2024) 為 PsyArXiv 預印本；Hila (2025) 為 arXiv 版；Kaebnick et al. (2023) 為 PMC 作者手稿；Yan et al. (2025) 為 arXiv 接受稿。頁碼引用以取得的版本為準，與正式版可能不同。
+
+### 排序與標記
+
+四大主題內依重要性排序，最重要者標 **【必讀】**。讀完全文後，我把 Johnson (2026) 與 Xu et al. (2026) 加進必讀：前者三頁就把你的立場講完，後者是實驗室成員最需要看到的實證數字。排序依據仍是我的判斷：與實驗室原則的論證關係、在該主題中的奠基地位、以及證據強度。
+
+---
+
+## 第一部分：統整觀點
+
+### 一、這 39 篇文獻與實驗室原則的關係
+
+實驗室原則有兩個子句：前半是「儘量使用、各階段皆可」，後半是「為真實性與正確性負責、能解釋所有生成內容」。讀完這批文獻，我的判斷是：後半句是 2023 到 2026 年間整個學術出版界、科學哲學界與人機互動研究界的共識，幾乎沒有反對聲音；前半句則有真正的反對者，而且反對的理由不是倫理，而是認知。以下分別說明。
+
+### 二、支持「自己負責、自己能解釋」的論述
+
+這個子句在文獻中有四個不同層次的支撐。
+
+第一個層次是出版治理的實務共識。Perkins & Roe (2024) 分析 28 份出版社政策、Ganjavi et al. (2024) 檢視前 100 大出版者與期刊、Yoo (2025) 比較 13 個編輯組織與期刊、Raitskaya & Tikhonova (2025) 回顧 2025 年 56 篇文獻，結論一致：AI 不能是作者，因為它無法負責；人類作者對稿件全部內容負責，包括 AI 生成的部分。Perkins & Roe 引用 Wiley 的政策原文：「作者對工具提供的任何資訊的正確性負完全責任」（p. 12）。Raitskaya & Tikhonova 的工具箱把這件事寫成一句話：「人類責任不可協商：AI 是工具，不是行動者」（Appendix 6, p. 49）。你的原則就是這個共識的實驗室版本。
+
+第二個層次是把責任從「工具揭露」轉到「主張可辯護性」的理論工作，這是 van Zoonen et al. (2026) 與 Johnson (2026) 的貢獻。van Zoonen 等人指出，禁止、強制揭露、只看效度三種政策都在管制生產過程，沒有一種問「具名的人能不能為這個主張辯護」；他們主張治理單位應是主張而非工具，作者的自評問題是：「若 AI 輸出不存在，我能否從自己的閱讀重建並辯護每一個詮釋性主張、引用、引文與推論步驟」（Table 2, p. 554）。Johnson 說得更直接：「作者身分從來不是關於誰寫出這些字、甚至誰做了推理，而是關於誰能為它們負責」（p. 2）。Bekker (2024) 的「所有權」原則與 Crawford et al. (2026) 的「責任不可從具名作者移轉」是同一件事。Lee et al. (2025) 提出的「管家」（stewardship）隱喻也很好用：在人與 AI 的協作中，生產的勞動可以委託，責任與問責不能。
+
+第三個層次是認識論的論證，說明為什麼「能解釋」不是行政要求而是知識的構成條件。Hila (2025) 區分內在論（反思性）與外在論（可靠性）證成，主張 LLM 只能提供後者：它可靠地傳遞人類事先建立好反思基礎的資訊，本身沒有反思性證成。因此 AI 生成的假設或解釋「需要人的反思性可解釋性才能算作知識」（p. 22）。Loru et al. (2025) 的實驗是這個論點的經驗版本：六個模型在新聞來源可信度判斷上與專家高度一致，但只給網址不給內容時準確度幾乎不變，顯示模型靠的是統計先驗與詞彙關聯而非對內容的評估；輸出相同不代表過程相同，他們稱這種表面可信取代驗證的狀態為 epistemia。Colangelo & Galli (2026) 用「伺服器裡的智者派」比喻：模型能以同等雄辯為一個命題及其反面辯護，因為它對真理沒有利害；「修辭上的可信必須讓位給證據裁決的那個轉換點，其責任仍然無可化約地屬於人」（p. 1099）。Lindebaum & Fleming (2024) 說的「ChatGPT 對它產出的知識無利害（no stake）」是同一個觀察。
+
+第四個層次是認知科學的實證，說明為什麼「能解釋」是檢驗理解的合適測試。Fan et al. (2025) 的隨機實驗顯示，ChatGPT 組的作文分數進步最多，但知識獲得與遷移沒有比較好；Yan et al. (2025) 據此區分「表現」與「學習」，指出 AI 帶來的分數提升多半是前者。Kosmyna et al. (2025) 的行為指標最直接：第一次寫作後，LLM 組 18 人中 15 人無法引述自己幾分鐘前「寫」的文章任何一句，另外兩組各只有 2 人（p. 31）。要求成員解釋生成內容，等於在做一個遷移測驗；通不過的人就是產出了自己不擁有的內容。Yoo (2025) 的說法可以直接放進實驗室規範：「學術誠信的核心不在於誰打出那個句子，而在於誰做出智識貢獻並為它承擔責任」（p. 8）。
+
+### 三、支持「儘量使用、各階段皆可」的論述
+
+前半句的支持者少一些，但論證清楚。Lin (2024) 的立場最明確：把 AI 限制在「語言與可讀性」既不務實也沒有建設性，因為無法執行；政策應管揭露而非管使用。Hosseini et al. (2023) 指出禁令只會鼓勵隱匿使用。Kaebnick et al. (2023) 的編輯群認為 Science 的全面禁止「過寬且可能無法執行」，並預期詳細的政策條文會被變化速度淘汰，演化中的專業規範反而更可行。Johnson (2026) 主張「管結果，不管工具清單」，保密是唯一應在工具層面管制的例外。Fan et al. (2025) 提供了一個間接證據：他們在實驗中技術上限制 ChatGPT 只能給建議、不能代寫，學生還是找到方法繞過去（p. 19），這說明工具限制不如規範與責任可靠。Clark (2025) 從延伸心智的立場提醒，人本來就是混合的思考系統，把技能重新配置到外部資源不必然是損失，關鍵能力是後設認知：知道什麼時候該依賴、什麼時候不該。
+
+### 四、對實驗室原則的挑戰與限定
+
+以下是文獻對前半句真正的質疑，以及對後半句的補充。我認為每一點都值得你在定稿前考慮，但是否採納是你的判斷。
+
+第一，保密是唯一的硬性例外。van Zoonen 等人的雙門檻框架中，保密門檻是二元的：受託材料一旦進入外部系統，「沒有補救能恢復保護」（p. 553）。Johnson 說這是「工具本身成為合理政策對象的唯一地方」（p. 2）。Nabavi et al. (2026) 的範疇性回顧把稿件送入第三方工具列為同儕審查中 AI 的首要風險。實驗室原則的「各階段」若包含審查他人稿件、處理合作者未發表資料、或含可識別受試者資料的材料，需要一條保密例外。
+
+第二，「能解釋」必須是自己的理解，不是轉述模型的說法。Kaebnick 等人早在 2023 年就注意到，AI 本身也「有能力提供一篇文章如何產生的說明」，它缺的是道德責任（p. 2）。Kim et al. (2025) 的實驗顯示 LLM 附帶的「解釋」會提高使用者對正確與錯誤答案的依賴，而且多數受試者以為那些解釋忠實描述了模型的推理過程，實則不然。Johnson 也承認「能力的界線已經移動」：模型現在能為方法選擇提供理由，所以作者能背出一個理由不再是理解的證明。實驗室原則的「解釋」宜明確定義為「從自己的閱讀與理解出發的辯護」，而非重述模型給的理由。van Zoonen 的措辭是「若 AI 輸出不存在，我能否從自己的閱讀重建」，比「能解釋」更嚴。
+
+第三，「能解釋」需要紀錄，不能只靠記憶。Lin (2024) 的機制是文件化：工具、版本、段落、程度、目的、提示詞與時間。Colangelo & Galli 指出相同提示在不同會話與版本會產生不同軌跡，「沒有仔細記錄提示、模型版本與輸出，科學推理的重要成分將變得在歷史上無法取用」（p. 1101）。Abdurahman et al. (2024) 的資料更具體：加一段研究說明就讓 BFI 開放性下降 d = −0.30，調換定義順序讓標註率改變 −56% 到 +164%；封閉模型的快照在三個月到一年內被淘汰。Binz et al. (2025) 中 Schulz 等人自述在修稿期間無法重現先前的模型結果。所以「解釋」不可能是「重新生成」，只能是「理解與辯護」，而辯護需要當時的紀錄。Crawford et al. 的第六項承諾（作者應能提供提示紀錄、模型設定或來源聲明）與 Bozkurt (2024) 的 aiTARAS 範本是現成的格式。
+
+第四，驗證是有成本的，而且是最先被省略的步驟。Bender 等人在 Binz et al. 中指出，「沒有任何已發表的使用者研究量化這種檢查需要多少努力，或研究者能多準確地執行」（p. 8）；Marelli 等人則警告「文本生成省下的時間可能被驗證所需的時間抵銷」（pp. 5–6）。Kim et al. 的受試者被告知系統可能出錯，仍有 61% 從未點開任何來源。Lee et al. 的知識工作者把驗證省略的理由是時間、「不是我的工作」、以及缺乏判斷所需的領域知識。Delikoura et al. (2025) 把這種現象稱為「驗證漂移」：因為模型的擬人化、權威語氣與看似詳盡的回答而降低批判評估。Xu et al. (2026) 的問卷最誠實：77% 的受訪者自稱「總是」外部核對 AI 給的參考文獻，同時 41.5% 承認複製過 BibTeX 而未檢查。Johnson 的診斷是「光禿禿的揭露崩到接近零，因為它是一個沒有成本的勾選框」（p. 2）。這對實驗室原則的含義是：「負責」若沒有具體動作與結構性檢查，會停留在紙面上。Johnson 建議把宣告綁定到可查核的行為；Xu 等人建議投稿前的自動化參考文獻檢查或第二人審核；Marelli 等人建議在使用 LLM 之前先定好品質標準與驗證方法。
+
+第五，這是最根本的挑戰：生成的方式可能侵蝕解釋的能力本身。Tang (2025) 的核心論點是，即使一個人仔細檢查了 AI 產出的內容，「也無法真正且徹底地掌握或擁有內容中的知識」（p. 3），因為理解來自拼湊與綜合的過程，而那正是被外包掉的部分。Hila 的「表現—推理權衡」預測，模型表現越好，人推理的誘因越低。Kosmyna 等人的第四次實驗顯示，先自己寫再用 LLM 的組，腦網路連結與回憶都優於先用 LLM 再自己寫的組，因此建議延後 AI 介入、讓自主的認知工作先發生。Choudhury & Chaudhry (2024) 與 Lee et al. 都指出，能驗證的前提是有領域知識，資淺者無法驗證自己不懂的東西。Bekker 的五層架構把「任何階段任何協助」列為第五層，稱之為「允許思想的外包」；Crawford 等人的第二項承諾禁止 AI 起草核心論證、代替閱讀做文獻綜合、產生主要詮釋，理由是這些內容無法追溯到作者的閱讀與專業。這些論點針對的不是責任歸屬，而是原則前半句對資淺成員的效果：如果「儘量使用」在學生身上導致理解未曾形成，後半句的「能解釋」就會系統性地不通過。
+
+第六，有些研究階段沒有「真實性與正確性」可言。Ibrahim et al. (2025) 指出，在構思、框架設定、寫作等開放式任務中沒有標準答案，「內容的正確性」無從定義。Maynard (2026) 進一步主張，主要風險不在內容錯誤，而在過程：使用者把評估本身外包給 AI，以及 AI 在不知不覺中影響了問什麼問題、怎麼框定問題；「過程很重要，即使內容是好的，因為過程會類推到內容不好的情境」（p. 3）。Messeri & Crockett (2024) 的科學單一文化風險也在這一層。一條以內容正確性為核心的原則，不會觸及這些。
+
+第七，期刊規範可能比實驗室原則嚴。Perkins & Roe 指出部分出版者（Science、Edward Elgar、SSRN）禁止 AI 用於實質內容，不論是否揭露；Yoo 指出 Science 禁止 AI 生成的引用、JAMA 預設禁止 AI 臨床影像。成員投稿前需核對目標期刊的規定。
+
+### 五、我的綜合判斷
+
+文獻整體上支持你的立場，而且支持的方式比一般的「AI 使用指引」更深：它不只是說「人要負責」，而是說明了為什麼責任只能在人身上（AI 無利害、無道德責任、無反思性證成）、為什麼「能解釋」是知識的構成條件而非行政程序、以及為什麼工具層面的禁令不如規範可行。在這個意義上，你的原則與 van Zoonen 的 claim accountability、Johnson 的 provenance、Bekker 的 ownership、Lee 的 stewardship 是同一個立場的不同表述。
+
+文獻對原則的補充集中在四件事，都不改變原則的方向，而是讓後半句可以落實：保密例外；「解釋」定義為自己的理解；紀錄義務；以及把「負責」具體化為可查核的動作（每一筆引用在可信索引核對、每一個數值回到資料、每一段分析能重跑或重推）。
+
+文獻對原則真正的異議只有一個，就是認知層面的：對還在養成階段的成員，「儘量使用」可能讓「能解釋」變得不可能。這個異議的證據基礎不算強，多半是學生寫短文的實驗、橫斷面自陳問卷與預印本，Tang 自己也承認「範圍仍相當有限」；而且 Fan 等人的實驗中，連人類專家組也沒有帶來知識增益。但它的邏輯是成立的。如果你要回應這個異議而不放棄「各階段」的立場，文獻提供的做法是順序而非禁止：Tang 的「自我錨定」（先自己寫出推理，再用 AI）、Kosmyna 的「先腦後機」、Hila 的「先自己推，再用模型檢查」、Marelli 的「先定驗證標準，再用模型」。這些都可以放在原則的實施細則，而不必改動原則本身。
+
+### 六、一個可能的修訂版（供參考）
+
+保留你的兩句話不動，下面加三條實施說明。這只是把文獻的補充寫成可用的文字，你可以整段刪掉。
+
+> 1. 保密例外：審查中的他人稿件、合作者未發表的資料、含可識別資訊的受試者資料，不得輸入實驗室未核准的外部 AI 系統。
+> 2. 「能解釋」的定義：指從自己的閱讀、資料與理解出發，在沒有 AI 輸出的情況下重建並辯護該內容；轉述 AI 給的理由不算。為此，凡 AI 實質參與的部分（假設、分析、圖表、段落草稿）應保留工具、版本、提示與輸出的紀錄。
+> 3. 「負責」的具體動作：每一筆引用在可信索引核對並至少讀過摘要；每一個數值與統計回到原始資料或程式；AI 參與的分析在報告前以人工標註的子集驗證；投稿前核對目標期刊的 AI 規定。
+
+對學生與博士後，建議另加一條：涉及研究問題的形成、核心論證與主要詮釋時，先自己寫出來再用 AI；在實驗室會議上以自己的話說明，作為「能解釋」的例行檢查。
+
+---
+
+## Part I (English summary): Synthesis
+
+The lab principle has two clauses: (a) members may use AI freely at every stage, and (b) each person is responsible for the truth and accuracy of the content and must be able to explain everything that was generated.
+
+Clause (b) is the consensus of 2023–2026 publishing governance, philosophy of science and HCI research, at four levels. Publisher and journal policies uniformly hold that AI cannot be an author because it cannot take responsibility, and that human authors answer for all content including AI-generated parts (Perkins & Roe 2024; Ganjavi et al. 2024; Yoo 2025; Raitskaya & Tikhonova 2025). Theoretical work relocates governance from tool disclosure to the defensibility of claims: van Zoonen et al. (2026) ask whether a named human can reconstruct and defend each claim "from my own reading if the AI output were unavailable"; Johnson (2026) writes that authorship "has always been about who can answer for" the words; Bekker's ownership, Crawford's non-transferable accountability and Lee et al.'s "stewardship" say the same. Epistemologically, Hila (2025) argues that LLMs offer only reliabilist, not reflective, justification, so AI output counts as knowledge only when a human can reflectively explain it; Loru et al. (2025) show empirically that model judgments matching experts can be produced by lexical priors rather than evaluation of content ("epistemia"); Colangelo & Galli (2026) and Lindebaum & Fleming (2024) locate the reason in the model's lack of stake in truth. Cognitively, Fan et al. (2025), Yan et al. (2025) and Kosmyna et al. (2025) show that AI-assisted output can be accurate and well scored while the person has learned nothing and cannot even quote it minutes later — which makes "explain it" a transfer test that detects performance without understanding.
+
+Clause (a) is supported by Lin (2024: scope restrictions are unenforceable; regulate disclosure, not use), Hosseini et al. (2023: bans drive hidden use), Kaebnick et al. (2023: detailed rules will be outrun by change), Johnson (2026: govern outcomes, not tool lists), Fan et al. (students bypassed a technically restricted chatbot) and Clark (2025: hybrid cognition is human nature; the key skill is knowing when to rely).
+
+The literature qualifies the principle in seven ways: (1) confidentiality is the one hard, tool-level exception (van Zoonen; Johnson; Nabavi); (2) "explain" must mean one's own understanding, not a relayed model rationale, since models can now supply rationales and their explanations are often unfaithful (Kaebnick; Kim et al.; Johnson); (3) explanation requires records — tool, version, prompts, outputs — because outputs are stochastic and models change (Lin; Colangelo & Galli; Abdurahman et al.; Binz et al.); (4) verification is costly and is the first step dropped, and self-reported diligence coexists with admitted shortcuts (Bender et al.; Kim et al.; Lee et al.; Delikoura et al.; Xu et al.), so "responsibility" needs named acts and structural checks; (5) the deepest challenge: the manner of generation may erode the capacity to explain, especially for trainees (Tang; Hila; Kosmyna; Choudhury & Chaudhry; Bekker; Crawford et al.); (6) some stages (framing, ideation) have no ground truth, and the main risk there is process-level — offloading evaluation itself (Ibrahim et al.; Maynard; Messeri & Crockett); (7) target journals may be stricter than the lab (Perkins & Roe; Yoo).
+
+Overall judgment: the literature supports the principle, and supports it for deeper reasons than most AI-use guidelines give. The additions it suggests (confidentiality carve-out; a definition of "explain"; a record-keeping duty; concrete verification acts) sharpen clause (b) without changing its direction. The only substantive objection is cognitive and concerns trainees; its evidence base is modest (short student essay tasks, cross-sectional surveys, preprints), but its logic holds. The literature's remedy is sequencing rather than prohibition: do the reasoning first, then use the model (Tang's self-anchoring; Kosmyna's brain-then-LLM; Hila; Marelli et al.'s "define verification criteria before use"). A draft set of three implementation notes is offered above for consideration.
+
+---
+
+## 第二部分：各篇文獻的重點介紹與評論
+
+格式說明：每條列出 APA 7 書目、全文取得狀態、重點介紹（中/英）、評論（中/英）。「全文」表示已讀完全文並附頁碼或段落名稱；「僅摘要」表示評論只能就摘要所呈現的內容進行。引文為我的中譯，原文可在同名 PDF 中查對。
+
+## 主題 A：責任歸屬、作者身分與期刊治理
+
+### A0. 起點文獻
+
+van Zoonen, W., Morgan-Thomas, A., & Tursunbayeva, A. (2026). Beyond AI disclosure: Claim accountability and responsible research in scholarly publishing. *European Management Journal*, *44*(4), 550–556. https://doi.org/10.1016/j.emj.2026.06.001
+全文：有（Glasgow eprints）。概念性政策論文，無新資料。
+
+重點介紹：作者把期刊對 AI 的回應分為禁止、強制揭露、只看效度三類，指出三者都在管制生產過程（有沒有用工具、有沒有申報、成品看起來是否稱職），沒有一種問「具名的人能不能為這個主張辯護」。他們主張治理單位應是主張而非工具，並提出雙門檻：保密門檻是二元的，受託材料一旦進入外部系統就無法補救；判斷門檻是分級的，AI 可以提供資訊給推理，但「當系統提供了人被期待提供的東西，門檻就被跨過了」（p. 553）。Table 2 把框架轉成作者、審查者、編輯、出版者的自評問題，作者的問題是：若 AI 輸出不存在，我能否從自己的閱讀重建並辯護每一個詮釋性主張、引用、引文與推論步驟。作者自承三個限制：計算性研究中機器本身是方法的一部分；框架依賴誠實自評；有儀式化的風險（p. 555）。
+
+Key points: Prohibition, mandatory disclosure and validity-only permissiveness all govern the production process rather than the defensibility of claims. The unit of governance should be the claim; a claim is admissible only if a named human can reconstruct and defend it. A binary confidentiality threshold and a graded judgment threshold are translated into role-based self-assessment questions (Table 2), and the authors identify institutional anchors — verification trails, selective probes, rewards for defensibility — without which the instrument decays into boilerplate.
+
+評論：這篇與你的立場幾乎逐字對應，Table 2 的作者自評問題就是「能解釋所有生成的內容」的嚴格版。它的弱點在於全是概念性論述，二手的實證資料都來自管理學與社會科學出版，轉移到認知神經科學實驗室是類比。「從自己的閱讀重建」這個標準沒有任何證據顯示研究者能可靠地自我評估，作者也承認「儀器並未消除對善意的依賴」（p. 555）。更重要的是，它幾乎沒有處理認知風險：它把問責當成問題的全部，而 Tang 與 Bender 等人主張辯護的能力本身可能被生成的方式侵蝕。制度錨點只是點名，沒有操作細節。
+
+Critique: Entirely conceptual; second-hand evidence from management publishing transfers to a neuroscience lab only by analogy. The "reconstruct from my own reading" standard is stated without evidence that researchers can self-assess it, and the authors concede reliance on good faith. Cognitive risks — that the capacity to defend may be eroded by how content was produced — are not addressed. Institutional anchors are named, not specified.
+
+### A1. 【必讀】
+
+Lindebaum, D., & Fleming, P. (2024). ChatGPT undermines human reflexivity, scientific responsibility and responsible management research. *British Journal of Management*, *35*(2), 566–575. https://doi.org/10.1111/1467-8551.12781
+全文：僅摘要（bronze OA，Wiley 網站阻擋自動下載；校園網路可取得）。
+
+重點介紹：作者問 ChatGPT 產生的是什麼樣的知識、這對研究者的反身性意味什麼、缺乏反身性又如何使我們失去以負責任方式形塑知識的資格。他們先說明 ChatGPT 的運作與其內在的認識論限制：它用高機率、衍生性的選擇生成文本，對自己產出的知識「無利害」（no stake），因此傾向產出不負責任的內容；真正的人類思考嵌於偶然的社會文化脈絡，會做出訓練資料「內」與「外」的低機率選擇，因此有創造性、脈絡性與承諾。結論是 ChatGPT 的使用與科學責任及負責任的管理研究完全不相容。
+
+Key points: ChatGPT generates text through high-probability, derivative choices and has no stake in the knowledge it produces, hence tends toward irresponsible output; genuine human thinking is embodied, contextual and committed, making low-probability choices inside and outside the training data. The authors conclude that ChatGPT use is wholly incompatible with scientific responsibility.
+
+評論（僅依摘要）：這是 van Zoonen 等人與 Colangelo & Galli 反覆引用的源頭，「無利害」是整個責任論證的核心直覺。但結論比前提強：從「模型無利害」推到「使用它與科學責任完全不相容」，中間跳過了「人可以承擔模型無法承擔的利害」這個可能，而後者正是你的立場。就摘要看，這篇對你的原則是一半支持（責任只能在人身上）、一半反對（連使用都不該）。全文據說是以管理教育為脈絡，對實驗科學的適用性需自行判斷。
+
+Critique (abstract only): The source of the "no stake" intuition that anchors the accountability argument. The conclusion outruns the premise: that the model bears no stake does not entail that a human cannot bear it on the model's behalf, which is exactly the lab principle. Half supports (responsibility must be human), half opposes (use itself is incompatible). Written for management research; transfer to experimental science untested.
+
+### A2. 【必讀】
+
+Hosseini, M., Resnik, D. B., & Holmes, K. (2023). The ethics of disclosing the use of artificial intelligence tools in writing scholarly manuscripts. *Research Ethics*, *19*(4), 449–465. https://doi.org/10.1177/17470161231180449
+全文：僅摘要（gold OA；Sage 與 PMC 阻擋自動下載；PMC11694804 可直接取得）。
+
+重點介紹：作者反對 Science 式的禁令，理由是禁令無法執行、只會鼓勵隱匿使用，而且 LLM 對寫作、審查與編輯有用，也促進科學中的公平。他們主張 LLM 沒有自由意志、無法負道德或法律責任，所以列為作者或放進致謝都不恰當；工具應如軟體般在文內引用並列入參考文獻。建議：在導論或方法揭露使用細節（提示詞、受影響的段落）；標明使用者、版本、模型與時間，因為同一版本可能換模型、模型也隨時間變化；將相關互動紀錄作為補充材料提交。
+
+Key points: Bans are unenforceable and encourage hidden use; LLMs lack free will and cannot be morally or legally responsible, so neither authorship nor acknowledgement is appropriate — cite them as tools. Disclose prompts and affected text in the introduction or methods, record user, version, model and time, and submit interaction logs as supplementary material.
+
+評論（僅依摘要）：這是揭露倫理的奠基論文，也是「責任在人」與「使用不禁」兩個子句同時成立的最早論證之一。它的機制是文件化，這正是你的原則所缺的部分：沒有紀錄，「能解釋」就只能靠記憶。要注意的是，第一作者在 2025 年改變立場，主張寫作協助的揭露應為自願（見 Raitskaya & Tikhonova 的整理），理由是界線難畫、揭露可能讓審查者對非母語作者產生偏見；這個轉向本身就說明「揭露」與「負責」是兩件事。
+
+Critique (abstract only): Foundational for both clauses of the lab principle at once. Its accountability mechanism is documentation, which the principle lacks. The first author later argued (2025) that disclosure of writing assistance should be voluntary, because demarcation is impractical and disclosure can bias reviewers — a shift that itself shows disclosure and responsibility are separate things.
+
+### A3. 【必讀】
+
+Lin, Z. (2024). Towards an AI policy framework in scholarly publishing. *Trends in Cognitive Sciences*, *28*(2), 85–88. https://doi.org/10.1016/j.tics.2023.12.002
+全文：有（PsyArXiv 預印本含補充材料；頁碼依預印本）。
+
+重點介紹：分析 2023 年 12 月時 ICMJE、COPE、WAME、JAMA、PNAS、Science、Nature、Lancet 八個機構的 AI 政策。共識是 AI 不能是作者、人負全責；分歧在允許的使用範圍、揭露的內容與位置，而且對揭露是否應隨 AI 參與程度而異、以及再現性問題都沉默。Science 十個月內改了政策。Lin 認為把 AI 限制在「可讀性與語言」既不務實（無法執行）也沒有建設性（否定實際價值）：「政策應聚焦的不是限制 AI 使用，而是當 AI 使用超出典型人類編輯服務時的適當揭露」（p. 3）。他提出「促成」與「務實」兩原則，附作者與審查者的政策範本：報告工具、版本、開發者、段落與程度（例如「約 20% 的文字最初由 AI 起草」）、目的、含時間戳的提示詞。
+
+Key points: Eight organisations agree that AI cannot be an author and humans bear full responsibility, but diverge on scope and disclosure. Restricting AI to "readability and language" is unenforceable and negates real value; policy should regulate disclosure, not use, and only when use exceeds what a human editing service would do. Provides templates specifying tool, version, sections, extent, purpose and time-stamped prompts.
+
+評論：這是「儘量使用」子句最直接的學術支持，作者是認知科學社群的人，發表在你熟悉的期刊。但它是單一作者、公開主張擁抱 AI（引用自己三篇推廣文章），「促成原則」是主張而非論證。核心推論「限制無法執行，所以政策不應限制」把可執行性與關切的實質混為一談：Lancet 區分語言協助與「產生科學洞見、分析詮釋資料、得出結論」等研究者任務（補充材料 p. 6），Lin 沒有在實質上回應。文中完全沒有認知或認識論效應，也沒說「全責」如何在實務上查核。「超出典型人類編輯服務」這個門檻本身也模糊。另外他自己指出「同一工具與提示可能產生不同結果……完整記錄可能不切實際」（p. 3），這意味「解釋」不可能是「重現」。
+
+Critique: The most direct scholarly support for "use freely", from a cognitive scientist. But single-authored by an advocate; the "enabling" principle is asserted. The inference from unenforceability to non-restriction conflates enforceability with the merit of the concern, and the Lancet's substantive distinction is not engaged. Nothing on cognitive effects or on how "full responsibility" is verified. Its own point that outputs are stochastic and models update implies "explain" cannot mean "regenerate".
+
+### A4. 【必讀】
+
+Johnson, R. F. (2026). Provenance, not prohibition: A framework for AI in scholarly publishing. *Laryngoscope Investigative Otolaryngology*, *11*(4), e70487. https://doi.org/10.1002/lio2.70487
+全文：有（Europe PMC）。三頁主編評論，無原始資料。
+
+重點介紹：出版政策跳到禁止或允許之前，沒先定義要治理的是什麼。真正的風險不是工具使用而是「來源可追溯性」的喪失。六項原則：區分能力與問責（模型現在能生成甚至為方法選擇辯護，但「它不能為這個選擇負責。它不能站在講台上，以執照、名聲與地位擔保它、接受詰問、多年後仍為它負責」，pp. 1–2）；來源勝過完美；不要以無法查核的禁令建構政策（偵測不可靠，禁令獎勵隱匿）；把揭露與驗證綁在一起，用一句可被同儕追究的證言取代勾選框；管結果不管工具清單，保密是唯一合理的前端工具限制；建文化而非監控。引用 He & Bu (2026) 對 520 萬篇論文的分析：只有 0.1% 揭露 AI 使用，有無政策的期刊沒有差別。
+
+Key points: The risk is loss of provenance, not tool use. Separate capability from accountability; prioritise provenance over polish; avoid unverifiable bans; bind disclosure to a checkable attestation ("all citations, data, and analyses were independently verified by the authors"); govern outcomes, not tool lists, with confidentiality as the one legitimate tool-level restriction; build culture, not surveillance. Bare disclosure "collapsed to near zero because it was a costless checkbox" (p. 2).
+
+評論：三頁就把你的立場說完，「作者身分從來不是關於誰寫出這些字，而是關於誰能為它們負責」（p. 2）可以直接引用。它的價值在於指出「光禿禿的宣告」與「綁定到可查核行為的證言」之間的差別：一句「我負責」和一個勾選框一樣沒有成本。弱點是沒有資料，外科比喻承擔了論證；它承認模型現在「能在被問時為選擇辯護」，卻沒有處理由此產生的問題：如果模型能給理由，作者能背出理由就不再是理解的證明。證言仍是自陳，He & Bu 的發現同樣可以預測證言會被反射性地簽署。對去技能化與作者的認識狀態隻字未提。
+
+Critique: States the lab position in three pages; its key contribution is the distinction between a costless declaration and an attestation bound to a checkable act. No data; analogies do the work. It concedes models can now defend choices but does not draw the consequence that reciting a rationale no longer proves understanding. The attestation remains self-report. Silent on deskilling.
+
+### A5.
+
+Crawford, J., Purvis, A., Grieve, A., & Taylor, L. (2026). Authorship statement for generative artificial intelligence: Assuring trust and accountability. *Journal of University Teaching and Learning Practice*, *23*(1). https://doi.org/10.53761/v16abt43
+全文：有（期刊網站）。期刊編輯立場聲明。
+
+重點介紹：自 2023 年以來的五項變化（GenAI 已多模態地嵌入整個工作流程；出版標準部分收斂；保密與資料治理風險升高；偵測不可靠所以誠信須靠透明而非監控；「AI 使用」不再是單一可定義的行為）要求更新政策。六項承諾：具體揭露（工具、版本、功能、影響了什麼）；作者必須自己產生實質學術貢獻，GenAI 不得起草核心論證、代替閱讀做文獻綜合、產生主要詮釋、或寫出暗示未曾發生之推理的結論；同儕審查以人為中心且稿件不得上傳外部工具；合成媒體須標示；方法或分析用 GenAI 時須有反身性說明（是否幻覺引用、是否影響設計或假設、用了什麼檢核）；責任不得從具名作者移轉，作者應能提供提示紀錄、模型設定或來源聲明。附長短兩種揭露範例。
+
+Key points: Six commitments — specific disclosure; authors must generate the substantive contribution (no AI-drafted central argument, literature synthesis in lieu of reading, or primary interpretation); human-centred, confidential review; labelled synthetic media; mandatory reflexivity when GenAI enters methods or analysis; non-transferable accountability, with authors ready to supply prompt logs, settings and provenance statements.
+
+評論：第六項承諾與你的原則相同，並補上一句有用的話：揭露不會把責任移走。但第二項承諾正是 Lin、van Zoonen 與 Johnson 認為無法執行的那種過程限制；文章自己承認偵測不可靠，所以第二項完全靠誠實。「輔助表達」與「實質貢獻」的界線交給判斷，儘管文章也強調「AI 使用」難以分類。「長篇閱讀比讀 AI 摘要產生更深的思考」沒有引用。內部也有張力：導論說訓練退出機制已緩解多數保密風險，第三項卻維持絕對禁止。對你的原則的實質貢獻是第五項的反身性內容與第六項的紀錄要求，那是「能解釋」的操作化。
+
+Critique: Position 6 restates the lab principle and adds that disclosure does not transfer responsibility. Position 2 is a process restriction of the kind others argue is unenforceable, and rests entirely on honesty. The assistive/substantive line is left to judgment. Positions 5 and 6 supply the reflexivity and record-keeping content that would operationalise "explain everything".
+
+### A6.
+
+Binz, M., Alaniz, S., Roskies, A., Aczel, B., Bergstrom, C. T., Allen, C., Schad, D., Wulff, D., West, J. D., Zhang, Q., Shiffrin, R. M., Gershman, S. J., Popov, V., Bender, E. M., Marelli, M., Botvinick, M. M., Akata, Z., & Schulz, E. (2025). How should the advancement of large language models affect the practice of science? *Proceedings of the National Academy of Sciences*, *122*(5), e2401227121. https://doi.org/10.1073/pnas.2401227121
+全文：有（eScholarship）。四組立場與互相回應。
+
+重點介紹：Schulz 等人認為與 LLM 合作「更像人類合作者而非軟體工具」，既有規範（查證、引用、致謝工具）已足夠，責任仍在作者，並主張優先使用開源模型以保再現性；他們自述初稿由 GPT-4 從會議筆記寫成。Bender、Bergstrom 與 West 認為「科學不能被自動補全」：LLM 建模的是詞形分布而非資訊，「我們不適合評估 LLM 輸出，因為我們忍不住會為它賦予意義」（p. 4），LLM 初稿、LLM 代替受試者、LLM 寫審查都違反既有規範。Marelli 等人主張原則而非規定：透明（承認使用、釋出提示與回應、用 CRediT）、問責（研究者無論如何負責；在使用前先定義品質標準與驗證方法）、公平。Botvinick 與 Gershman 主張兩件事必須留在人身上：選擇研究什麼的規範性決定，以及作為科學目標的人類理解。
+
+Key points: Four positions — LLMs as fallible collaborators covered by existing norms (Schulz et al.); LLMs model word-form distributions and humans cannot help but make sense of their output (Bender et al.); principles of transparency, accountability and fairness, with verification criteria defined before use (Marelli et al.); the normative choice of problems and human understanding as the goal of science must remain human (Botvinick & Gershman). All agree responsibility stays with the researcher.
+
+評論：四組唯一共同的一點就是責任在人，這對你的原則是最廣泛的支持；Marelli 等人的「使用前先定驗證標準」是可以直接採用的實務。但 Bender 等人的挑戰也最尖銳：「沒有任何已發表的使用者研究量化這種檢查需要多少努力，或研究者能多準確地執行」（p. 8），也就是說「為正確性負責」可能是成員無法可靠兌現的承諾，尤其在期限壓力下。文中實證都薄且過時（2023–24 的模型）；Liang 等人的「有幫助」評分來自自選的研究者評自己論文的回饋，與審查準確性無關。Bender 等人說 LLM 初稿等於抄襲，同一篇文章裡 Schulz 等人就用 GPT-4 寫初稿，可見規範本身仍在爭議中。Yax 等人與 Schulz 等人都遇到封閉模型結果無法重現，這意味「解釋」不可能是「重跑」。
+
+Critique: The one shared point — responsibility stays human — is broad support; Marelli et al.'s "define verification methods before use" is directly adoptable. Bender et al. pose the sharpest challenge: the effort and accuracy of human verification of fluent output are unmeasured. Evidence throughout is thin and dated; the debate on LLM first drafts is unresolved even within the article. Reproducibility failures with proprietary models mean "explain" cannot mean "reproduce".
+
+### A7.
+
+Kaebnick, G. E., Magnus, D. C., Kao, A., Hosseini, M., Resnik, D., Dubljević, V., Rentmeester, C., Gordijn, B., & Cherry, M. J. (2023). Editors' statement on the responsible use of generative AI technologies in scholarly journal publishing. *Hastings Center Report*, *53*(5), 3–6. https://doi.org/10.1002/hast.1507（erratum: https://doi.org/10.1002/hast.1534）
+全文：有（PMC 作者手稿）。
+
+重點介紹：九位生命倫理與人文期刊主編的聯合聲明。AI 不得列為作者，理由值得注意：「雖然可以主張生成式 AI 具備作者問責的某些面向，例如提供文章如何產生之說明的能力，但它確實缺乏的問責面向是道德責任。只有人能負道德責任」（p. 2）。作者應透明，「有疑慮就揭露」；揭露的四個理由：標記正確性問題（AI「在提供準確引用方面極不可靠」）、理解觀點中偏誤的來源、評估所有權並保護學術社群、支持公共審議。編輯與審查者不應只靠 AI 審查，人是最終裁決者。他們認為 Science 的全面禁止「過寬且可能無法執行」，並預期變化速度會讓詳細政策失效，演化中的專業規範更可行。
+
+Key points: AI cannot be an author because, although it may be able to give an account of how a text was produced, it lacks moral responsibility, which only persons have. Disclose when in doubt, for four reasons. Humans remain final arbiters in review and editing. Blanket prohibition is too broad and unenforceable; evolving professional norms may work better than detailed rules.
+
+評論：對你的原則最有價值的是那一句：AI 也能「說明」文章如何產生，它缺的是道德責任。這意味「能解釋」本身不是使人負責的東西，你的原則把解釋與負責並列是對的，但應說明解釋必須是成員自己的理解而非轉述。這篇是 2023 年的初步聲明，寫給使命明確是「負責任思考者的社群」的人文期刊，理由的轉移需要留意；引用不可靠的說法描述的是 2023 年的模型；建議刻意不操作化，作者自承「難以決定編輯應如何促進負責任的使用」。對詳細規則的懷疑支持你選擇一條短的原則性規範。
+
+Critique: Its most useful move — that AI can give an account of how a text was produced but lacks moral responsibility — implies explanation alone does not confer accountability; the lab principle rightly pairs them, but should specify that the explanation must be the member's own. A 2023 preliminary statement for humanities journals with a communitarian mission; deliberately non-operational. Its scepticism of detailed rules supports a short principle-based policy.
+
+### A8.
+
+Colangelo, M. T., & Galli, C. (2026). The sophist in the server. *EMBO Reports*, *27*(5), 1098–1102. https://doi.org/10.1038/s44319-026-00711-w
+全文：有（Europe PMC）。評論文章。
+
+重點介紹：LLM 確實做某種推理（多步推論、自我批評、檢索），但那是「脫離了通常錨定科學判斷的認識論承諾的推理」（p. 1098）：模型能以同等流暢為一個論題及其反面辯護，因為它沒有信念、名聲或對真理的責任，像古希臘的智者派。風險不是取代科學判斷，而是模糊修辭可信與證據支持的界線。Figure 1 把探究分為生成階段（人與模型重疊）與證據裁決階段，後者「無可化約地屬於人」。提議的規範：標準化揭露使用方式與階段、保存提示紀錄與代表性輸出、模型與提示與輸出的版本封存、審查者使用 LLM 時透明、教學生詰問機器產生的論證。並警告過多的可信輸出會使評估者「認知飽和」。
+
+Key points: LLM reasoning is real but detached from epistemic commitments; the model can argue a thesis and its opposite equally well. The transition from rhetorical plausibility to evidential adjudication "remains irreducibly human" (p. 1099). Proposes disclosure of stage and manner of use, prompt/output logging, model versioning, and teaching students to interrogate machine arguments; warns of cognitive saturation from abundant plausible outputs.
+
+評論：支持你的原則的核心邏輯（責任在人）與後半句（推理必須可重建，所以要留紀錄）。它也提出一個實務上的限定：相同提示在不同會話與版本會產生不同軌跡，「解釋生成內容」需要實際的紀錄而非回憶。弱點是全是論述，引用的實證多為 2025 年的 arXiv 預印本，智者派比喻作者自稱「暫定」；「幻覺假設曾引導研究者進入原本會忽略的概念領域」（p. 1100）沒有細節，可能是倖存者偏誤。它沒有討論使用者的去技能化，只談輸出的偏誤與再現性。與多數文獻不同的是，作者明白反對他們所謂針對 AI 的「道德討伐」，主張常態化揭露而非限制，這與你的前半句一致。
+
+Critique: Supports both clauses; adds that reproducibility across sessions and versions makes logging, not memory, the basis for explanation. Argumentative, with evidence largely from 2025 preprints; the "hallucinated hypotheses led to discoveries" claim is unsupported. No treatment of user deskilling. Openly opposed to a "moral crusade" against AI use, favouring normalised disclosure — consistent with "use freely".
+
+### A9.
+
+Flanagin, A., Bibbins-Domingo, K., Berkwits, M., & Christiansen, S. L. (2023). Nonhuman "authors" and implications for the integrity of scientific publication and medical knowledge. *JAMA*, *329*(8), 637–639. https://doi.org/10.1001/jama.2023.1344
+全文：僅摘要（bronze OA，JAMA 網站阻擋自動下載）。
+
+重點介紹：JAMA 編輯群在 ChatGPT 被列為共同作者的事件後的社論。指出協助寫作、文法、參考文獻、統計與報告標準的 AI 工具正快速增加，編輯與出版者也用 AI 篩查投稿。2023 年 1 月 Nature 報導兩篇預印本與兩篇文章把 ChatGPT 列為作者，其中一篇附了電子郵件，而這些已被 PubMed 與 Google Scholar 索引。社論確立非人類不得為作者、AI 使用須揭露的政策基準。
+
+Key points: The JAMA editorial issued after ChatGPT appeared as a bylined author in indexed papers; establishes that nonhuman entities cannot be authors and that AI use must be disclosed, and notes that editors and publishers themselves use AI tools for screening.
+
+評論（僅依摘要）：作為歷史脈絡引用即可，它是被引用最多的期刊政策文件之一，但論證薄，主要是事件描述與政策宣告。對你的原則的用處在於提供「AI 不能負責所以不能是作者」這條規範的權威來源，沒有更多。
+
+Critique (abstract only): Useful as historical context and as an authoritative source for the no-AI-authorship norm; argumentatively thin, mostly event description and policy declaration.
+
+### A10.
+
+LaFlamme, M., & Meyers, N. (2026). Enacting AI disclosure in scholarly publishing. *American Ethnologist*, *53*(2), 132–135. https://doi.org/10.1111/amet.70084
+全文：僅摘要（付費文章）。
+
+重點介紹：從人類學出發的評論，描繪新興的 AI 揭露與歸屬實務，考慮如何配合該學科的認識論與倫理承諾，並將揭露要求置於跨部門、跨尺度的規範趨勢中。
+
+Key points: Sketches emerging AI disclosure and attribution practices, adapts them to anthropology's epistemic and ethical commitments, and situates disclosure expectations within broader regulatory trends.
+
+評論（僅依摘要）：對思考「揭露」在不同學科如何落地有參考價值，但摘要看不出具體主張。就你的目的而言，它提醒揭露規範正在跨部門被法典化，實驗室的內部規範最終會遇到外部要求；除此之外沒有可評論的內容。可視為選讀。
+
+Critique (abstract only): A reminder that disclosure expectations are being codified across sectors; no specific claims visible in the abstract. Optional reading.
+
+### A 補充：期刊政策的實證盤點
+
+Perkins, M., & Roe, J. (2024). Academic publisher guidelines on AI usage: A ChatGPT supported thematic analysis. *F1000Research*, *12*, 1398. https://doi.org/10.12688/f1000research.142411.2
+全文：有（Europe PMC，含審查意見）。
+
+重點介紹：107 個出版者中 36 個有 AI 政策，去除重複後 28 份（2023 年中）。人工與 ChatGPT 輔助的主題分析得出六個主題：人類專屬作者身分、作者問責、揭露與透明、研究誠信、流動的政策地景、限制與排除。「沒有任何出版者說 LLM 可以列為作者。這不是因為模型無法產生有意義的洞見、內容、分析或詮釋，而是因為這些工具無法為書面作品負責」（p. 8）。方法上的附帶發現：GPT-4 在作者提供的小資料集上，經多次提示仍無法給出準確的逐字引文，「引文經常被誤歸於其他出版者、被濃縮、或根本是捏造的」（p. 11）。
+
+Key points: Of 28 unique 2023 policies, all exclude AI authorship on the ground that tools cannot take responsibility; use is permitted with disclosure, and authors are accountable for all content including AI parts. Incidentally, GPT-4 fabricated and misattributed quotations from a small supplied dataset despite repeated prompting.
+
+評論：文獻盤點本身已過時（作者自承），「人工」組也用了軟體，兩組主題的相似不是信度統計；審查者指出親 AI 立場與大量自引，作者部分承認。對你的原則最有用的反而是附帶發現：捏造的引文能在多輪提示下存活，所以「為正確性負責」意味每一筆 AI 提供的引用與引文都要對回原始來源。另外部分出版者（Edward Elgar、SSRN、Science）不論揭露與否都禁止 AI 用於實質內容，成員投稿前要查。
+
+Critique: A dated snapshot with methodological softness (software-assisted "manual" arm; no reliability statistic; pro-AI stance noted by reviewers). Its incidental finding — fabricated quotes surviving multiple prompts — is the most useful part for the lab: responsibility for accuracy entails checking every AI-supplied citation against the source. Some publishers prohibit AI for substantive content regardless of disclosure.
+
+Ganjavi, C., Eppler, M. B., Pekcan, A., Biedermann, B., Abreu, A., Collins, G. S., Gill, I. S., & Cacciamani, G. E. (2024). Publishers' and journals' instructions to authors on use of generative artificial intelligence in academic and scientific publishing: Bibliometric analysis. *BMJ*, *384*, e077192. https://doi.org/10.1136/bmj-2023-077192
+全文：僅摘要（hybrid OA，BMJ 網站阻擋自動下載）。
+
+重點介紹：橫斷面書目計量研究，2023 年 5 月與 10 月檢視前 100 大出版者與前 100 高排名期刊的網站。有 GenAI 指引的出版者 24%、期刊 87%；有指引者中 96% 與 98% 禁止 AI 列為作者；只有一家期刊明文禁止用 GenAI 生成稿件；兩家出版者與 19 家期刊表明指引只適用於寫作過程。
+
+Key points: Among the top 100 publishers only 24% provided GenAI guidance, versus 87% of top journals; of those, 96–98% prohibited AI authorship, yet only one journal explicitly banned GenAI in manuscript generation, and a minority limited guidance to the writing process.
+
+評論（僅依摘要）：這是引用「期刊實際怎麼規定」時的標準文獻，樣本與方法清楚。它對你的原則的支持是間接的：多數期刊允許使用、要求揭露、責任歸作者，與你的立場一致；但指引之間的不一致（部分期刊與其出版者矛盾）意味成員不能假設實驗室原則等於期刊要求。資料為 2023 年，已有新的盤點（Yoo 2025；Raitskaya & Tikhonova 2025）。
+
+Critique (abstract only): The standard reference for what journals require; clear sampling. Indirect support: most journals permit use with disclosure and assign responsibility to authors. Inconsistencies between journals and their publishers mean lab members cannot assume the lab principle matches venue rules. 2023 data.
+
+Yoo, J. H. (2025). Defining the boundaries of AI use in scientific writing: A comparative review of editorial policies. *Journal of Korean Medical Science*, *40*(23), e187. https://doi.org/10.3346/jkms.2025.40.e187
+全文：有（期刊網站）。
+
+重點介紹：比較 ICMJE、WAME、COPE 與 NEJM、Lancet、Nature、Science、BMJ、Annals、JAMA、Cell 的政策（Table 1），三項共同原則：AI 不能是作者、須揭露、責任全在人類作者。嚴格程度不同：Science 實際上禁止未揭露或未核准的 AI 文本並禁止 AI 生成的引用；JAMA 限制審查者使用與 AI 臨床影像。Table 2 依 Resnik & Hosseini 的三級架構把 11 種情境分為強制揭露（假設生成、撰寫段落、資料分析、圖表、修改病人影像）、選擇性揭露（文法、重組）、不需揭露（拼字、參考文獻格式、文獻搜尋）。偵測工具不可靠且對非母語者有偏見，所以誠信應靠揭露、良心與社群自律：「學術誠信的核心不在於誰打出那個句子，而在於誰做出智識貢獻並為它承擔責任」（p. 8）；「這個責任不只及於最終產品，也及於整個創作過程的誠信」（p. 9）。
+
+Key points: Thirteen bodies share three principles — no AI authorship, disclosure, full human responsibility — differing in strictness. A three-tier disclosure scheme (mandatory / optional / unnecessary) is applied to eleven scenarios. Detection tools are unreliable and biased against non-native writers, so integrity must rest on disclosure and community norms rather than detection.
+
+評論：Table 2 的分級是「解釋所有生成內容」最實用的操作化：實質使用（假設、分析、圖表、段落）全紀錄，語言編輯輕紀錄，否則文件負擔不切實際。弱點是單一作者的敘述性回顧，政策是轉述不是引文，期刊選擇沒有說明理由，而且作者評估的是自己主編的期刊，沒有標明這個視角。NHANES 論文工廠的論證明說是「時間重疊」。偵測工具的準確率來自廠商。對去技能化沒有討論。另外它提醒你的原則的「各階段」比某些期刊寬：Science 禁 AI 生成引用、JAMA 預設禁 AI 臨床影像。
+
+Critique: The tiered scheme is the most practical operationalisation of "explain everything" — full provenance for substantive uses, lighter for editing. A single-author narrative review of the author's own journal's policy, with paraphrased rather than quoted policies and vendor-sourced detection figures. Reminds that "every stage" is broader than some venues allow.
+
+Raitskaya, L., & Tikhonova, E. (2025). The 2025 landscape of generative AI in scholarly writing and publishing: A scoping review of uses and ethical approaches. *Journal of Language and Education*, *11*(4), 5–51. https://doi.org/10.17323/jle.2025.29876
+全文：有（期刊網站）。
+
+重點介紹：PRISMA-ScR 範疇性回顧，Scopus 2025 年英文文獻 334 筆篩至 56 篇。論述集中於治理、技術影響、風險緩解。收錄的個別發現：20 位神經外科醫師辨識 AI 與人類作者的正確率只有 61%；14 位審查者中 11 位沒認出 GPT-4o 生成的稿件；偵測器把高達 30.4% 的人類文本誤判為 AI；ChatGPT 改善住院醫師的結構與語言分數，但對辨識研究問題與理解方法沒有顯著效果；303 名學習者對標示為 AI 生成的文字花較少時間修改。Appendix 6 的工具箱把使用分為三級（實質/高風險：假設、段落草稿、資料分析、圖表，須強制揭露與嚴格監督；支持性/中風險：重組、大綱、文獻搜尋、回饋，選擇性揭露；例行/低風險：文法、格式，不需揭露），並列出「人類責任不可協商」與「保存智識勞動」兩條原則。
+
+Key points: A scoping review of 56 publications from 2025. Included findings: reviewers and clinicians largely cannot tell AI from human text; detectors misclassify up to 30% of human text; ChatGPT improves surface quality without improving core research skills; learners revise AI-labelled text less. The Appendix 6 toolkit sets a three-tier taxonomy with "human accountability is non-negotiable" and "preservation of intellectual labor" as principles.
+
+評論：它記錄了 2025 年的共識，工具箱的自問「我是否已仔細查核、編輯並對稿件每一部分包括 AI 生成內容負完全責任？」（p. 50）幾乎就是你的原則的檢核表版。限制：單一資料庫、只有英文、只有一年、沒有品質評估，所以 12 位審查者的小研究與大研究等重；十個假設主題用 VOSviewer「驗證」有循環之嫌；把自己的先前作品納入樣本並顯著引用；文中有錯字與計數不一致。它記錄但沒有裁決 Resnik & Hosseini（實質使用強制揭露）與 Hosseini 等人 2025（寫作協助自願揭露）之間的分歧，這是實驗室要自己決定的事。收錄的實證（Kumar；Radtke & Rummel）顯示 AI 提升表面品質而不提升核心研究技能，這對「儘量使用」在受訓者身上的效果是提醒。
+
+Critique: Documents the 2025 consensus; its checklist is nearly a ready-made version of the lab principle. Single database, one year, no quality appraisal, partly circular cluster validation, self-inclusion. Reports but does not adjudicate the mandatory-vs-voluntary disclosure debate. Included empirical work suggests AI raises surface quality without core-skill gains — a caution for trainees.
+
+Nabavi, A., Safari, F., Shmoury, A. H., Tabet, S., Perdomo-Luna, C., & Celi, L. A. (2026). Artificial intelligence in scholarly peer review: A scoping review of applications, risks, and governance challenges. *International Journal of Medical Informatics*, *214*, 106418. https://doi.org/10.1016/j.ijmedinf.2026.106418
+全文：僅摘要（付費文章）。
+
+重點介紹：PRISMA-ScR 範疇性回顧，四個資料庫加灰色文獻（COPE、ICMJE、WAME、出版社入口），2024 年 1 月至 2025 年 8 月，2,908 筆篩至 189 筆。AI 在同儕審查中分為輔助型（分流、協助）與自主型（產生審查意見、預測）。好處是流程效率、標準化檢查、更清楚的回饋；但現有系統缺乏自主評估所需的領域推理與倫理判斷。主要風險：稿件送入第三方工具的保密外洩、偏袒菁英機構或男性作者的演算法偏誤、學術聲音同質化。
+
+Key points: A scoping review of 189 records on AI in peer review. AI is used assistively (triage, assistance) and autonomously (review generation, prediction). Key risks: confidentiality breaches when manuscripts go to third-party tools, algorithmic bias favouring elite institutions or male authors, and homogenisation of scholarly voice.
+
+評論（僅依摘要）：對你的原則的意義集中在一點：「各階段」若包含審查他人稿件，保密是硬限制。這與 van Zoonen 的保密門檻、Johnson 的「工具本身成為政策對象的唯一地方」、Crawford 的第三項承諾一致。摘要看不出治理建議的細節，方法上是標準的範疇性回顧。
+
+Critique (abstract only): Its relevance is concentrated in one point: if "every stage" includes reviewing others' manuscripts, confidentiality is a hard limit, consistent with van Zoonen, Johnson and Crawford. Governance recommendations are not visible in the abstract.
+
+## 主題 B：認識論風險 — 理解的錯覺與信任校準
+
+### B0. 起點文獻
+
+Tang, B. L. (2025). The epistemic downside of using LLM-based generative AI in academic writing. *Publications*, *13*(4), 63. https://doi.org/10.3390/publications13040063
+全文：有（你上傳的檔案）。敘述性回顧。
+
+重點介紹：撇開倫理違規不談，AI 用於學術寫作有三項內在的認識論缺陷。一是認識論損害，主要是理解的錯覺：拿到現成草稿的作者沒有做過拼湊與綜合，「即使盡了審慎義務、仔細檢視 AI 產出的內容以去除可察覺的錯誤，仍無法真正且徹底地掌握或擁有內容中的知識」（p. 3）。二是認知鈍化：「AI 使用者被認知卸載的輕易成就麻醉了獲取知識的痛苦，放鬆了自己的智識鋒芒與認知強度」（p. 4）。三是 AI 依賴，習慣性的與情感性的。這些缺陷需要規範之外的節制，研究者應「至少在智識上自我錨定」自己的寫作；揭露要求應保留並更細緻。證據來源包括 Messeri & Crockett、Kosmyna 等人（自陳擁有感最低、無法引述自己的作品）、Barcaui 的 RCT、Gerlich、Lee 等人、Bastani 等人（GPT-4 撤走後學生表現比從未使用者差）、Köbis 等人（委託 AI 增加不誠實行為）。
+
+Key points: Three intrinsic epistemic costs — illusion of understanding (even careful checking of AI output does not yield mastery), cognitive dulling through offloading, and habitual/emotional dependency — which call for restraint beyond regulation and for "self-anchoring" one's own writing.
+
+評論：這是對你的原則前半句最直接的挑戰：它主張生成的方式會侵蝕解釋的能力本身，所以「儘量使用」加「能解釋」可能在受訓者身上不相容。但證據薄，作者自承「範圍仍相當有限」（p. 6）：Kosmyna、Barcaui、Bastani 都是預印本，Gerlich 與 Lee 是橫斷面自陳，Kosmyna 是學生寫短文而非研究者寫論文。最重要的主張（仔細檢查仍無法掌握）是從寫作過程的本質推出的論證，不是發現。文章沒有考慮「先自己寫、再用 AI」的設計，也沒區分用 AI 起草與用 AI 批評或寫程式。它自己引的計算機類比（Sec. 3.2）反而削弱悲觀結論。對你的原則的正面貢獻是「自我錨定」這個做法，以及提醒倫理審查書與 SOP 這類文件不宜由 AI 起草，因為遵循它們需要真正的理解（p. 5）。
+
+Critique: The most direct challenge to "use freely": the manner of production may erode the capacity to explain. Evidence is thin and largely preprint or cross-sectional; the central claim is an argument from the nature of writing, not a finding; no consideration of write-first-then-AI designs or of drafting versus critique. Its constructive contribution is "self-anchoring" and the caution about ethics protocols and SOPs.
+
+### B1. 【必讀】
+
+Messeri, L., & Crockett, M. J. (2024). Artificial intelligence and illusions of understanding in scientific research. *Nature*, *627*(8002), 49–58. https://doi.org/10.1038/s41586-024-07146-0
+全文：僅摘要（付費文章；摘要取自 Nature 網頁）。
+
+重點介紹：科學家熱切想像 AI 改善研究的方式。作者建立科學家對 AI 願景的分類，指出其吸引力來自「透過克服人類缺點來提升生產力與客觀性」的承諾；但這些方案也可能利用我們的認知限制，使我們陷入「理解的錯覺」：相信自己對世界的理解比實際更多。這些錯覺遮蔽了科學社群看見「科學單一文化」形成的能力：某些方法、問題與觀點主宰了其他取徑，使科學較不創新、更易出錯。AI 工具在科學中的擴散「有引入一個產出更多、理解更少的探究階段的風險」。
+
+Key points: A taxonomy of scientists' visions for AI; their appeal lies in promised productivity and objectivity, but they can exploit cognitive limitations and produce illusions of understanding, obscuring the formation of scientific monocultures. AI risks "a phase of scientific enquiry in which we produce more but understand less."
+
+評論（僅依摘要）：Tang「理解的錯覺」與 Abdurahman 等人「認識論自滿」的直接源頭，也是討論 AI 認識論風險時被引用最多的論文。就摘要判斷，它的層次在社群而非個人：單一文化是集體現象，個人的「能解釋」原則不會自動處理它。它對你的原則的意義是提醒「內容正確」不等於「理解」，而且錯覺的特徵正是當事人察覺不到。需讀全文才能評論其論證細節。
+
+Critique (abstract only): The source of the "illusion of understanding" concept. Operates at the community level — monocultures are collective — so an individual "explain it" principle does not address it automatically. Its lesson for the lab: accurate content is not understanding, and the illusion is by definition invisible to the person who has it.
+
+### B2. 【必讀】
+
+Hila, A. (2025). The epistemological consequences of large language models: Rethinking collective intelligence and institutional knowledge. *AI & Society*, *41*(1), 79–97. https://doi.org/10.1007/s00146-025-02426-3
+全文：有（arXiv 版；頁碼依 arXiv）。哲學論證。
+
+重點介紹：集體層次的知識需要內在論證成（對使信念為真之理由的反思性掌握，這是產生知識並推動其成長的標準）與外在論證成（透過可信賴的過程與制度可靠地傳遞）。LLM 只實現後者：它可靠地傳遞人類事先建立好反思基礎的資訊，但沒有接觸真實的管道、也不具反思性推理能力。「使用 LLM 進行知識生產需要人的反思性可解釋性，那些新假設才算作知識。LLM 能偵測新模式，但判定那些模式是否構成有力的假設而非噪音，落在人類推理者身上」（p. 22）。若人因為輸出可靠而外包理解，就放棄了反思性證成，「當學習者把對某知識領域的理解與應用外包給 LLM，他們就放棄了獲得個人精通的過程，這又增加了對 LLM 的依賴」（p. 26）。「表現—推理權衡」：模型表現越好，推理的誘因越低（p. 32）。提出個人、機構、法規三層規範。
+
+Key points: Collective knowledge needs both internalist (reflective) and externalist (reliabilist) justification; LLMs instantiate only the latter. AI-generated hypotheses count as knowledge only when a human can reflectively explain them. Outsourcing comprehension to reliable outputs forfeits reflective justification, erodes learning incentives, and — via the performance–reasoning trade-off — worsens as models improve.
+
+評論：這是你的原則後半句最強的理論支撐：「能解釋」不是行政要求，而是把 LLM 輸出從可靠傳遞轉成知識的條件。同時它也是前半句的挑戰：表現—推理權衡預測「儘量使用」在受訓者身上會削弱解釋所需的理解。弱點是純論證，因果主張都用「可能」「威脅」表述，沒有使用者行為資料；約一半篇幅是計算史與 transformer 機制的背景；「LLM 無法理解語言」是作者自述的看法（p. 10）而非論證；採用的內在論標準是知識論中有爭議的一個立場。作者也承認若外包降低知識庫品質，新的推理誘因可能出現並抵銷傷害（p. 28）。它沒有考慮到，驗證並解釋 AI 輸出這個行為本身就是一種反思性證成，而那正是你的原則要求的。
+
+Critique: The strongest theoretical support for "must be able to explain" — it is the condition that turns reliable transmission into knowledge — and simultaneously a challenge to "use freely" via the performance–reasoning trade-off. Purely argumentative; causal claims are hedged; half the text is background; key premises are stated as opinion. It overlooks that verifying and explaining an output is itself reflective justification, which is where it meets the lab principle.
+
+### B3.
+
+Loru, E., Nudo, J., Di Marco, N., Santirocchi, A., Atzeni, R., Cinelli, M., Cestari, V., Rossi-Arnaud, C., & Quattrociocchi, W. (2025). The simulation of judgment in LLMs. *Proceedings of the National Academy of Sciences*, *122*(42), e2518443122. https://doi.org/10.1073/pnas.2518443122
+全文：有（Europe PMC）。實證。
+
+重點介紹：六個模型零樣本分類 2,286 個新聞網域的可信度，與 NewsGuard 對照。所有模型辨識不可信來源的一致率 85–97%，但 GPT-4o mini 與 Llama 4 Maverick 把 32% 與 35% 的可信網域誤判為不可信，且右傾的可信媒體被誤判更多。關鍵發現：只給網址不給內容，Gemini 的 F1 從 0.86 降到 0.78，GPT 從 0.79 到 0.77，「如果模型不分析內容就能分類一個網域，就很難把基於內容的評估與統計回憶區分開來」（p. 5）。代理式流程（模型與 50 位非專家受試者依相同程序選判準、檢索、評分）顯示雙方都把「事實正確性」排第一，但模型一致把「所有權透明度」排前三，人類很少。作者稱這種「把語言形式與認識論可靠性混淆」的狀態為 epistemia：「當表面可信取代驗證時產生的知識錯覺」。
+
+Key points: Six LLMs match expert credibility ratings at the output level, but accuracy barely drops when given only the URL, indicating reliance on lexical priors rather than content evaluation; systematic political asymmetries appear. "What appears as alignment at the output level may conceal a deeper epistemic shift, where normative reasoning is replaced by surface-level approximation" (p. 1).
+
+評論：對「能解釋」子句的實證支持：輸出與專家一致可以由回憶與詞彙關聯產生，所以無法重建結論為何成立的人，沒有辦法知道模型是推理還是模式比對。限制：領域是新聞可信度不是科學評估，轉移是討論中的主張；對過程的推論是間接的（關鍵詞與判準排序作為推理的代理）；人類組小（50 位義大利非專家）且對 NewsGuard 的表現比模型差，所以資料並沒有顯示人類「審慎推理」，那是從文獻引進的；NewsGuard 被當作真值而未討論其偏誤；代理式條件只用了 Gemini 2.0 Flash；epistemia 是詮釋框架不是測量構念。對實驗室的含義是：文獻篩選、可信度評估、審稿這類評估性任務需要明確的人工再驗證，不能與其他階段一視同仁。
+
+Critique: Empirical support for "explain": output agreement can arise from recall, so a member who cannot reconstruct why a conclusion holds cannot tell reasoning from pattern-matching. Domain is news credibility; process inferences are indirect; the human arm is small and performed worse than the models; ground truth is taken uncritically. Implication: evaluative tasks (screening, credibility, review) need explicit human re-verification.
+
+### B4.
+
+Heersmink, R., de Rooij, B., Clavel Vázquez, M. J., & Colombo, M. (2024). A phenomenology and epistemology of large language models: Transparency, trust, and trustworthiness. *Ethics and Information Technology*, *26*(3), 41. https://doi.org/10.1007/s10676-024-09777-3
+全文：僅摘要（hybrid OA；Springer、PhilPapers、Tilburg 典藏皆阻擋自動下載）。
+
+重點介紹：把 LLM 概念化為多功能的計算認知人工物。現象學上 LLM 可被體驗為「準他者」而被擬人化；它們在資料與演算法層面不透明，但在現象與資訊層面卻透明流暢，產生互動的流。擬人化與互動流會在部分使用者身上造成不當的信任態度。從信任與證言的知識論看有兩個陷阱：使用者理想上應把信任程度對準 LLM 的可信程度，但不透明與流暢的組合讓校準困難；結果是對輸出（尤其幻覺時）的不當信任，以及 LLM 本身可信度的削弱。
+
+Key points: LLMs are opaque in data and algorithm yet phenomenologically transparent and fluent; anthropomorphising and interactional flow foster unwarranted trust. Users cannot easily calibrate trust to trustworthiness, which is most harmful when models hallucinate.
+
+評論（僅依摘要）：提供「為什麼流暢不是正確的證據」的哲學說明，與 Maynard 的「誠實的非訊號」、Kim 等人的實驗互補。就摘要看是概念分析，沒有實證，也沒有提出校準信任的方法。對你的原則的意義是背景性的：它解釋了為什麼需要外部驗證而非依賴對輸出的感覺。
+
+Critique (abstract only): A philosophical account of why fluency is not evidence of correctness, complementary to Maynard and to Kim et al.'s experiment. Conceptual, no data, no method for calibrating trust. Background support for external verification.
+
+### B5.
+
+Kim, S. S. Y., Vaughan, J. W., Liao, Q. V., Lombrozo, T., & Russakovsky, O. (2025). Fostering appropriate reliance on large language models: The role of explanations, sources, and inconsistencies. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*, 1–19. https://doi.org/10.1145/3706598.3714020
+全文：有（arXiv 版）。實證。
+
+重點介紹：放聲思考研究（N = 16）加預先註冊的受試者內實驗（N = 308）。研究一：ChatGPT 在 48 次作答中 13 次答錯，受試者在其中 9 次跟著錯（平均信心 6.15/7）；追問不改變準確度。研究二：2×2×2 設計操弄答案正誤、有無解釋、有無來源。有解釋時，對正確答案的同意率從 67.2% 升到 78.2%，信心與「理由品質」評分升高，追問減少；但對錯誤答案的準確率從 21.8% 降到 17.2%。有來源時，對錯誤答案的同意率從 78.2% 降到 68.2%。模型錯時的準確率：只有來源 31.8% > 解釋加來源 23.1% > 都沒有 21.8% > 只有解釋 17.2%。308 人中 189 人從未點開任何來源；點開時準確率 60.1% 對 49.2%。作者指出：「在缺乏努力與專業的情況下，使用者必然依賴解釋品質的表面線索，例如流暢度，而 LLM 的解釋在這方面綽綽有餘」（Sec. 5.1）；多數受試者以為 ChatGPT 的解釋忠實描述了它得出答案的過程，實則「沒有可靠方法在無法接觸系統內部的情況下評估其忠實性」（Sec. 5.2）。
+
+Key points: Explanations increase reliance on both correct and incorrect answers and raise confidence without raising accuracy; sources reduce overreliance, especially when clicked, but 61% of participants never clicked one. LLM "explanations" justify the answer but do not describe how the model produced it and are often unfaithful.
+
+評論：對你的原則有兩個直接含義。一是「能解釋」必須定義為成員自己的獨立辯護，而不是轉述模型的解釋，因為模型的解釋會提高對錯誤答案的依賴、而且不忠實於它的過程。二是即使被告知系統可能出錯，多數人也不驗證，所以個人責任若沒有結構性的推力（要求來源、標記不一致、驗證紀錄）可能不改變行為。限制：任務是外行人答二元冷知識，題目刻意選成錯答比正答更可信（受試者在沒有解釋與來源時也更同意錯誤答案，作者稱之為刺激材料的人為效應）；對專家研究任務的推廣未經測試，作者自承。研究二是單一預生成回應，沒有真正互動；虛構系統的準確率固定 50%，遠低於現行系統；不一致性沒有操弄，只有 3 個錯答含不一致。效果量絕對值不大：最好的條件下仍有約三分之二的人採納錯答。
+
+Critique: Two implications: "explain" must be the member's own justification, since model explanations increase reliance on wrong answers and are unfaithful; and stated responsibility without structural nudges may not change behaviour, since most participants never verified. Limits: lay trivia deliberately chosen so wrong answers were more plausible; single pre-generated responses; a 50%-accurate hypothetical system; inconsistencies not manipulated; modest absolute effects.
+
+### B6.
+
+Bottazzi Grifoni, E., & Ferrario, R. (2025). The bewitching AI: The illusion of communication with large language models. *Philosophy & Technology*, *38*(2), 61. https://doi.org/10.1007/s13347-025-00893-6
+全文：僅摘要（hybrid OA，Springer 阻擋自動下載）。
+
+重點介紹：以後期維根斯坦的語言觀分析人與 LLM 的互動，把理解視為可觀察的溝通實踐而非心理或計算狀態。成功的溝通需要在定義與判斷上維持參照點的恆常性，而 LLM 缺乏在對話中追蹤否定與矛盾所需的恆常性。表面的理解來自「蠱惑」：LLM 對語言模式的統計依循，加上人類盲目跟隨熟悉語言遊戲的傾向；在刻板情境中，人會自動套用「除非證明否則視為理解」的實務原則。LLM 越能模擬刻板互動，錯覺只會越深，對有意義的控制構成疑慮。
+
+Key points: Communication requires constancy of reference points; LLMs cannot maintain it across negations and contradictions. Apparent understanding is a "bewitchment" produced by statistical pattern adherence and humans' tendency to follow familiar language games; better mimicry deepens the illusion.
+
+評論（僅依摘要）：一個哲學上有趣的論證，說明為什麼流暢的對話不是理解的證據。就摘要看沒有實證，「LLM 無法追蹤否定與矛盾」是經驗主張，需要全文看它的支持。對你的原則的意義與 Heersmink 相同：背景性地支持外部驗證。可視為選讀。
+
+Critique (abstract only): A philosophically interesting argument that fluent dialogue is not evidence of understanding. The empirical claim about negations needs the full text. Background support for external verification; optional.
+
+### B7.
+
+Abdurahman, S., Atari, M., Karimi-Malekabadi, F., Xue, M. J., Trager, J., Park, P. S., Golazizian, P., Omrani, A., & Dehghani, M. (2024). Perils and opportunities in using large language models in psychological research. *PNAS Nexus*, *3*(7), pgae245. https://doi.org/10.1093/pnasnexus/pgae245
+全文：有（Europe PMC）。多項實證加評論。
+
+重點介紹：對心理學中「GPTology」的警告。GPT-3.5 作答 MFQ-2 一千次，與 19 個人群樣本（N = 3,902）相比變異數小 43 到 121 倍，相關網路也不同；在 BFI、RWA 等量表上一致地變異過小且偏向特定人群。道德語言標註：微調 BERT F1 = 0.48，零樣本 ChatGPT 0.22，LIWC 0.27；零樣本 ChatGPT 把文本標為道德的機率是人類的十倍以上，且偏向個人主義、開放、隨和的標註者。提示敏感度：加一段研究說明使 BFI 開放性下降 d = −0.30、外向性 d = −0.54；調換定義順序使標註率變化 −56% 到 +164%。封閉模型快照在三個月到一年內被淘汰；自架的 7B LLaMA 可重現結果。建議逐任務對人工標註基準驗證、記錄模型版本與提示、優先用開源模型。
+
+Key points: LLMs as simulated participants show variance 43–121× smaller than humans and distorted nomological networks; as zero-shot annotators they are outperformed by small fine-tuned models and are highly prompt-sensitive; proprietary snapshots are deprecated within months. Validate task by task against human labels, log version and prompt, prefer open models.
+
+評論：這是「為正確性負責」在 AI 用於資料分析或標註時的具體樣貌：先以人工標註子集驗證再擴大、保留提示與版本、優先開源。提示敏感度的數字直接說明為什麼「能解釋生成內容」需要當時的提示與版本。限制：多數實驗用 2023 年的 GPT-3.5，作者自承新模型「可能已處理上述所有疑慮」；與 GPT-4 的比較是跨研究；人類對照樣本本身也是線上便利樣本；「理解的錯覺」是引用 Messeri & Crockett 而非測試。它談的是 LLM 作為分析工具與模擬受試者，不是寫作或推理輔助，所以只涵蓋「各階段」的一部分。再現性一節指出專有模型會無聲地改變，這是「解釋一切」的上限：即使有完整紀錄，成員也可能無法解釋日後的差異。
+
+Critique: Shows what responsibility for accuracy looks like when AI does analysis: benchmark against human labels before scaling, log prompt and version, prefer open models. Prompt-sensitivity results justify record-keeping. Most experiments use 2023-era GPT-3.5; comparisons with newer models are cross-study. Scope is analysis and simulated participants, not writing. Silent model updates set a ceiling on what "explain everything" can guarantee.
+
+### B8.
+
+Maynard, A. D. (2026). *The AI cognitive Trojan horse: How large language models may bypass human epistemic vigilance* [Preprint]. arXiv. https://doi.org/10.48550/arxiv.2601.07085
+全文：有（arXiv）。理論假設論文。
+
+重點介紹：人類有平行運作的「認識論警覺」機制（Sperber 等人），依賴的線索是流暢、溫暖、回應性、無利害，這些在人類身上代價高昂因此有訊息價值。LLM 呈現「誠實的非訊號」：這些特徵是真的，但計算上幾乎免費，不帶任何訊息，於是警覺預設停機。四個繞過機制：與理解脫鉤的處理流暢；沒有利害的溫暖與能力呈現；把評估本身外包（「當使用者不只問『X 是什麼』而是問『我該怎麼看 X』『這個論證好嗎』『我該信這個來源嗎』，他們委託的是評估功能本身……風險不在 AI 告訴使用者什麼——那可能是正確的——而在當 AI 在說的時候，使用者可能停止做什麼」，p. 9）；RLHF 導致的諂媚。「過程很重要，即使內容是好的，因為過程會類推到內容不好的情境」（p. 3）。推測性的「聰明使用者陷阱」：認知越精熟者可能越脆弱，因為暴露多、後設認知過度自信、工作流程深度整合、更能合理化被 AI 推動的信念。作者自己的 AI 使用聲明：「Claude 4.5 用於研究與寫作協助。所有概念、主張、引用與最終文字均由作者獨立驗證」（p. 16）。
+
+Key points: LLMs present "honest non-signals" — fluency, helpfulness, apparent disinterest — that carry information in humans but are trivial for machines, so epistemic vigilance stands down. Four bypass mechanisms; the risk is partly calibration, not deception: even accurate AI can be harmful through what users stop doing. Speculates that sophisticated users may be more vulnerable.
+
+評論：提供了你的原則的理由（流暢與樂於助人不是正確的證據，所以要獨立驗證與辯護），作者自己的 AI 使用聲明就是原則的實作範例。但它也指出以正確性為核心的規則會錯過主要風險：過程層面的評估外包，以及對問什麼問題、怎麼框定問題的不知不覺的影響。「聰明使用者陷阱」意味資深與專家成員不能豁免，對自己能解釋的信心本身可能降低審視。全篇是理論，作者反覆自承；每個實證引用都是間接的，相反假設（經驗改善校準）同樣可能。部分前提可爭：LLM「沒有」原生的不確定性訊號忽略了校準信心的研究；Kim 等人顯示不一致與缺來源確實會觸發懷疑。單一作者預印本。
+
+Critique: Supplies the rationale for the principle and a working example of it (the author's own AI-use statement). Also argues that accuracy-focused rules miss the process-level risk — offloading evaluation itself — and that experts are not exempt. Entirely theoretical, as the author says; counter-hypotheses are equally plausible; some premises are contestable. Single-author preprint.
+
+### B9.
+
+Ibrahim, L., Collins, K. M., Kim, S. S. Y., Reuel, A., Lamparth, M., Feng, K., Ahmad, L., Soni, P., El Kattan, A., Stein, M., Swaroop, S., Padmakumar, V., Sucholutsky, I., Strait, A., Yang, D., Liao, Q. V., & Bhatt, U. (2025). *Measuring and mitigating overreliance to build human-compatible AI* [Preprint]. arXiv. https://doi.org/10.48550/arxiv.2509.08010
+全文：有（arXiv）。立場論文。
+
+重點介紹：過度依賴是行為（接受錯誤輸出或在不當時委託），非意圖、源於錯置的信任、產生可測量的失誤；與過度依存（以演算法取代個人判斷、學習與自主的模式）及信任（心理狀態）區分。風險涵蓋個人短期錯誤、長期依存與廣泛去技能化、機構治理失靈、社會同質化。「LLM 有引發跨越相互連結之認知能力（批判推理、寫作、判斷、情緒處理）的廣泛去技能化的風險。這在性質上不同：第一，LLM 在這些領域尚未可靠正確，因此證成狹義去技能化的安全網不存在；第二，這些能力是基礎性的」。既有的依賴測量（同意率、轉換比例）對 LLM 失效，因為使用是互動的、輸出複雜且部分正確、任務缺乏真值。提出多粒度、會話層次、結果導向的測量，以及模型、系統、使用者三層的緩解；並主張「使用者教育在系統本身被設計成鼓勵過度依賴時可能報酬遞減」。
+
+Key points: Overreliance is a behaviour arising from misaligned trust; LLMs risk broad deskilling of foundational capacities without the safety net of reliable correctness. Traditional reliance metrics fail for interactive, partially correct, ground-truth-free tasks. Verification behaviour is the key observable; user-level education has diminishing returns without system-level friction.
+
+評論：它把過度依賴視為個人行為並呼籲「建立機制辨識未能批判評估輸出的人」，這與你的責任子句一致，而且它指出可觀察的指標是驗證行為：來源有沒有查、測試有沒有跑、推導有沒有重做。挑戰有兩點：它明確主張個人責任與教育在沒有系統層面摩擦的情況下報酬遞減，所以原則本身不太可能改變行為；而且在構思、框架、寫作這類開放任務中沒有真值，「內容的真實性與正確性」對這些階段無從定義。去技能化是長期的依存模式，逐項正確性的規則管不到。限制：沒有新實驗；唯一的原始資料是 LLM 標記的事故資料庫，單一作者驗證 100 筆、κ = 0.528；結果導向的定義是反事實的，難以操作；作者群有產業與政府背景，框架偏向部署治理。
+
+Critique: Treats overreliance as an individual behaviour with verification as the observable marker — consistent with the principle. But it argues that individual responsibility and education have diminishing returns without system-level friction, and that open-ended stages have no ground truth for "accuracy". No new experiments; incident-database labelling only moderately validated; outcome-based definitions are counterfactual.
+
+## 主題 C：認知鈍化、認知卸載與依賴
+
+### C1. 【必讀】
+
+Lee, H.-P., Sarkar, A., Tankelevitch, L., Drosos, I., Rintel, S., Banks, R., & Wilson, N. (2025). The impact of generative AI on critical thinking: Self-reported reductions in cognitive effort and confidence effects from a survey of knowledge workers. *Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems*, 1–22. https://doi.org/10.1145/3706598.3713778
+全文：有（Microsoft Research）。橫斷面問卷。
+
+重點介紹：319 位每週使用 GenAI 的知識工作者提供 936 個真實任務案例，59.3% 自陳有批判思考。混合效應模型：對 AI 的信心 β = −0.69（p < .001）預測較少的批判思考，對自己的信心 β = 0.26、對評估能力的信心 β = 0.31 預測較多。Bloom 分類的六類活動中，55% 到 79% 的案例自陳「較少」或「少很多」的努力。質性上，批判思考從資訊蒐集轉為資訊驗證、從問題解決轉為回應整合、從任務執行轉為「管家」（stewardship）：「與人與人的協作不同，在人與 AI 的『協作』中，儘管物質生產的勞動委託給了 GenAI 工具，工作的責任與問責仍在人類使用者身上」（Sec. 6.2）。省略驗證的理由：信任、任務看起來瑣碎、沒時間、「不是我的工作」、缺乏判斷所需的領域知識。作者警告：「若沒有在常見或低風險情境中的規律練習，認知能力可能隨時間退化」（Sec. 4.3.2）。
+
+Key points: Among 319 knowledge workers, confidence in GenAI predicted less self-reported critical thinking and less effort; self-confidence predicted more. Critical thinking shifts toward verification, integration and stewardship. Barriers to verification: trust, triviality, time, "not my job", and lack of domain knowledge.
+
+評論：文章直接說責任在人並提出「管家」隱喻，而受訪者實際算作批判思考的事（對照外部來源、確認程式能跑、對照指引核對主張）是「為正確性負責」的具體模板。限定：「能解釋」預設領域知識，資淺者無法驗證自己不懂的東西，所以原則需要指導與驗證支援的配套；審視在被視為瑣碎的任務上下降，而作者主張這會侵蝕技能，所以「各階段皆可」在低風險階段可預期會少檢查；時間壓力與「驗證是別人的事」很常見，驗證應是任務中明列、有預算的部分。方法限制：全是自陳，測的是感知的批判思考與感知的努力；橫斷面，「本分析不建立因果」（Sec. 6.1.1）；對 AI 的信心與批判思考的負相關也可以是把審視理性地分配到工具已證明可靠的任務上，資料無法區分；效果係數在五點量表上小（−0.11 到 −0.24）；樣本年輕、科技導向、自選。流行的「AI 侵蝕批判思考」摘要誇大了它。
+
+Critique: States that accountability remains human and proposes "stewardship"; what workers count as critical thinking is a template for the accountability clause. Qualifications: explanation presupposes domain knowledge; scrutiny drops on trivial tasks; time and "not my job" inhibit verification. Self-report only, cross-sectional, small effects, young self-selected sample; popular claims that it shows AI "erodes" critical thinking overstate it.
+
+### C2. 【必讀】
+
+Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., Shen, Y., Li, X., & Gašević, D. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance. *British Journal of Educational Technology*, *56*(2), 489–530. https://doi.org/10.1111/bjet.13544
+全文：有（arXiv 版）。隨機實驗。
+
+重點介紹：117 名大學生隨機分為無支援、ChatGPT-4、人類專家、寫作分析檢核表四組，兩小時閱讀寫作加一小時修改。ChatGPT 透過 API 嵌入平台，預載讀物、任務、評分標準與學生文章，限制只能給建議不能代寫，並提醒輸出可能不準。結果：動機無差異；自我調節學習歷程有顯著差異，ChatGPT 組形成「ChatGPT → 詳述 → 評估 → ChatGPT」的迴圈，較少連到閱讀、定向與評估，人類專家組則在修改與閱讀、定向與評估之間轉換較多；ChatGPT 組作文分數進步顯著較多（η² = .108），但知識獲得與遷移無差異。作者定義後設認知怠惰為「學習者對 AI 協助的依賴、卸載後設認知負荷、較不能有效地把負責任的後設認知歷程與學習任務連結」（p. 18），並觀察到「有些學習者會找到方法繞過任務指示、用 ChatGPT 生成完整文本……這種『超越表現』可能是以犧牲真正人類技能的發展來優化表現的『AI 賦權學習技能』的結果」（p. 19）。
+
+Key points: A four-arm randomised experiment (N = 117): the ChatGPT group improved essay scores most but showed no advantage in knowledge gain or transfer; trace data show its self-regulation looped through the chatbot and connected less to reading and evaluation. Students worked around a technically restricted chatbot. "Metacognitive laziness" names dependence that offloads metacognitive load.
+
+評論：這是「內容可以正確且高分、而人什麼都沒學到」最清楚的實證案例，你的「能解釋」子句正是能偵測這種表現而無理解的檢查，所以這篇是保留並執行該子句的理由。學生繞過技術限制的觀察支持依靠規範與責任而非工具限制，也就是你的前半句。限定：歷程資料把卸載定位在評估、監控與定向（對照標準檢查工作、重讀來源），「各階段皆可」正是邀請在這些地方卸載，實驗室可考慮至少對受訓者保留某些評估步驟為無輔助的人工工作。方法限制：各組 25–35 人，單一短任務，沒有延遲測驗，所以長期學習無從得知；後設認知怠惰是從轉換模式推論的，不是驗證過的測量；知識獲得與遷移在四組（包括人類專家組）都沒差，所以並不顯示 AI 特別無助於學習，而遷移分數接近天花板；AI 組基線作文分數最低，回歸均值可能貢獻；多數作文由單一評分者評分；複製貼上的觀察是軼事；附錄表格有不一致。
+
+Critique: The clearest empirical case that output can be accurate and high-scoring while the person learned nothing; the "explain it" clause is the check that would detect this. Students bypassing tool restrictions supports norms over restrictions. Process data locate offloading in evaluation and monitoring, which "every stage" invites. Small arms, one short task, no delayed test, null learning effects across all arms including the human expert, ceiling effects, regression to the mean, single rater.
+
+### C3.
+
+Gerlich, M. (2025). AI tools in society: Impacts on cognitive offloading and the future of critical thinking. *Societies*, *15*(1), 6. https://doi.org/10.3390/soc15010006（勘誤：https://doi.org/10.3390/soc15090252）
+全文：僅摘要（gold OA，MDPI 網站阻擋自動下載）。
+
+重點介紹：666 名不同年齡與教育背景的受試者的問卷與深度訪談。頻繁使用 AI 工具與批判思考能力呈顯著負相關，由認知卸載中介；年輕受試者依賴度較高、批判思考分數較低；教育程度較高者批判思考較佳，與 AI 使用無關。主張教育策略應促進與 AI 的批判性互動。
+
+Key points: In a mixed-methods study (N = 666), frequent AI-tool use correlated negatively with critical-thinking ability, mediated by cognitive offloading; younger participants showed higher dependence and lower scores; higher education predicted better critical thinking regardless of AI use.
+
+評論（僅依摘要）：被引用極廣（Scite 記錄逾千篇引用），Tang、Maynard、Izquierdo-Condoy 都倚重它，但它是橫斷面相關設計，因果方向無法確定：批判思考較弱的人可能更依賴 AI，而非相反；Maynard 自己也指出這一點。批判思考的測量在摘要中不明。有一則表格勘誤。對你的原則而言，它是「儘量使用」對受訓者可能有認知代價的常被引證據，但引用時應說明其設計限制。
+
+Critique (abstract only): Very widely cited and leaned on by Tang, Maynard and others, but correlational; the causal direction is undetermined, as Maynard notes. Has a table correction. Cite with its design limits stated.
+
+### C4.
+
+Kosmyna, N., Hauptmann, E., Yuan, Y. T., Situ, J., Liao, X.-H., Beresnitzky, A. V., Braunstein, I., & Maes, P. (2025). *Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task* [Preprint]. arXiv. https://doi.org/10.48550/arxiv.2506.08872
+全文：有（arXiv，216 頁）。預印本，EEG 加行為。
+
+重點介紹：54 人分為 LLM、搜尋引擎、純腦力三組，各寫三次 20 分鐘 SAT 式作文，第四次交換條件（18 人完成）。EEG（32 通道，dDTF 連結）顯示純腦力組連結最強最分散，搜尋組低 34–48%，LLM 組在低頻語意與監控網路中最多低 55%（p. 146）。行為指標最清楚：第一次寫作後，LLM 組 18 人中 15 人無法引述自己文章的任何一句，另外兩組各 2 人；LLM 組 0 人給出正確引文，搜尋組 15 人、純腦力組 16 人（p. 31）。擁有感：LLM 組 9/18 完全擁有、3/18 不擁有；純腦力組 16/18，到第三次為 18/18。第四次：先腦後機組（Brain-to-LLM）的 alpha、theta、delta 連結顯著高於 LLM 組前三次，回憶較好；先機後腦組連結較弱並重複使用 LLM 慣用的詞組。NLP 顯示 LLM 組文章在主題內同質。英文教師評：「我們認為這些文章『沒有靈魂』，很多句子內容空洞，缺乏個人細節」（p. 72）。作者建議「混合策略：AI 處理寫作的例行面向，而核心認知歷程——想法生成、組織與批判修改——由使用者驅動」（p. 126）。
+
+Key points: EEG connectivity scaled down with external support (Brain-only > Search > LLM); 15/18 LLM users could not quote their own essay minutes later; ownership was lowest in the LLM group; in the crossover, brain-then-LLM outperformed LLM-then-brain on connectivity and recall. The authors call this "cognitive debt" and recommend delaying AI until self-driven work has occurred.
+
+評論：引述失敗與擁有感低是「能解釋所有生成內容」最直接的行為對應：讓 LLM 生成文字的人幾分鐘後就無法重述或宣稱它，所以解釋要求是內容是否內化的自然檢驗。第四次的先腦後機優於先機後腦，是「順序而非禁止」這個做法的證據。但證據對研究情境只是暗示性的：每組 18 人、第四次每臂 9 人且自選、沒有搜尋組；任務是無利害的 20 分鐘作文；預印本；992 個電極對乘多個頻帶的探索性分析，連結差異對應到「語意整合」「執行監控」是反向推論，而作者在別處又把 LLM 組連結下降讀作「神經效率適應」（p. 129）。引述失敗的解釋有歧義：第三次的 LLM 組「多半複製貼上，極少編輯」（Table 1），無法引述可能反映的是根本沒有寫過那些句子，而非記憶編碼受損。第四次哪個子組出現引述缺陷，訪談段與討論段的說法不一致（pp. 46–51 對 p. 150）。摘要說 LLM 組「在神經、語言、評分所有層次都較差」，但評分結果並不支持：教師常給 LLM 組與第四次的文章平均以上。NLP 流程、本體抽取與 AI 評審都用 LLM，文章沒把這當限制。「認知債務」是詮釋標籤。已有方法學評論（Stanković et al., 2026, arXiv:2601.00856）。
+
+Critique: The quoting and ownership deficits are the most direct behavioural analogue of failing the "explain it" test, and the crossover result supports sequencing over prohibition. But: 18 per group, 9 per crossover arm, self-selected; a no-stakes 20-minute essay; preprint; exploratory connectivity analyses with reverse inference; the quoting deficit may reflect non-authorship (copy-paste) rather than impaired encoding; internal inconsistency about which Session 4 subgroup showed the deficit; the abstract's "worse at all levels" is not borne out by scoring; LLMs used throughout the analysis pipeline. Suggestive, not conclusive, for research settings.
+
+### C5.
+
+Yan, L., Greiff, S., Lodge, J. M., & Gašević, D. (2025). Distinguishing performance gains from learning when using generative AI. *Nature Reviews Psychology*, *4*(7), 435–436. https://doi.org/10.1038/s44159-025-00467-5
+全文：有（arXiv 接受稿）。短評。
+
+重點介紹：GenAI 教育研究把「表現」（可觀察、短暫、依賴支援的行為）與「學習」（持久、可遷移的改變）混為一談。69 項研究的後設分析 g = 0.7「雖然效果量大，但很可能反映的是即時任務成功而非學習」（p. 2）；AI 移除後增益消失（Darvishi 等人）；ChatGPT 降低認知負荷但論證與推理較弱（Stadler 等人）；頻繁使用提高信心與效率但同時增加科技依賴（Zhang & Xu）。主張用保留與遷移測驗、延遲回憶、縱貫設計，實務上「GenAI 應用來支持而非取代獨立的認知努力」（p. 3）。
+
+Key points: GenAI research conflates performance with learning; large reported effects likely reflect immediate task success. Calls for retention and transfer tests and longitudinal designs; GenAI should support, not replace, independent cognitive effort.
+
+評論：表現與學習的區分是「能解釋所有生成內容」最精簡的理由：要求成員不靠工具解釋內容，實際上就是一個遷移測驗。挑戰在於你的原則是產品導向的（內容的真實性與正確性），而這篇的核心是正確的產品可以與零學習並存；對學生與博士後，實驗室可能需要指定無輔助的階段或定期的無輔助展示。對以產出為目標的資深研究者，這個關切較不適用，原則可以區分受訓目標與產出目標。限制：兩頁意見，沒有原始證據；「很可能反映表現」是詮釋不是證明；證據部分自我引用（與 Fan 等人共享作者）；為正規教育寫的，沒有處理研究實驗室這種產品本身就重要、實作者已是專家的情境；沒有回應 Clark 的延伸心智立場。
+
+Critique: The performance/learning distinction is the most compact justification for "explain it" as a transfer test. It challenges the product-oriented wording of the principle for trainees. A two-page opinion with no original evidence, partly self-referential, framed for formal education, and silent on the extended-mind counter-position.
+
+### C6.
+
+Clark, A. (2025). Extending minds with generative AI. *Nature Communications*, *16*(1), 4627. https://doi.org/10.1038/s41467-025-59906-9
+全文：有（Nature）。哲學評論。
+
+重點介紹：GPS、搜尋與 GenAI「讓我們變笨」的恐懼建立在「心智只是生物腦」的錯誤自我形象上。人本來就是納入外部資源的混合思考系統，腦內技能的明顯損失常是有效率的重新配置。GenAI 可以改變並豐富創造過程（AlphaGo 之後人類圍棋的新穎性增加），也可能鞏固單一文化（引 Messeri & Crockett）。「像多數學者一樣，我常下載一篇論文就自欺以為——透過某種電子滲透——我知道裡面寫什麼」（p. 1）。對 AI 建議的正確態度是像對待談話中突然浮現的念頭：「既信任也質疑」（p. 2）。關鍵能力是後設認知：「知道依賴什麼、何時依賴……我們現在需要成為專家，能依主題與自己操作一系列提示的技巧，估計回應的可能可靠性」（p. 3），並提出「延伸認知衛生」：教育使用者這些系統如何失敗、提示訓練、過濾工具。
+
+Key points: On the extended-mind view, offloading is re-weaving rather than loss; AI suggestions should be treated like thoughts that occur to us — trusted and questioned before endorsement. The key new competence is metacognitive: knowing what to rely on and when, with "extended cognitive hygiene."
+
+評論：「既信任也質疑」與「延伸認知衛生」直接對應你的原則：AI 的建議像直覺，要檢查後才能背書並擁有；對後設認知技能的堅持是要求成員能辯護生成內容的另一個理由。它也提出一個定義上的問題：在延伸心智的觀點下，要求「無輔助地解釋一切」可能是腦內標準，混合系統中的能力可以合理地包含用手邊工具檢索、驗證與辯護；原則應說明「解釋」是指無輔助回憶，還是能以自己的資源辯護並重現。個人化 AI 會變得「近乎是你」，這模糊了「生成的」與「自己的」內容之界線，實驗室可能需要約定什麼算 AI 生成。限制：沒有資料；安慰建立在定義上的移動（若心智是延伸的，腦內技能損失「不是損失」），這不能決定特定的卸載是否有害，作者也說「魔鬼仍在細節裡」；圍棋例子的領域有完美的客觀回饋，開放式研究沒有；「以謹慎博學的學者身分回答」的提示「很有用」沒有證據；2020 年收稿，部分早於現行 LLM。
+
+Critique: "Trust and question" and "extended cognitive hygiene" map onto the principle; it also raises whether "explain" means unaided recall or justification with one's tools at hand — the principle should say which. Personalised AI blurs the generated/own boundary. No data; reassurance rests on a definitional move; the Go example has perfect feedback unlike research; parts predate current LLMs.
+
+### C7.
+
+Delikoura, I., Fung, Y. R., & Hui, P. (2025). *From superficial outputs to superficial learning: Risks of large language models in education* [Preprint]. arXiv. https://doi.org/10.48550/arxiv.2509.21972
+全文：有（arXiv）。系統性回顧（PRISMA）。
+
+重點介紹：五個資料庫 3,453 筆篩至 70 篇實證研究（2023–2025，多用 GPT-3.5）。模型層次的風險（膚淺理解、有限穩健性、擬人化、幻覺、偏誤、隱私）在學習者互動中延伸為認知與行為後果。收錄的個別發現：人與 ChatGPT 評分相關 r = 0.46；職前教師無法辨識 ChatGPT 文本且過度自信；ChatGPT-3.5 對標示低收入或弱勢學校的相同作文給較低分；法律系學生「儘管被明確告知 LLM 的限制」仍出現「驗證漂移」與錨定；學習者對標示 AI 生成的文字花較少時間修改，高信任者尤甚；「對 ChatGPT 能力表達高度信心的學生傾向跳過生成程式碼的驗證，較謹慎的學習者則較會檢視」（p. 25）；11 週的中學介入提高繳交率與分數但降低創造力與後測知識。學生層次的建議：「對照可靠來源交叉檢查 LLM 輸出並批判性地質疑所有輸出」「把 LLM 當支持工具而非替代品，並對使用保持透明」（p. 26）。
+
+Key points: A PRISMA review of 70 empirical studies: model-level risks cascade into learner-level outcomes — "verification drift", anchoring, less revision of AI-labelled text, confident users skipping verification, and interventions that raise scores while lowering creativity and knowledge. Student-level mitigations: verify against reliable sources, treat LLMs as support, be transparent.
+
+評論：它自己的學生層次建議幾乎就是你的責任子句，並具體記錄了為什麼需要這條：驗證是人最先放掉的步驟。但證據也顯示跳過驗證的正是能力較弱或較信任的人，所以依賴個人自評的原則可能恰好在風險最高處失效；回顧中的緩解措施多是結構性的（人在迴路、修改評量、素養訓練），實驗室需要在個人責任之外加機制（審查檢查點、揭露規範）。AI 使用提高輸出指標而降低知識與創造力的發現，提醒「內容正確性」不是實驗室唯一該追蹤的東西。限制：對象是中小學與高等教育的學習者，不是研究者；風險「頻率」是提到該風險的研究數，不是效果量；沒有品質評估；多為 GPT-3.5 時代的短期單一課程介入；「記憶侵蝕」一節倚賴預印本，多巴胺論證是推測；IMO 模型未驗證；本身是投稿中的預印本。
+
+Critique: Its student-level recommendations nearly restate the accountability clause and document why it is needed. But those who skip verification are the less competent or more trusting, so self-assessment fails where risk is highest; mitigations are structural. Learner populations, study counts rather than effect sizes, no quality appraisal, GPT-3.5-era interventions, speculative sections, preprint.
+
+### C8.
+
+Choudhury, A., & Chaudhry, Z. (2024). Large language models and user trust: Consequence of self-referential learning loop and the deskilling of health care professionals. *Journal of Medical Internet Research*, *26*, e56764. https://doi.org/10.2196/56764
+全文：有（arXiv 作者手稿）。觀點文章。
+
+重點介紹：臨床人員對 LLM 的信任、訓練資料的組成、模型準確度與臨床能力動態相連。兩個預期風險：自我參照迴圈（模型越來越以自己的輸出訓練，資料同質化）；去技能化，尤其是把例行與學習任務委託給 LLM 的下一代。信任應依專業與驗證意願校準：專家能偵測錯誤，可以安全卸載例行工作；非專家無法，容易被有說服力但錯誤的輸出影響。「問題的癥結在於使用者驗證 AI 生成內容之正確性與相關性的能力」；「如果醫療專業人員必須逐一仔細檢查 AI 輸出的正確性，自動化省下的時間可能被驗證花的時間抵銷」。臨床人員是最終決策者，承擔主要道德與法律責任。作者明言兩個風險「目前仍是理論性的」。
+
+Key points: Trust, training-data composition, model accuracy and clinician competence are dynamically linked; risks are a self-referential training loop and deskilling of trainees. Trust should be calibrated by expertise and willingness to verify; experts can safely offload, non-experts cannot. The clinician remains the final decision-maker and bears primary responsibility.
+
+評論：把責任放在介面上的人（臨床人員作為最終決策者）與你的原則是同一個動作；對驗證與透明的強調支持「能解釋」作為對抗自動化偏誤與盲目信任的防線。限定：專家與非專家的區分意味原則對在自己領域審視 AI 輸出的 PI 與在能力範圍外使用 AI 的學生運作不同；「負責」預設偵測錯誤的能力，而文章說非專家沒有。驗證成本的論點意味若認真執行責任子句，原則的自由不會轉成省時。限制：沒有實證，Figure 1 是沒有資料的假想曲線，「臨界點」是斷言不是模型，沒有接觸模型崩潰的文獻；受訓者去技能化的主張只有兩篇教育引用；把一個法案稱為「關鍵的立法步驟」如同已通過；醫療專屬，轉移到實驗室是類比。
+
+Critique: Same move as the principle — responsibility at the human interface — with verification as the defence against automation bias. The expert/non-expert distinction implies the principle works differently for PIs and students; responsibility presupposes error-detection ability. No data; hypothetical curves; healthcare-specific.
+
+### C9.
+
+Izquierdo-Condoy, J. S., Arias-Intriago, M., Tello-De-la-Torre, A., Busch, F., & Ortiz-Prado, E. (2025). Generative artificial intelligence in medical education: Enhancing critical thinking or undermining cognitive autonomy? *Journal of Medical Internet Research*, *27*, e76340. https://doi.org/10.2196/76340
+全文：有（Europe PMC）。觀點文章。
+
+重點介紹：GenAI 可以是認知增強器也可以是「認知自主」的威脅，取決於如何嵌入教學。兩個表格整理二手證據：Zhai 等人的系統性回顧（18 項研究）顯示過度依賴與問題解決能力下降相關（效果量 −0.41），78% 的研究出現認知被動；Zhou 等人（325 名研究生）顯示 AI 自我調節中介了 29% 的批判思考增益，沒有訓練就沒有增益；Çiçek 等人的 RCT（n = 129）顯示 ChatGPT 回饋不改善批判思考且在複雜任務上不如專家回饋，但揭露 AI 參與提高了批判意識；Shalong 等人的 RCT（n = 103）顯示以 ChatGPT 為基礎的 LearnGuide 改善 Cornell 批判思考測驗並持續 14 週。「疑慮不在於醫學生把 GenAI 當作學習過程的一部分，而在於他們可能把關鍵的認知任務委託給這些工具，卻沒有伴隨反思性處理」。主張課程加入 AI 素養、倫理素養與反思實踐，並有機構監督。
+
+Key points: GenAI can enhance or threaten cognitive autonomy depending on how it is embedded; evidence is mixed — over-reliance correlates with reduced problem-solving, gains appear only with self-regulation training or scaffolding, and disclosure of AI involvement raised critical awareness in one RCT.
+
+評論：全文的處方是反思性處理、對照同儕審查來源交叉檢查、辨識偏誤，這正是「能解釋一切」的操作化；Çiçek 的發現（揭露提高批判意識）支持透明規範。挑戰在於它的核心經驗點：增益只在有自我調節訓練與鷹架時出現，所以「允許加問責」可能不夠；大學部學生對學術責任的理解低於教師，一條對所有成員一體適用的問責條款可能需要對資淺成員的差異化支援。限制：作者自承非系統性、有選擇偏誤；表格並列異質人群與結果，效果量是二手轉述沒有評估；最強的正面（Shalong）與負面（Zhai、Gerlich）證據都小或觀察性，「好壞參半」是公允但薄的結論；「推理 AI」一節是推測；概念模型未驗證；對象是學習者不是研究者。
+
+Critique: Its prescription — reflective processing, cross-checking, bias identification — operationalises "explain everything", and one RCT finding supports transparency norms. Its central point is that benefits appear only with training and scaffolding, so permission plus accountability may be insufficient, especially for juniors. Non-systematic, heterogeneous second-hand evidence, learner populations.
+
+---
+
+## 主題 D：學術寫作實務層面
+
+### D1. 【必讀】
+
+Bekker, M. (2024). Large language models and academic writing: Five tiers of engagement. *South African Journal of Science*, *120*(1/2). https://doi.org/10.17159/sajs.2024/17147
+全文：有（期刊網站）。評論與政策提案。
+
+重點介紹：LLM 改變三件事：資訊處理的速度與規模、研究過程的協助、以及「思想外包的可能」。核心科學原則不變。五個許可層級：一禁止（除考試外必被違反）、二寫完後校對（可能微妙改變意義）、三寫作中編輯含縮短、重組、查引用（語言平淡、怠惰）、四從頭共創含建議遺漏、替代詮釋、重跑實驗（「作者身分不透明，引入幻覺與偏誤的高風險，不可解釋，喪失自主，喪失批判推理，思想外包」）、五無限制（「換言之，第五層允許思想的外包」，p. 3）。不論層級都適用兩條「不可侵犯」的原則：所有權（「已投稿或已發表的作品及其全部內容仍是人類作者的責任，作者是唯一為錯誤或其他後果負責的一方」，p. 4；「把錯誤怪到 LLM 頭上顯得是不誠實的推諉」）與透明（揭露何時、如何使用，最好把提示與回應作為補充材料）。對統計分析工具的判準：「當科學家不理解統計分析的過程，而把它粗略地當成魔法（即無法解釋）時，危險就進來了」（p. 4）。
+
+Key points: Five permission tiers from ban to no limits; Tiers 2–3 preserve human authorship, Tiers 4–5 introduce hallucination, opacity and loss of critical reasoning — Tier 5 "permits the outsourcing of thought." Two inviolable principles: ownership (the human author is the only accountable party) and transparency (disclose when and how, ideally with prompts and responses). Analysis tools are acceptable when the user understands what is being done rather than treating it as magic.
+
+評論：所有權原則就是你的責任子句，「魔法對理解」的判準是「能解釋」最清楚的表述，「怪 LLM 是推諉」給了理由，而透明原則是你的原則所缺的第二條。但在他的架構下，你的原則是第五層——「任何階段任何 LLM 協助」——他認為這允許思想外包、學術價值有限、偏向 AI 炒作；他的立場是許可應依階段而異，概念化與論證建構保留給人。如果你保留「各階段」，這篇是反方最清楚的陳述，也是說明「問責子句本身處理不了推理技能喪失」的最清楚陳述。限制：意見文章，沒有關於寫作過程中傷害實際發生於何處的證據；LLM 使用會鈍化推理是斷言；第四、五層產出「事實上價值有限」是規範判斷不是發現，他自己舉的 AlphaFold 例子就顯示大量計算貢獻可與人類作者身分並存；層級只針對寫作，資料分析與程式只以計算機類比簡短帶過；公開完整提示與回應紀錄在多會話迭代使用下可能不可行；2024 年初寫的，工具地景已變。
+
+Critique: Ownership is the accountability clause; "magic vs understood" articulates "explain"; transparency is the missing second principle. Under his taxonomy the lab principle is Tier 5, which he regards as outsourcing thought — the clearest statement of the counter-position. Opinion piece; harm-location claims are asserted; the AlphaFold example cuts against his own judgment; writing-only; full prompt logs may be impractical.
+
+### D2. 【必讀】
+
+Xu, Z., Qiu, Y., Sun, L., Miao, F., Wu, F., Li, X., Wang, X., Lu, H., Zhang, Z., Hu, Y., Li, J., Jin, L., Zhang, F., Luo, R., Liu, X., Li, Y., & Liu, J. (2026). *GhostCite: A large-scale analysis of citation validity in the age of large language models* [Preprint]. arXiv. https://doi.org/10.48550/arxiv.2602.06718
+全文：有（arXiv）。實證。
+
+重點介紹：LLM 不檢索參考文獻，「而是利用其生成本質，把統計上相關的 token（真實的作者名、聽起來合理的標題、有名望的出版場所）組合成看似真實實則完全捏造的引用」（p. 1）。三項實驗：13 個模型在 40 個領域生成引用，幻覺率 14.23%（DeepSeek-V3.1）到 94.93%（Hunyuan），Claude Sonnet 4 21.84%、GPT-5 50.92%、Gemini 2.5 Pro 59.47%；宣稱年份越近捏造率越高（2000 年 27.61%，2025 年 98.75%）；開啟線上搜尋沒有一致改善；讓 LLM 驗證 100 筆已知引用，平均準確率 38%，低於猜測，「使用者不能只靠 LLM 自我修正或驗證書目輸出」（p. 8）。頂尖 AI/ML 與資安會議 56,381 篇論文 220 萬筆引用，人工核對後 604 篇（1.07%）含無效或捏造引用，2025 年 1.61% 比平均高 80.9%；一個錯誤的 AugMix 標題出現在 16 篇論文，追溯到 OpenReview 的引用按鈕。97 位研究者問卷：41.5% 複製過 BibTeX 未檢查，17.3% 引用過 AI 建議的論文而未讀，30 位審查者中 76.7% 不徹底檢查參考文獻、80% 從未懷疑過假引用；91.5% 認為主要責任在作者；77.3% 自稱「總是」外部核對 AI 給的參考文獻。建議：「研究應把每一個 AI 生成的輸出視為未經驗證，直到檢查為止，無論是引用、文獻摘要或草稿文字」（p. 13）。
+
+Key points: All 13 frontier LLMs fabricate citations (14–95%), worse for recent years, with no reliable fix from web search or chain-of-thought; LLMs cannot verify citations either (38% accuracy). 1.07% of papers at top CS venues contain invalid citations, up 80.9% in 2025. Researchers assign responsibility to authors (91.5%) yet admit unchecked copy-paste (41.5%); reviewers rarely check. Treat every AI output as unverified until checked.
+
+評論：這批文獻中對責任子句在引用與文獻摘要上最強的實證支撐：捏造是工具的性質，模型不能用來檢查自己的引用，社群已把責任放在作者身上。它的建議是原則的現成操作化：每個 AI 輸出視為未驗證、每個引用標題在可信索引核對、至少讀過摘要才引用、缺 DOI 視為警訊。它也給了一個誠實的警告：自陳的勤勉與承認的複製貼上並存，所以沒有機制的榮譽條款會在紙上被滿足、在實務上被違反；作者還指出把責任集中在個人會減少對系統性防護的壓力，實驗室層次的含義是加一道輕量的共同檢查（投稿前自動化參考文獻驗證或第二人審核）。限制：基準提示（「給我領域 X 的 N 篇參考文獻」）是人造任務，14–95% 是受控基線不是真實起草時的捏造率，作者自承；線上搜尋是透過第三方聚合器切換，可能不反映廠商原生工具；檔案分析無法把任何無效引用歸因於 AI，2025 年的跳升是時間巧合加假設；只用標題相似度偵測，近似真實的捏造被低估；問卷是 94 人的便利樣本，自陳且有社會期許；Sec. VIII.A 有一句「使用 AI 協助的參與者插入無效引用的比率顯著較高」在文中沒有任何測量支持，讀起來像未經支持的主張；只涵蓋電腦科學；預印本。
+
+Critique: The strongest empirical grounding for the accountability clause as applied to references: fabrication is a property of the tool, models cannot check their own citations, and the community already assigns responsibility to authors. Its recommendations operationalise the principle. Its survey also shows self-reported diligence coexisting with admitted shortcuts, so an honour clause without a mechanism will be satisfied on paper only. Benchmark rates are a controlled baseline, archival attribution to AI is not possible, one claim in Sec. VIII.A is unsupported, CS-only, preprint.
+
+### D3.
+
+Fecher, B., Hebing, M., Laufer, M., Pohle, J., & Sofsky, F. (2023). Friend or foe? Exploring the implications of large language models on the science system. *AI & Society*, *40*(2), 447–459. https://doi.org/10.1007/s00146-023-01791-1
+全文：僅摘要（hybrid OA，Springer 阻擋自動下載）。
+
+重點介紹：對 72 位 AI 與數位化研究者的德菲法研究，聚焦 LLM 的應用與限制、對科學系統的影響、倫理與法律考量、有效使用所需的能力。LLM 在行政、創意與分析任務上有轉化潛力；偏誤、錯誤資訊與品質保證的風險需以主動規範與科學教育因應。
+
+Key points: A Delphi study with 72 AI/digitisation researchers: transformative potential in administrative, creative and analytical tasks; risks of bias, misinformation and quality assurance to be addressed by proactive regulation and science education.
+
+評論（僅依摘要）：早期（2023）的系統層次分析，仍常被引用，但德菲法反映的是專家意見的收斂而非實證效果。就摘要看它對你的原則沒有直接的支持或反對，「所需能力」一節可能與「能解釋」有關，需讀全文。選讀。
+
+Critique (abstract only): An early system-level Delphi study; reflects expert opinion convergence rather than measured effects. No direct bearing on the principle visible in the abstract; the "required competencies" section may be relevant. Optional.
+
+### D4.
+
+Bozkurt, A. (2024). GenAI et al.: Cocreation, authorship, ownership, academic ethics and integrity in a time of generative AI. *Open Praxis*, *16*(1), 1–10. https://doi.org/10.55982/openpraxis.16.1.654
+全文：有（期刊網站）。社論加報告框架。
+
+重點介紹：GenAI 不應被列為共同作者，因為作者身分需要問責，以及 AI 缺乏的特質：「生成式 AI 缺乏人類的推理與特質，例如內疚、羞恥、改變的意願或悔恨，這些是處理作者身分相關衝突的基礎」（p. 4）；美國著作權法下 AI 輸出不能登記。禁止不可行，所以誠信要靠透明的多層次揭露：「僅僅報告使用了生成式 AI 有時是不夠的。更細緻的做法是提供多層次的聲明，說明在何處、何時、哪些段落、為了什麼目的使用」（p. 5），必要時含提示與參數，並加一句最終人類核准聲明。提出 aiTARAS 框架的九個範本（直接貢獻、一般協助、特定段落、想法發展、編輯審閱、翻譯、資料分析、資料視覺化、程式碼），每個都聲明人類作者審閱、批判編輯並驗證了 AI 貢獻，「最終……是人類作者的唯一責任」。作者留下一個開放問題：討論與結論這種展現作者批判觀點的段落，是否該用 AI（p. 5）。
+
+Key points: GenAI cannot be a co-author because authorship requires accountability and traits AI lacks; bans are unviable, so integrity rests on multilayered disclosure (where, when, which sections, what purpose, prompts and parameters) plus a final human-approval statement. The aiTARAS templates are offered; whether discussion and conclusion sections should be AI-assisted is left open.
+
+評論：與 ICMJE 問責標準及「主要責任在人類作者」一致；aiTARAS 範本可直接改作實驗室內部的揭露格式（工具、版本、段落、目的、人工驗證）。它指出報告是必要但有時不夠的，並提出最終人類核准聲明；你的原則目前沒有透明或揭露成分，成員可以私下滿足它而不留紀錄。它也提出「各階段」的措辭默默回答了的問題：展現批判觀點的段落是否該用 AI。限制：社論，大量自引，沒有資料；範本是樣板，每個都宣稱「評估並處理了潛在偏誤」，有變成儀式性證言的風險；揭露被當成主要誠信機制，但揭露不是驗證，文章沒說讀者或編輯如何檢查人類核准的宣稱；完全沒有觸及認知或技能效應。
+
+Critique: Consistent with ICMJE accountability; the aiTARAS templates are directly reusable as a lab disclosure format. It argues reporting is necessary but sometimes insufficient and proposes a final human-approval statement — the transparency element the principle lacks. Editorial with heavy self-citation; templates risk becoming ritual attestations; disclosure is not verification; nothing on cognitive effects.
+
+---
+
+## 第三部分：排除的文獻
+
+Brown, J., & Marsden, J. (2026). Generative AI tools and fabricated references. *Addiction*, *121*(5), 1032. https://doi.org/10.1111/add.70379
+一頁社論，付費，資料庫與 PubMed 均無摘要，也無法取得全文。依你的指示排除。從標題判斷，它的主題已由 Xu et al. (2026) 以實證形式涵蓋。
+
+---
+
+## 附錄：全文 PDF 清單（`pdfs/` 資料夾，28 篇）
+
+| 檔名 | 來源 |
+|---|---|
+| vanZoonen_2026_Beyond-AI-disclosure.pdf | Glasgow eprints |
+| Tang_2025_The-Epistemic-Downside-of-Using-LLM-Based-Generative-AI.pdf | 你上傳的檔案 |
+| Lin_2024_Towards-an-AI-policy-framework-in-scholarly-publis.pdf | PsyArXiv 預印本 |
+| Johnson_2026_Provenance-Not-Prohibition-A-Framework-for-scp-AI.pdf | Europe PMC |
+| Crawford_2026_Authorship-Statement-for-Generative-Artificial-Int.pdf | 期刊網站 |
+| Binz_2025_How-should-the-advancement-of-large-language-model.pdf | eScholarship |
+| Kaebnick_2023_Editors-Statement-on-the-Responsible-Use-of-Genera.pdf | PMC 作者手稿 |
+| Colangelo_2026_The-sophist-in-the-server.pdf | Europe PMC |
+| Perkins_2024_Academic-publisher-guidelines-on-AI-usage-A-ChatGP.pdf | Europe PMC |
+| Yoo_2025_Defining-the-Boundaries-of-AI-Use-in-Scientific-Wr.pdf | 期刊網站 |
+| Raitskaya_2025_The-2025-Landscape-of-Generative-AI-in-Scholarly-W.pdf | 期刊網站 |
+| Hila_2025_The-epistemological-consequences-of-large-language.pdf | arXiv |
+| Loru_2025_The-simulation-of-judgment-in-LLMs.pdf | Europe PMC |
+| Kim_2025_Fostering-Appropriate-Reliance-on-Large-Language-M.pdf | arXiv |
+| Abdurahman_2024_Perils-and-opportunities-in-using-large-language-m.pdf | Europe PMC |
+| Maynard_2026_The-AI-Cognitive-Trojan-Horse.pdf | arXiv |
+| Ibrahim_2025_Measuring-and-mitigating-overreliance.pdf | arXiv |
+| Lee_2025_The-Impact-of-Generative-AI-on-Critical-Thinking.pdf | Microsoft Research |
+| Fan_2024_Beware-of-metacognitive-laziness-Effects-of-genera.pdf | arXiv |
+| Kosmyna_2025_Your-Brain-on-ChatGPT.pdf | arXiv（37 MB） |
+| Yan_2025_Distinguishing-performance-gains-from-learning-whe.pdf | arXiv 接受稿 |
+| Clark_2025_Extending-Minds-with-Generative-AI.pdf | Nature |
+| Delikoura_2025_From-Superficial-Outputs-to-Superficial-Learning.pdf | arXiv |
+| Choudhury_2024_Large-Language-Models-and-User-Trust-Consequence-o.pdf | arXiv 作者手稿 |
+| Izquierdo-Condoy_2025_Generative-Artificial-Intelligence-in-Medical-Educ.pdf | Europe PMC |
+| Bekker_2024_Large-language-models-and-academic-writing-Five-ti.pdf | 期刊網站 |
+| Xu_2026_GhostCite.pdf | arXiv |
+| Bozkurt_2024_GenAI-et-al-Cocreation-Authorship-Ownership-Academ.pdf | 期刊網站 |
+
+未取得全文的 11 篇（皆有摘要，保留在書目中）：Lindebaum & Fleming 2024；Hosseini et al. 2023；Flanagin et al. 2023；LaFlamme & Meyers 2026；Ganjavi et al. 2024；Nabavi et al. 2026；Messeri & Crockett 2024；Heersmink et al. 2024；Bottazzi Grifoni & Ferrario 2025；Gerlich 2025；Fecher et al. 2023。其中前述的 OA 篇在校園網路直接點 DOI 即可下載。
