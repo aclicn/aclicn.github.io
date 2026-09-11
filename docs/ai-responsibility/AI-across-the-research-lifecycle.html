@@ -97,7 +97,7 @@
 <p>上面七節反覆出現三件事。紀錄：AI 實質參與的部分（假設、分析、圖表、段落草稿）保留工具、版本、提示與輸出；語言修飾類的使用輕紀錄即可（Yoo, 2025 的分級）。具體的驗證動作：每筆引用在可信索引核對、每個數字回到資料、每段分析能重跑或重推、投稿前核對目標期刊的 AI 規定。「負責」若沒有這些動作，就只是一個沒有成本的勾選框（Johnson, 2026）；問卷中 77% 的研究者自稱總是核對 AI 給的文獻，同時 41.5% 承認複製過 BibTeX 沒檢查（Xu et al., 2026），所以實驗室需要一道共同的檢查——投稿前的參考文獻自動核對或第二人審核——不能只靠個人自評。解釋：在實驗室會議上用自己的話說明，不看 AI 輸出。這是遷移測驗，能區分「表現」與「學習」（Yan et al., 2025）。</p>
 <p>資深與資淺成員適用的方式不同。能驗證的前提是有領域知識；專家可以安全地卸載例行工作，非專家無法驗證自己不懂的東西（Choudhury &amp; Chaudhry, 2024; Lee et al., 2025）。所以對學生與博士後，第一、五、六、七階段的自我錨定是規則而不是建議，指導者也要提供驗證的支援。這個異議的證據基礎不算強，多半來自學生寫短文的實驗與橫斷面問卷，但邏輯成立，順序上的要求成本也低。</p>
 <hr />
-<h2 id="eight-stages">補充：八階段研究歷程</h2>
+<h2 id="eight-stages">第二部分：八階段研究歷程與 AI 使用</h2>
 <p>依最新討論稿，研究歷程應拆成八個階段，而不是把前處理、品質控制與公開流通隱含在其他步驟中。這八個階段是循環的：先導研究可能返回設計，結果解釋會修訂理論並開啟下一輪。</p>
 <ol>
 <li><strong>研究定位與問題形成：</strong>整理領域、理論、共識、矛盾與缺口，區分探索性問題與確認性假設，並評估重要性與可行性。</li>
@@ -111,7 +111,31 @@
 </ol>
 <p><strong>貫穿全程的原則：</strong>AI 可以協助整理、對話、產生程式與除錯；研究者必須核對引用與數字、驗證程式和管線、保護個資與未發表材料，並能用自己的話解釋所有生成內容。</p>
 <hr />
-<h2 id="claude">第三部分：Claude 各方案的能力與各階段的對應</h2>
+<h2 id="openai">第三部分：OpenAI／ChatGPT 各方案的能力與各階段的對應</h2>
+<h3 id="openai-plans">方案概覽（2026 年 9 月 11 日查核）</h3>
+<p>以下依 OpenAI 官方方案頁與說明中心整理，只列與研究工作有關的差異；價格為美元。模型、功能與用量會依帳號、地區、逐步推出狀態與系統負載而變動；官方所稱 unlimited 仍受濫用防護與個別模型限制約束。</p>
+<table><thead><tr><th>方案</th><th>價格</th><th>模型／容量</th><th>研究相關功能</th><th>優點與限制</th></tr></thead><tbody>
+<tr><td>Free</td><td>0</td><td>日常文字對話不限；進階模型與工具有限額</td><td>網路搜尋、有限檔案上傳、資料分析、影像生成、語音、deep research、自訂 GPT</td><td>零成本，適合初步查詢與短篇整理；不適合長時間分析、反覆除錯或大量檔案工作</td></tr>
+<tr><td>Plus</td><td>20/月</td><td>較高訊息、檔案與工具額度；可用多個推理模型</td><td>deep research、Projects、Tasks、自訂 GPT、進階語音、影片與螢幕分享</td><td>個人研究生功能／價格較平衡；仍有用量上限，重度推理與 agentic 工作可能中斷</td></tr>
+<tr><td>Pro</td><td>100 或 200/月</td><td>比 Plus 高得多的容量；高階推理與長工作流程</td><td>較高階模型、延伸 deep research、Codex 與較長的程式／分析工作</td><td>適合長文件、多輪除錯與資料分析；價格高，最強模型仍可能有獨立週／日額度</td></tr>
+<tr><td>Business</td><td>標準席 25/月（年繳 20）；Premium 125/月（年繳 100）</td><td>席次包含不同工作容量；Premium 比 Standard 高</td><td>安全工作區、Projects、資料分析、連接器、ChatGPT Work、Codex、agents、SSO／MFA</td><td>適合研究室共享脈絡與管理；連接器擴大資料暴露範圍，額度與 credits 依功能分開計算</td></tr>
+<tr><td>Enterprise／Edu</td><td>洽詢</td><td>較大內容處理能力；依工作區權限提供模型</td><td>SCIM、稽核、資料保留與資料落地選項、集中管理、優先支援；Edu 依校級設定</td><td>適合合規與大規模部署；導入成本高，仍不能取代去識別化、倫理審查與結果驗證</td></tr>
+</tbody></table>
+<h3 id="openai-stage-map">各階段對應</h3>
+<table><thead><tr><th>階段</th><th>Free 就能做的</th><th>Plus／Pro 加上的</th><th>Business／Enterprise／Edu 加上的</th><th>注意</th></tr></thead><tbody>
+<tr><td>1 研究定位</td><td>搜尋、整理與對抗式對話</td><td>deep research、Projects</td><td>共享來源與工作區</td><td>引用逐筆核對，問題先自己形成</td></tr>
+<tr><td>2 設計與計畫</td><td>檢定力程式草稿</td><td>檔案分析、推理模型與 Projects</td><td>核准工作區與權限管理</td><td>效果量與操作化由研究者決定</td></tr>
+<tr><td>3 先導確認</td><td>腳本與檢核表</td><td>多輪除錯與檔案整理</td><td>集中管理與資料政策</td><td>時序、設備與品質門檻實機驗證</td></tr>
+<tr><td>4 註冊與收集</td><td>模板與執行清單</td><td>Projects 保存計畫脈絡</td><td>工作區治理與資料控管</td><td>可識別個資不進未核准系統</td></tr>
+<tr><td>5 整理、預處理與 QC</td><td>短程式與資料字典</td><td>較長程式、多輪 Codex／分析工作</td><td>連接器、共享專案與管理紀錄</td><td>資料對應、參數與排除規則須人工核對</td></tr>
+<tr><td>6 統計分析</td><td>模型與圖表草稿</td><td>長文件、推理、deep research 與 Codex</td><td> agents、工作區資料治理</td><td>以模擬資料與已知答案驗證</td></tr>
+<tr><td>7 解釋與下一輪</td><td>紅隊與替代解釋</td><td>Projects 維持研究脈絡</td><td>共享回顧與權限控制</td><td>理論修訂由人寫，新假設留下一輪</td></tr>
+<tr><td>8 報告、公開與溝通</td><td>潤稿、格式與一致性檢查</td><td>長文件、圖表與審查意見整理</td><td>協作、稽核與資料保存政策</td><td>揭露 AI 使用，審查中的稿件不得上傳</td></tr>
+</tbody></table>
+<p>OpenAI 方案的主要差異可簡化為三件事：Free／Plus 支援一般閱讀、規劃、寫作與程式協助；Pro 主要增加高強度、多輪工作的容量；Business、Enterprise／Edu 主要增加共享工作區、管理與資料治理。任何方案都不會自動提高研究主張的真實性，引用、數字、程式與方法仍須逐項驗證。</p>
+<p class="small-note">官方參考：<a href="https://openai.com/chatgpt/pricing">ChatGPT 定價與功能比較</a>、<a href="https://help.openai.com/en/articles/9275245-using-chatgpt-s-free-tier">Free tier 使用限制</a>、<a href="https://help.openai.com/en/articles/20001354-gpt-56-and-gpt-6-pro-in-chatgpt">模型與使用限制說明</a>。查證日期：2026 年 9 月 11 日。</p>
+<hr />
+<h2 id="claude">第四部分：Claude 各方案的能力與各階段的對應</h2>
 <h3 id="2026-9-10">方案概覽（2026 年 9 月 10 日查核）</h3>
 <p>以下依 Anthropic 的方案頁面與說明中心整理，只列與研究工作有關的差異；價格為美元。用量的具體數字（每五小時能送多少訊息）官方沒有公布，只給相對倍數。</p>
 <table>
