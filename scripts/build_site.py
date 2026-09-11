@@ -102,6 +102,7 @@ def build():
             (OUT / f"{slug}.html").write_text(shell(title, toolbar + '<article>' + body + '</article>', base, md.toc, language), encoding="utf-8")
             published.append(slug + '.html')
         entries = ''.join(f'<li><span class="number">0{i}</span><div><h2><a href="{filename(base, language)}.html">{labels[int(en)]} →</a></h2><p>{descriptions[int(en)]}</p></div></li>' for i, (base, labels, descriptions) in enumerate(DOCUMENTS, 1))
+        entries += f'''<li><span class="number">04</span><div><h2><a href="{filename('literature-ai-tools-1page', language)}.html">{tr('文獻 AI 服務一頁速覽', 'Literature AI services on one page')} →</a></h2><p>{tr('Elicit、Scite Assistant 與 Consensus 的用途、限制與收費速覽。', 'A quick comparison of uses, limitations, and pricing for Elicit, Scite Assistant, and Consensus.')}</p><p><a href="{filename('literature-ai-tools-1page', 'zh-Hant-TW' if en else 'en')}.html" hreflang="{'zh-Hant-TW' if en else 'en'}" lang="{'zh-Hant-TW' if en else 'en'}">{tr('English version', '繁體中文版')}</a></p></div></li>'''
         downloads = f'<li><a href="pdf-request-list.html">{tr("PDF 協助取得清單（英文，可轉寄）", "PDF request list for colleagues")}</a></li>'
         downloads += f'<li><a href="{REPO}/tree/main/pdfs">{tr("全部 PDF", "All PDF files")} ({len(list((ROOT / "pdfs").rglob("*.pdf")))})</a></li>'
         downloads += ''.join(f'<li><a href="{REPO}/tree/main/pdfs/part{i}">{tr("單篇 PDF · 第", "Individual PDFs · Part")} {i}</a></li>' for i in (1, 2))

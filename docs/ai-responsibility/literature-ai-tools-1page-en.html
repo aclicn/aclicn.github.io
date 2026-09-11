@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Literature AI services on one page: Elicit, Scite Assistant, Consensus</title>
+<link rel="alternate" hreflang="zh-Hant-TW" href="literature-ai-tools-1page.html">
+<style>
+  @page { size: A4; margin: 10mm 11mm; }
+  :root { --ink:#1E2A2F; --muted:#5C6B70; --line:#CBD3D0; --elicit:#1D6E77; --scite:#3D4B9C; --consensus:#5A7A2B; --caveat:#9B4B1D; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#E8ECEA; color:var(--ink);
+    font-family:"Source Sans 3","Segoe UI","Helvetica Neue",Arial,"Liberation Sans",sans-serif; }
+  .page { width:210mm; min-height:297mm; margin:16px auto; padding:10mm 11mm; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.12); }
+  h1 { font-size:15.5pt; margin:0 0 1.5mm; line-height:1.2; letter-spacing:-.01em; }
+  .meta { font-size:7.8pt; color:var(--muted); margin:0 0 2.5mm; line-height:1.35; }
+  table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:7.6pt; line-height:1.3; }
+  th, td { vertical-align:top; text-align:left; padding:1.3mm 1.6mm; border-bottom:.4pt solid var(--line); }
+  thead th { font-size:10pt; padding-bottom:1mm; border-bottom:1.2pt solid var(--line); }
+  thead th:nth-child(2) { color:var(--elicit); border-bottom-color:var(--elicit); }
+  thead th:nth-child(3) { color:var(--scite); border-bottom-color:var(--scite); }
+  thead th:nth-child(4) { color:var(--consensus); border-bottom-color:var(--consensus); }
+  thead th small { display:block; font-size:7.2pt; color:var(--muted); font-weight:500; }
+  th.row { width:16mm; color:var(--muted); font-weight:600; font-size:7.8pt; }
+  th.row.warn { color:var(--caveat); }
+  tr.warn td { background:#FBF3EC; }
+  .no { color:var(--muted); }
+  .foot { font-size:7.3pt; line-height:1.32; margin-top:1.8mm; }
+  .foot p { margin:0 0 1mm; }
+  .foot .src { color:var(--muted); }
+  .site-link { width:210mm; max-width:100%; margin:14px auto -6px; padding:0 4px; font-size:9pt; color:var(--muted); }
+  .site-link a { color:#235d50; }
+  @media print { .site-link{display:none} body{background:#fff} .page{ width:auto; min-height:auto; margin:0; padding:0; box-shadow:none } }
+</style>
+</head>
+<body>
+<p class="site-link"><a href="index-en.html">ACL / Responsible AI documents</a> · <a href="literature-ai-tools-1page.html" hreflang="zh-Hant-TW" lang="zh-Hant-TW">繁體中文</a></p>
+<div class="page">
+  <h1>Literature AI services on one page: Elicit, Scite Assistant, Consensus</h1>
+  <p class="meta">Compiled 11 September 2026 from each vendor's site and help center plus university-library evaluations. All three change quickly; the vendor sites are the final word. Only Scite's pricing was read from the official page on the writing date; Elicit's and Consensus's pricing pages would not load and third-party figures conflict, so no amounts are given.</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Elicit<small>elicit.com</small></th>
+        <th>Scite Assistant<small>scite.ai/assistant</small></th>
+        <th>Consensus<small>consensus.app</small></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="row">Built for</th>
+        <td>The review workflow: semantic search → screen → extract custom fields from each paper into a table → report. A Research Agent (Aug 2026) chains the steps.</td>
+        <td>Question answering on a citation-context platform. Smart Citations classify each citing sentence as supporting, contrasting, or mentioning, with its section.</td>
+        <td>Search engine plus answer layer. The Consensus Meter sorts the top 20 papers on a yes/no question into Yes / No / Possibly / Mixed and shows proportions.</td>
+      </tr>
+      <tr>
+        <th class="row">Data and full text</th>
+        <td>138M papers (Semantic Scholar, PubMed, OpenAlex) plus 545K clinical trials. Full text for open access; subscription journals need the browser extension plus an institutional subscription, otherwise abstract only.</td>
+        <td>317M+ indexed works, about 41M with full text (including paywalled content from 35+ publisher partners). Works without full text have metadata only, so no citation sentences.</td>
+        <td>220M+ papers (Semantic Scholar, OpenAlex, own crawl, 7 partner publishers), updated weekly; Medical Mode: about 8M papers plus 50K clinical guidelines. Full text only from partners or open access.</td>
+      </tr>
+      <tr>
+        <th class="row">Main functions</th>
+        <td>Custom-column extraction (including uploaded PDFs); systematic-review workflow (PRISMA 2020, auditable); Reports with control over included papers; Alerts; Library; collaboration; API and MCP; CSV/BIB export.</td>
+        <td>Cited synthesis with the search strategy shown; settings for model, paper count, years, type, journal, or a Collection/DOI list; Table Mode with custom columns and CSV export; Fact checks listing kept and rejected sources; PDF upload; Reference Check for retractions and editorial notices; Collection alerts; Zotero plugin; MCP.</td>
+        <td>Pro synthesis; Meter plus Snapshot (per-position mean year, methods quality, SJR, citations); Study Snapshot; filters for design, sample size, Q1–Q4; Chat with full text (including uploads); Deep Search; Research Agent (citation tracing, author analysis, comparison tables); Medical Mode; export to Zotero and others.</td>
+      </tr>
+      <tr class="warn">
+        <th class="row warn">Caveats</th>
+        <td>Abstract-only without full text, so methods details are often missing. Accuracy figures (994 Cochrane reviews: 95% recall, 96% extraction) are vendor self-evaluations, not independently replicated. A thousand papers is not an exhaustive search; formal reviews still need traditional databases and dual screening. Check agent-made figures against the source. Credits go fast. Uploading paywalled papers raises licence questions.</td>
+        <td>Fact checks do not guarantee relevance: an HKU Libraries test (June 2026) saw an unrelated paper marked "verified". Preprints and zero-citation papers are included by default; exclude them or rank by citations. Citation classes are model judgements ("contrasting" may be a methods aside), so read the sentence. Papers without full text have no contrasting-citation record, so "no contradiction" is not confirmation. Thin non-English coverage. No permanent free tier.</td>
+        <td>The Meter reflects only 5–20 papers and shifts when the question is rephrased (the vendor's first-listed limitation). Classification ignores conditions in the question (vendor example: a paediatric study counted as "Yes" to an adult-safety question). Yes/no turns "it depends" into a percentage; a vote count is not a pooled effect size. Ranking favours recent, highly cited papers, so pivotal older work can drop out. Preprint handling is undocumented. Syntheses occasionally cite papers for things they do not say.</td>
+      </tr>
+      <tr>
+        <th class="row">Best fit</th>
+        <td>Screening and extraction for systematic or scoping reviews; meta-analysis coding sheets (define fields like a coding manual); first-draft skeletons for grant backgrounds or reviews; monitoring new papers; turning a batch of PDFs into a table.<br><span class="no">Not for: one "is there evidence?" question; how a paper was later cited.</span></td>
+        <td>Checking whether a finding was later supported or contradicted before citing it; a retraction audit of the reference list before submission; counter-evidence for the Discussion, read in the original sentences; tracking the citation character of your own papers; teaching citation count versus citation character.<br><span class="no">Not for: non-English or grey literature; free long-term use; quick syntheses where context does not matter.</span></td>
+        <td>A minutes-long read on which way the evidence leans; the first hour in an unfamiliar field; clinical questions in Medical Mode; snowballing from a classic paper; a first comparison table before moving to Elicit; quick checks on "everyone knows" claims while reviewing or supervising.<br><span class="no">Not for: formal reviews needing reproducible search records; debates that cannot be phrased yes/no.</span></td>
+      </tr>
+      <tr>
+        <th class="row">Pricing</th>
+        <td>Free credits plus paid plans; monthly usage pool since June 2026; amounts not verified.</td>
+        <td>Paid after a 7-day trial: Basic US$20/month, Pro US$50/month (billed yearly; verified Sept 2026). The free Connect plan gives 25 MCP credits a month, no Assistant.</td>
+        <td>Free credits plus paid plans; Deep Search and Research Agent are paid modes with monthly caps; amounts not verified.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="foot">
+    <p><b>Shared by all three:</b> outputs are not citable sources — go back to the paper and confirm it says that, under matching conditions; "with citations" is not "correctly cited"; all rest on Semantic Scholar/OpenAlex plus publisher deals, so Chinese-language journals, book chapters, and grey literature are weakly covered; if a tool appears in a Methods section, record the query, date, settings, and version (the same question a week later can return different results); read the privacy terms before uploading unpublished work (Consensus states it does not train on user data; the other two were not checked); disclose AI use as the journal requires.</p>
+    <p class="src">Sources: elicit.com and support.elicit.com; scite.ai/features, /pricing, /llms.txt; help.consensus.app (FAQs, Consensus Meter, Research Agent, Research Database); HKU Libraries Researcher Connect, "Features and Limitations of Scite Assistant and Scite MCP" (30 Jun 2026); Oregon State and Deakin library guides; Nicholson et al. (2021) <i>QSS</i> 2(3). The shared Scite chat link supplied by the user did not load.</p>
+  </div>
+</div>
+</body>
+</html>

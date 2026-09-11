@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>文獻 AI 服務一頁速覽：Elicit、Scite Assistant、Consensus</title>
+<link rel="alternate" hreflang="en" href="literature-ai-tools-1page-en.html">
+<style>
+  @page { size: A4; margin: 10mm 11mm; }
+  :root { --ink:#1E2A2F; --muted:#5C6B70; --line:#CBD3D0; --elicit:#1D6E77; --scite:#3D4B9C; --consensus:#5A7A2B; --caveat:#9B4B1D; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:#E8ECEA; color:var(--ink);
+    font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei","Noto Sans CJK TC","Source Han Sans TC",sans-serif; }
+  .page { width:210mm; min-height:297mm; margin:16px auto; padding:10mm 11mm; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.12); }
+  h1 { font-size:15pt; margin:0 0 1.5mm; line-height:1.3; }
+  .meta { font-size:7.6pt; color:var(--muted); margin:0 0 2.5mm; line-height:1.4; }
+  table { width:100%; border-collapse:collapse; table-layout:fixed; font-size:8pt; line-height:1.42; }
+  th, td { vertical-align:top; text-align:left; padding:1.3mm 1.6mm; border-bottom:.4pt solid var(--line); }
+  thead th { font-size:10pt; padding-bottom:1.2mm; border-bottom:1.2pt solid var(--line); }
+  thead th:nth-child(2) { color:var(--elicit); border-bottom-color:var(--elicit); }
+  thead th:nth-child(3) { color:var(--scite); border-bottom-color:var(--scite); }
+  thead th:nth-child(4) { color:var(--consensus); border-bottom-color:var(--consensus); }
+  thead th small { display:block; font-size:7.2pt; color:var(--muted); font-weight:500; }
+  th.row { width:17mm; color:var(--muted); font-weight:600; font-size:8pt; }
+  th.row.warn { color:var(--caveat); }
+  tr.warn td { background:#FBF3EC; }
+  td b { font-weight:700; }
+  .no { color:var(--muted); }
+  .foot { font-size:7.4pt; line-height:1.4; margin-top:2mm; }
+  .foot p { margin:0 0 1.2mm; }
+  .foot .src { color:var(--muted); }
+  .site-link { width:210mm; max-width:100%; margin:14px auto -6px; padding:0 4px; font-size:9pt; color:var(--muted); }
+  .site-link a { color:#235d50; }
+  @media print { .site-link{display:none} body{background:#fff} .page{ width:auto; min-height:auto; margin:0; padding:0; box-shadow:none } }
+</style>
+</head>
+<body>
+<p class="site-link"><a href="index.html">ACL / Responsible AI 文件首頁</a> · <a href="literature-ai-tools-1page-en.html" hreflang="en" lang="en">English</a></p>
+<div class="page">
+  <h1>文獻 AI 服務一頁速覽：Elicit、Scite Assistant、Consensus</h1>
+  <p class="meta">2026 年 9 月 11 日整理，依各服務官方頁面、說明中心與大學圖書館評測。三者近月皆推出 agent 功能並更動額度制度，細節以官網為準。定價只有 Scite 是當日從官方頁面查核；Elicit 與 Consensus 定價頁無法讀取，第三方數字互相矛盾，故不列金額。</p>
+
+  <table>
+    <thead>
+      <tr>
+        <th></th>
+        <th>Elicit<small>elicit.com</small></th>
+        <th>Scite Assistant<small>scite.ai/assistant</small></th>
+        <th>Consensus<small>consensus.app</small></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th class="row">定位</th>
+        <td>文獻回顧的工作流程：語意搜尋→篩選→自訂欄位逐篇萃取成表格→報告；Research Agent（2026-08）可自動串接各步驟。</td>
+        <td>引用脈絡平台上的問答介面。底層 Smart Citations 把每個引用句分類為支持／反駁／提及，並標示出現章節。</td>
+        <td>學術搜尋引擎加問答層。Consensus Meter 把前 20 篇論文對是非題的結論分成是／否／可能／混合，以比例呈現。</td>
+      </tr>
+      <tr>
+        <th class="row">資料與全文</th>
+        <td>1.38 億篇（Semantic Scholar、PubMed、OpenAlex）加 54.5 萬筆臨床試驗。OA 論文可讀全文；訂閱期刊需瀏覽器擴充功能加機構訂閱，否則只用標題與摘要。</td>
+        <td>索引 3.17 億篇以上，其中約 4,100 萬篇有全文（含付費牆，35 家以上出版社合作）。沒有全文的論文只有詮釋資料，也不會有引用句。</td>
+        <td>2.2 億篇以上（Semantic Scholar、OpenAlex、自建爬取、7 家合作出版社），每週更新；Medical Mode 約 800 萬篇加 5 萬份臨床指引。合作出版社或 OA 才讀全文。</td>
+      </tr>
+      <tr>
+        <th class="row">主要功能</th>
+        <td>自訂欄位資料萃取（含上傳 PDF）；系統性回顧流程（PRISMA 2020，可追溯稽核）；可自訂納入論文的 Report；Alerts；Library；多人協作；API 與 MCP；CSV/BIB 匯出。</td>
+        <td>附引用綜述並顯示檢索策略；設定模型、篇數、年份、類型、期刊，或限定 Collection／DOI；Table Mode 自訂欄位匯出 CSV；Fact checks 列出採用與剔除的文獻；上傳 PDF 提問；Reference Check 查撤稿與編輯聲明；Collections 引用與撤稿警示；Zotero 外掛、MCP。</td>
+        <td>Pro 綜述；Meter 與 Snapshot（各立場的平均年份、方法品質、SJR、引用數）；Study Snapshot；篩選研究設計、樣本數、Q1–Q4；Chat with full text（含上傳）；Deep Search；Research Agent（引用追蹤、作者分析、比較表）；Medical Mode；匯出至 Zotero 等。</td>
+      </tr>
+      <tr class="warn">
+        <th class="row warn">注意事項</th>
+        <td>無全文時只靠摘要，方法細節常缺。準確率（Cochrane 994 篇：召回 95%、萃取 96%）皆官方自評，無獨立重製。一次處理上千篇不等於檢索窮盡，正式回顧仍需傳統資料庫與雙人篩選。Agent 產出的圖表、計算要逐一回原文核對。額度制消耗快。上傳付費論文有授權疑慮。</td>
+        <td>Fact checks 不保證相關：HKU 圖書館 2026-06 實測曾把無關論文標為 verified。預設納入預印本與零引用論文，需在設定中排除或改依引用數排序。引用分類是模型判斷，「反駁」可能只是方法差異，須點開原句。沒有全文的論文不會有反駁紀錄，「無反駁」不等於站得住。非英文覆蓋低。無永久免費方案。</td>
+        <td>Meter 只反映 5–20 篇，換個問法比例會變（官方列為首要限制）。分類會忽略問題中的母群、劑量等條件（官方舉例：問成人安全，兒童研究算「是」）。是非題把「視條件而定」壓成百分比，投票不等於效果量統合。排序偏好新近高引用，關鍵舊文可能落榜。是否排除預印本未見說明。綜述偶有引用錯配。</td>
+      </tr>
+      <tr>
+        <th class="row">最適情境</th>
+        <td>系統性或範疇回顧的篩選與萃取；後設分析編碼表（欄位定義要像編碼手冊）；計畫書或回顧的初稿骨架；監看領域新論文；把一批 PDF 做成結構化表格。<br><span class="no">不適合：單一「有沒有證據」的問題；想知道論文後來被怎麼引用。</span></td>
+        <td>引用前查證一項發現後來被支持還是反駁；投稿前掃一遍參考文獻抓撤稿；撰寫 Discussion 找相反證據並讀原句；追蹤自己論文的引用性質；教學生分辨引用次數與引用性質。<br><span class="no">不適合：非英文或灰色文獻；免費長期使用；不在乎引用脈絡的快速綜述。</span></td>
+        <td>幾分鐘內判讀一個宣稱的證據傾向；進入陌生領域的第一小時；臨床問題切 Medical Mode；從經典論文向前向後滾雪球；先做初步比較表再轉 Elicit 深化；審稿或指導時快速查證「大家都知道」的說法。<br><span class="no">不適合：需完整可重製檢索紀錄的正式回顧；無法化為是非題的理論爭論。</span></td>
+      </tr>
+      <tr>
+        <th class="row">收費</th>
+        <td>免費額度加付費方案，2026-06 起改為每月用量池；金額未查核。</td>
+        <td>7 天試用後付費：Basic 每月 US$20、Pro 每月 US$50（年繳換算，2026-09 查核）；免費 Connect 方案只有每月 25 次 MCP 額度，不含 Assistant。</td>
+        <td>免費額度加付費方案；Deep Search 與 Research Agent 屬付費模式且有月上限；金額未查核。</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="foot">
+    <p><b>三者共通：</b>輸出不是可引用來源，引用前回原文確認它真的那樣說、條件也相符；「附引用」不等於引用正確；三者都建立在 Semantic Scholar／OpenAlex 加各自出版社合作上，中文期刊、書籍章節、灰色文獻覆蓋皆弱；若寫進方法段，記錄查詢字串、日期、設定與版本（同一問題隔週結果可能不同）；上傳未發表稿件前先看隱私條款（Consensus 聲明不用使用者資料訓練，另兩者未查核）；依期刊規定揭露 AI 使用。</p>
+    <p class="src">來源：elicit.com 與 support.elicit.com；scite.ai/features、/pricing、/llms.txt；help.consensus.app（FAQs、Consensus Meter、Research Agent、Research Database）；HKU Libraries Researcher Connect「Features and Limitations of Scite Assistant and Scite MCP」（2026-06-30）；Oregon State、Deakin 圖書館指南；Nicholson 等（2021）<i>QSS</i> 2(3)。使用者提供的 Scite 分享對話連結無法載入，未納入。</p>
+  </div>
+</div>
+</body>
+</html>
