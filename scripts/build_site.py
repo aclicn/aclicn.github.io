@@ -18,6 +18,8 @@ DOCUMENTS = [
      ("從研究各階段的 AI 使用出發，整理責任歸屬、理解與驗證的論點。", "The original English summary of accountability, understanding, and verification across research stages.")),
     ("annotated-bibliography-AI-accountability-epistemics", ("註解書目", "Annotated bibliography"),
      ("依主題閱讀 40 篇文獻的摘要，查看 DOI、PDF 狀態與來源限制。", "Summaries of 40 papers, grouped by theme, with DOI links, PDF status, and source limitations.")),
+    ("AI-across-the-research-lifecycle", ("研究生命週期指引", "Research lifecycle guide"),
+     ("八階段的研究工作、AI 協助與驗證，並對應 Claude 與 OpenAI 各方案的功能。", "Eight research stages, AI assistance and verification, with Claude and OpenAI plan mappings.")),
 ]
 
 
@@ -49,6 +51,8 @@ def shell(title, content, active="", toc="", language="zh-Hant-TW"):
         slug = filename(base, language)
         current = ' aria-current="page"' if base == active else ''
         nav += f'<a href="{slug}.html"{current}>{labels[int(en)]}</a>'
+    guide = filename('research-stage-ai-guide', language)
+    nav += f'<a href="{guide}.html">{tr("研究生 AI 使用指引", "Graduate student AI guide")}</a>'
     alternate_language = 'zh-Hant-TW' if en else 'en'
     alternate = filename(active or 'index', alternate_language) + '.html'
     nav += f'<a href="{alternate}" hreflang="{alternate_language}" lang="{alternate_language}">{tr("English", "繁體中文")}</a>'

@@ -1,167 +1,219 @@
-# Using AI wisely across the research lifecycle: Implementing the lab principle stage by stage
+# Using AI across the research lifecycle: An eight-stage guide
 
-Compiled: 2026-09-10
+Updated: 2026-09-11
 
 ## About this document
 
-This document applies the lab principle to seven stages of a research project: forming the idea and question, designing the experiment, conducting the experiment, analysing the data, presenting results and drawing conclusions, criticising the results and their interpretation, and revising the question for the next cycle. Part I lists the main ideas. Part II elaborates each stage — what AI is good for, where it fails quietly, what wise use looks like — and ends each stage with one concrete "can you explain it" check. Part III maps the capabilities of Claude's subscription plans onto these stages; plan facts were checked on Anthropic's official pages on 10 September 2026, and since prices and features change, they should be re-checked before any decision.
+This guide organizes cognitive neuroscience research into eight connected stages. Each stage explains the research work, useful AI assistance, risks and verification, and a practical check of understanding. The Claude and OpenAI/ChatGPT tables use the same stage numbers throughout.
 
 The lab principle:
 
 > Members of my research team may use AI as much as they like at every stage of research, but each person must be able to answer for the truth and accuracy of the content, and must be able to explain everything that was generated.
 
-All literature cited here comes from this project's [literature review](AI-research-accountability-literature-review-en.md) and [annotated bibliography](annotated-bibliography-AI-accountability-epistemics-en.md), cited by author and year; full references are in the bibliography. No new literature was added, and the quotations and figures in the original review were not re-verified. A [Chinese version](AI-across-the-research-lifecycle.md) is available on a separate page.
+Being able to explain includes the evidence for claims, reasons for design choices, what code does to data, and the limits of inference. Members may ask AI to propose, draft, or critique, but must understand and appropriately verify anything they adopt. For trainees, recording an initial judgment before comparing it with AI is one way to practice understanding.
 
----
+This guide integrates the original lifecycle document's discussion of accountability and verification with the eight-stage discussion document's research tasks. The academic discussion draws on those materials; individual studies were not re-verified for this revision, and precise percentages not rechecked here have been omitted. See the [research synthesis](AI-research-accountability-literature-review-en.md), [annotated bibliography](annotated-bibliography-AI-accountability-epistemics-en.md), and sources below. A [Traditional Chinese version](AI-across-the-research-lifecycle.md) is available.
 
-## Part I: Main ideas
+## Part I: The eight-stage cycle and shared principles
 
-Five ideas run through all seven stages:
+Research moves back and forth: pilot findings can change a design, interpretation can initiate another study, and public scrutiny and replication can reshape the question. Preserve the timing of these decisions so readers can distinguish advance commitments from ideas formed after results became available.
 
-1. The unit of accountability is the claim, not the tool. Every stage carries claims that a named person must be able to defend: this question is worth asking, this design can answer it, this is how the data were obtained, this analysis produced this number, this conclusion follows from the results. AI may take part in producing them; the ability to defend them must stay with a person (van Zoonen et al., 2026; Johnson, 2026).
-2. Sequencing works better than prohibition. Where the core argument is formed — framing the question, interpreting the results — write it yourself first, then use AI. For members still in training, this is a rule (Tang, 2025; Kosmyna et al., 2025).
-3. AI has no stake in the truth, and fluency is not evidence of correctness. Every stage needs concrete acts of verification, not a statement that "I take responsibility" (Colangelo & Galli, 2026; Johnson, 2026; Xu et al., 2026).
-4. Explanation requires records. Model output varies across versions and sessions, so any substantive AI contribution should leave a record of tool, version, prompt and output (Lin, 2024; Abdurahman et al., 2024).
-5. Confidentiality is the one hard limit at the level of the tool. Manuscripts under review, collaborators' unpublished data, and identifiable participant data do not enter external systems the lab has not approved (van Zoonen et al., 2026; Nabavi et al., 2026).
+| Stage | Research task | Main verification or deliverable |
+|---|---|---|
+| 1. Research positioning and question formation | Develop an answerable question from phenomena, theory, and literature | Question memo, sources, exploratory questions and confirmatory hypotheses |
+| 2. Research design and planning | Operationalize constructs and plan sampling, quality criteria, and analysis | Design rationale, power or precision planning, analysis and ethics documents |
+| 3. Pilot study and method confirmation | Test tasks, equipment, and the complete pipeline | Timing and quality tests, change log, executable pipeline version |
+| 4. Registration and formal data collection | Confirm the registered plan and collect data under the approved procedure | Timestamped plan, raw data, experiment and deviation logs |
+| 5. Data preparation, preprocessing, and quality control | Create a traceable analysis dataset under explicit rules | Data dictionary, QC reports, exclusions and processing logs |
+| 6. Statistical analysis and result evaluation | Estimate effects, uncertainty, and robustness | Reproducible results, code tests, separately labelled confirmatory and exploratory analyses |
+| 7. Interpretation, theory revision, and future research | Evaluate alternatives, delimit inference, and plan further tests | Claim–evidence mapping, specific limitations, new hypotheses |
+| 8. Reporting, sharing, and scientific communication | Report faithfully, preserve or share materials, respond to review | Manuscript, AI-use statement, reproducibility materials and responses |
 
-One sentence for each stage:
+Researchers must be able to justify each adopted claim and decision. Fluent explanations and expensive models do not replace evidence. Keep records of substantive AI assistance and verify against original sources, data, simulations, or independent reruns. Specify confirmatory hypotheses, primary analyses, and exclusions in advance; if changes become necessary, retain the original plan, timing, rationale, and information already seen, and disclose deviations or exploration.
 
-1. Forming the question: AI is an adversary, not a source; write the question yourself first.
-2. Experimental design: treat AI's suggestions as hypotheses, and test them by running the whole analysis pipeline on simulated data.
-3. Conducting the experiment: AI handles the tooling around the data, not the data; de-identify identifiable data first, or keep it local.
-4. Data analysis: never run a step you cannot explain; use simulated data with known answers as positive and negative controls; when AI takes part in annotation or classification, validate it on a hand-labelled subset first.
-5. Presenting results and conclusions: write the results narrative and the conclusions yourself, then let AI check consistency and language; trace every citation to a trusted index and every number to the analysis output.
-6. Critique: this is where AI is most valuable, provided you ask it to object rather than praise, and provided your own critique is written first.
-7. Revision: the synthesis of what was learned is written by a person while AI diverges; review where AI erred in this cycle to calibrate trust for the next.
+Exploration and revision are valuable. The problem is presenting hypotheses developed after seeing results as advance predictions—HARKing—or selecting only the analysis producing a preferred result. Current data can generate new hypotheses, but data already used to develop those hypotheses do not constitute independent confirmation.
 
----
+## Part II: Research work, AI assistance, and verification
 
-## Part II: Stage by stage
+### 1. Research positioning and question formation {#stage-1}
 
-### 1. Forming the research idea and question
+**Research work.** Establish the field, phenomenon, and theoretical background; map agreements, contradictions, and gaps; assess importance and feasibility. Distinguish exploratory questions from confirmatory hypotheses and translate theory into predictions that evidence could contradict.
 
-This stage has no correct answer, so "accuracy of content" cannot be defined (Ibrahim et al., 2025). The risk is therefore not that AI gives wrong information but that it shapes the process: what gets asked, and how it is framed, can be steered by the model without anyone noticing (Maynard, 2026); and when everyone is steered by the same handful of models in the same direction, the questions of a whole field narrow (Messeri & Crockett, 2024). A second risk is flattery: by default the model will find your idea promising, and it can argue for the opposite idea with equal fluency (Colangelo & Galli, 2026). For junior members there is a further layer: a question the model proposed never truly becomes the trainee's own, and every later stage then has one fewer person able to defend it (Tang, 2025; Bekker, 2024).
+**AI assistance.** Cluster literature, compare theories, build topic maps, suggest candidate gaps and questions from adjacent fields. Ask what would undermine an explanation or which existing study may already answer the question. Keep a question memo before asking AI for counterexamples so that changes in your judgment remain visible.
 
-Where AI is really useful here is in widening and in opposition. Widening: quickly mapping an unfamiliar field, finding how adjacent fields have handled similar problems, listing ten different ways a phenomenon could be asked about. Opposition: finding the existing study closest to your question that may already have answered it; exposing what your question presupposes; asking "if this hypothesis is wrong, what is the most likely reason?" For literature discovery, use search with citation sources and literature-index connectors (for example Scite and Consensus) rather than asking the model to "give me some relevant papers"; fabrication rates for the latter range from over ten percent to over ninety percent depending on model and year (Xu et al., 2026).
+**Risks and verification.** AI may fabricate references, overstate agreement, flatter a proposal, or turn an ordinary question into an apparently important gap. The original review's discussion of homogenization and outsourced understanding (Messeri & Crockett, 2024; Tang, 2025) motivates caution without predicting every user's outcome. Check authors, dates, titles, identifiers, and the original texts supporting key claims. People must judge the gap's reality, importance, and feasibility.
 
-Wise use means self-anchoring: write down, in your own words, the question, why it matters, and what you expect to see — one page is enough — and only then start the AI conversation; during the conversation, ask it to attack your question rather than polish it; afterwards, do not keep its phrasing, but write the question again. Record where each idea came from; this is the provenance record of the question itself. The normative decision about what to study stays with people (Botvinick & Gershman, in Binz et al., 2025). The "explain it" check: at lab meeting, without looking at any AI output, say why this question is worth asking and how it differs from the closest existing study.
+**Understanding check.** Without reading AI output, explain why the question matters, how it differs from the closest work, and what evidence would change your view. Keep a memo that links claims to sources.
 
-### 2. Designing the experiment
+### 2. Research design and planning {#stage-2}
 
-Experimental design can be right or wrong, but it goes wrong quietly. AI can produce design advice that looks complete, power estimates, counterbalancing schemes, stimulus lists and task code, and each may carry an error that never raises an alarm: an outdated default parameter, a practice described as "standard" without a source, a small timing flaw in the stimulus-presentation code, a power calculation that uses the wrong definition of effect size. Methodological citations are fabricated just like any other. And if the design documents contain a collaborator's unpublished task or data, the confidentiality rule applies.
+**Research work.** Translate constructs into measurable variables; choose tasks, manipulations, controls, and behavioral or neural measurements. Examine construct, measurement, and manipulation validity. Plan recruitment, sample size, power or precision, randomization, balancing, counterbalancing, and blinding. Specify QC, exclusions, primary/secondary/exploratory analyses, resources, and ethics documentation.
 
-Things worth handing to AI: enumerating confounds and alternative explanations; drafting the structure of a pre-registration; checking a design against reporting guidelines (for fMRI, COBIDAS) for omissions; writing task code and stimulus-generation code. The most valuable contribution is simulated data that lets the whole analysis pipeline run before any data are collected. Simulation is the verification tool of this stage: every claim in a piece of design advice can be turned into "under this design, can simulated data recover the effect we planted?"
+**AI assistance.** Compare paradigms, identify validity threats and confounds, generate balanced sequences, simulation-based power code, stimuli and task drafts, and clarify the analysis plan. AI may draft or check ethics documents and SOPs, provided the team verifies every commitment and procedure.
 
-Wise use: trace every methodological claim ("this is standard", "the effect size in the literature is about this") to a source you have read yourself; test task code for timing on the real hardware, which is something a person can check and the model cannot; keep a design-decision log noting which decisions were AI-suggested and on what grounds they were accepted at the time. The substance of ethics protocols and SOPs should not be drafted by AI, because the people who carry them out need to understand them (Tang, 2025). The "explain it" check: be able to defend every design choice to a reviewer, including why an alternative design was not used.
+**Risks and verification.** Complete formatting can conceal incorrect effect-size definitions, unsupported defaults, or weak operationalization. Ground effect assumptions in literature, pilot data, or explicit scenarios; compare sample requirements when assumptions are uncertain. Test whether simulated data recover known effects and calculate whether sequences are balanced. Simulation checks behavior under assumptions; it does not by itself establish construct validity.
 
-### 3. Conducting the experiment
+**Understanding check.** Defend key design choices and alternatives, including sample size, exclusion thresholds, and primary analysis. Retain a decision log, analysis plan, and inspectable simulation results.
 
-During data collection AI sees the least: it cannot see the participant, the scanner, or today's signal quality. What it can do is the tooling around the data: scripts for acquisition and file organisation, automated quality checks (head motion, signal dropout, EEG impedance logs), drafts and translations of participant instructions, notebook templates, scheduling.
+### 3. Pilot study and method confirmation {#stage-3}
 
-This is also the stage where the confidentiality rule is triggered most often. Identifiable participant data — DICOM headers containing names or birth dates, consent forms, contact details, raw images and physiological signals — do not enter external systems the lab has not approved. Distinguish "code and file paths" from "data content": asking AI to write a QC script that reads NIfTI files is fine; pasting a participant's raw data into a chat, or letting an AI tool read a folder that contains identifiers directly, is a different matter. De-identify first, before any tool; whatever can be processed locally, process locally.
+**Research work.** Run the procedure, instructions, stimuli, equipment, triggers, and data recording before formal collection. Check task comprehension, signal quality, artifacts, and the complete preprocessing and analysis pipeline. Return to stage 2 when needed and determine whether ethics documents require updating.
 
-Wise use: validate an AI-written QC script on a dataset with a known problem, and confirm that it catches the problem, before using it on new data; otherwise automation merely turns non-understanding into invisibility (what Bekker, 2024, calls "magic"). Any decision that affects participants — whether to re-collect, whether to exclude — is made by a person and its reasons are logged. The lab notebook remains a human document: AI may tidy the format, but the observations must be yours. The "explain it" check: be able to state what each QC criterion is, why it is set where it is, and what this dataset actually looks like.
+**AI assistance.** Develop and debug experimental software such as PsychoPy, improve instructions, inspect recording fields, draft QC scripts, and explain indicators in fMRIPrep or EEG quality reports. Iterative coding assistance is particularly useful for testing the pipeline.
 
-### 4. Data analysis
+**Risks and verification.** Plausible code cannot establish actual timing or trigger accuracy; measure these on the equipment and test comprehension with people. Evaluate QC with known problematic and acceptable examples, checking missed and false flags. Processing options create analytic flexibility (Carp, 2012), so record the chosen formal pipeline, parameters, versions, and rationale. If pilot data informed design changes, specify how those data will subsequently be used.
 
-This is the stage where AI saves the most time and where "not owning" the work is most likely. It can write preprocessing pipelines and MVPA and RSA code, debug, convert MATLAB to Python, explain an unfamiliar method, generate tests and produce documentation. The criterion comes from Bekker (2024): danger enters when the scientist does not understand the analysis and treats it as magic, that is, cannot explain it. Errors in code are silent — information leaking between cross-validation folds, the sign of a contrast vector, a mask applied in the wrong space — and each still produces a result, possibly a good-looking one. The model is also happy to try several more analyses until something is significant; it will not remind you what that is called. When AI itself takes part in the analysis (as annotator, rater or simulated participant), a further set of problems appears: outputs are sensitive to the wording of the prompt, and proprietary model versions are deprecated within months, so results cannot be reproduced later (Abdurahman et al., 2024; Binz et al., 2025).
+**Understanding check.** Demonstrate measured timing, QC reports, and a full trial run. Explain repaired problems, remaining limitations, and why this version is ready for formal research.
 
-Wise use has four parts. Do not run what you do not understand: for every analysis step, the member can say in their own words what it does to the data and why it is needed; a step that cannot be explained is understood first, or not used. Verify with known answers: plant a known effect in simulated data and see whether the pipeline recovers it (positive control); shuffle the labels and see whether the pipeline correctly finds nothing (negative control); have key results re-run or re-implemented independently by a second person. When AI takes part in annotation or classification, validate it on a hand-labelled subset before scaling up, record the model version and the full prompt, and prefer open models or API versions that can be pinned (Abdurahman et al., 2024). Keep provenance: every figure is tied to the code and data version that produced it, under version control; pre-specified and exploratory analyses are recorded separately. Raw data stay on local machines or in a lab-approved environment. The "explain it" check: at lab meeting, without looking at the code, take the whole pipeline from raw data to the final statistic on a whiteboard.
+### 4. Registration and formal data collection {#stage-4}
 
-### 5. Presenting results and drawing conclusions
+**Research work.** In the applicable preregistration or registered-report process, specify hypotheses, primary outcomes, sampling and stopping rules, exclusions, and analyses. Recruit, screen, obtain informed consent, and run the approved procedure. Record quality, equipment problems, attrition, and deviations; preserve raw data and materials. Registered reports additionally require the journal's prospective review process.
 
-What AI is good at here: figure code; readability and colour-blind-safety checks on figures; tables; checking that numbers in the text match the tables; checking that statistics are reported completely; language editing; reference formatting. What it is not good at, and should not do: deciding what the results mean for you. There are three dangers. The first is overclaiming: generated discussion paragraphs tend to say "these findings demonstrate" when your data support only "consistent with". The second is drafts replacing understanding: a person handed a finished draft has not done the piecing together and synthesis, and does not truly own the knowledge in it even after careful checking (Tang, 2025); in Kosmyna et al. (2025), minutes after writing a short essay with an LLM, 15 of 18 participants could not quote a single sentence of their own text. The third is fabricated citations: every frontier model fabricates references, worse for more recent years, and when a model is asked to verify citations itself its accuracy is 38%, worse than guessing (Xu et al., 2026). Some journals are stricter than the lab — Science, for example, prohibits AI-generated citations (Yoo, 2025) — so check before submitting.
+**AI assistance.** Format registration text, identify ambiguous commitments and missing fields, draft recruitment materials, checklists and logs, and assist with routine post-collection QC. Researchers record actual observations and decide how to handle participants and on-site events.
 
-Wise use: write the results narrative and the conclusions yourself first, however rough, and only then let AI check consistency and edit the language; the central argument and the primary interpretation are not drafted by AI, and for trainees this should at least be a rule (Crawford et al., 2026). Check every citation in a trusted index and read at least the abstract; treat a missing DOI as a warning sign. Trace every number to the analysis output, ideally filled in programmatically from the results files rather than copied by hand. Attach an AI-use statement to the manuscript stating the tool, the version, which sections it was used in, what it did, and who verified it (the aiTARAS templates of Bozkurt, 2024; Lin, 2024). The "explain it" check: if all the AI output disappeared, could you rebuild every interpretive claim from your own reading and your own data (van Zoonen et al., 2026)?
+**Risks and verification.** Ensure registration matches the intended study. Preserve the original when a correction requires a new version. Distinguish asking AI to write data-reading code from granting it access to participant files. Names, contact information, consent forms, and potentially identifying DICOM information must follow the approved data process. Local program execution does not establish that an external model receives no file content. Test backup restoration.
 
-### 6. Criticising the results and their interpretation
+**Understanding check.** Compare the registration, SOP, and one experiment log. Explain what followed the plan, when and why deviations occurred, and where raw data and backups are stored.
 
-This is the stage where AI is used to greatest effect, because here its weakness becomes a strength: a model that can argue a thesis and its opposite with equal fluency (Colangelo & Galli, 2026) can be told to argue the opposite. Ask it for the three strongest alternative explanations and what evidence would separate them; ask it to play a sceptical reviewer; ask it to find the logical gaps between results and conclusions; ask it to list the choices to which this analysis is sensitive.
+### 5. Data preparation, preprocessing, and quality control {#stage-5}
 
-The risks are here too. First, sycophancy: unless told otherwise, the model will praise first. Second, outsourcing evaluation: when what you ask is not "what is X" but "is this argument good", what you have delegated is the evaluative function itself; the process matters even when this particular content is good, because the habit carries over to the times when the content is bad (Maynard, 2026). Third, the model's critique can be confident and wrong: the "explanations" it attaches increase reliance on mistaken judgments (Kim et al., 2025), and its judgments may come from lexical association rather than evaluation of the content (Loru et al., 2025). Fourth, confidentiality: when reviewing someone else's manuscript, the manuscript does not enter an external AI system; this is not an exception to the lab principle but a journal rule and an obligation to the authors (Nabavi et al., 2026).
+**Research work.** Organize participants, conditions, and trials; establish a data dictionary and file structure. Clean behavioral data and handle artifacts, missingness, and outliers in EEG, fMRI, eye-tracking, or other neural data. Apply planned exclusion criteria and preserve the processing decisions linking analysis data to raw records.
 
-Wise use: write your own limitations and critique first, then look at the AI's, and compare the two. What it thought of and you did not is your blind spot; what you thought of and it did not is usually where domain knowledge was needed. Treat every AI objection as a hypothesis to be tested against the data, not as text to paste into the limitations section. Bring the disagreements to lab meeting. The "explain it" check runs in reverse here: for each AI objection you decide not to accept, can you say clearly why it is wrong?
+**AI assistance.** Help convert BIDS structures, check fields and naming, connect tools such as fMRIPrep, MNE, and EEGLAB, generate exclusion reports and logs, document code, add tests, prepare containers, or refactor scripts. Researchers determine tool suitability and parameter choices.
 
-### 7. Revising the idea and question for the next cycle
+**Risks and verification.** Incorrect condition mappings, mask spaces, or processing order may alter results without an error. Sample-check participant and trial mappings, inspect before/after data and quality plots, and examine every exclusion reason. Preserve raw data so derived files can be rebuilt. If existing rules fail to handle an unexpected issue, record the change and rationale, assess its consequences, and disclose the deviation; do not tune thresholds for significance.
 
-The synthesis that closes a cycle — what we learned, which expectations failed, what the next question is — is where understanding forms, so a person writes it. AI's role here is divergence and cross-checking: list ten possible follow-up directions, including some borrowed from other fields; compare your results with the literature (every citation verified as always); maintain a list of open questions; help draft the future-directions section. The risk is converging too fast: the same model gives every lab similar advice about the next step (Messeri & Crockett, 2024), and if the AI's summary of your project replaces your own reflection, this cycle's understanding never settles.
+**Understanding check.** Trace one participant or trial from the original record to the analysis dataset, explaining transformations, parameters, and exclusions. Reproducible execution must be accompanied by checks of correct mapping and logic.
 
-One lab-level task also belongs here: review this cycle's AI-use records to see where it erred, where it helped greatly, and which checks caught problems. This is the only way to build what Clark (2025) calls extended cognitive hygiene — knowing when you can rely on it and when you cannot — and it should accumulate at the level of the lab rather than the individual. Use the review to update lab practice, then begin the next cycle. The "explain it" check: say in your own words how this project changed your view of the question.
+### 6. Statistical analysis and result evaluation {#stage-6}
 
-### Three habits that run through every stage
+**Research work.** Inspect descriptive statistics, visualizations, and model assumptions; run planned primary analyses, neural-data models, and multiple-comparison correction. Report effect sizes, confidence intervals, and uncertainty. Conduct secondary, robustness, and sensitivity analyses, labelling exploratory and confirmatory results separately.
 
-Three things recur across the seven sections above. Records: for any substantive AI contribution (hypotheses, analyses, figures, paragraph drafts) keep the tool, version, prompt and output; language editing needs only light logging (the tiers in Yoo, 2025). Concrete acts of verification: every citation checked in a trusted index, every number traced back to the data, every analysis re-runnable or re-derivable, the target journal's AI rules checked before submission. Without such acts, "taking responsibility" is a checkbox that costs nothing (Johnson, 2026); in one survey 77% of researchers said they always check the references AI gives them while 41.5% admitted copying BibTeX without checking (Xu et al., 2026), so the lab needs a shared check — automated reference validation before submission, or a second reader — rather than relying on self-assessment alone. Explanation: at lab meeting, in your own words, without looking at AI output. This is a transfer test; it separates performance from learning (Yan et al., 2025).
+**AI assistance.** Draft GLM, mixed-model, MVPA/RSA, and plotting code; explain assumptions; compare reasonable analysis paths; flag departures from preregistration. The different conclusions reached in NARPS (Botvinik-Nezer et al., 2020) motivate reporting analytic choices rather than selecting a favorable result.
 
-Senior and junior members are treated differently. Verification presupposes domain knowledge: experts can safely offload routine work, while non-experts cannot verify what they do not understand (Choudhury & Chaudhry, 2024; Lee et al., 2025). For students and postdocs, therefore, self-anchoring at stages 1, 5, 6 and 7 is a rule rather than a recommendation, and supervisors must support verification. The evidence for this cognitive objection is not strong — mostly experiments with students writing short essays and cross-sectional surveys — but its logic holds, and sequencing costs little.
+**Risks and verification.** Check leakage across cross-validation folds, contrast direction, units of analysis, repeated measures, and correction scope. Use simulated effects as positive controls, and repeated null simulations or permutations to assess error behavior. One nonsignificant shuffled-label run cannot establish correctness. Have a second person rerun or independently implement key analyses. Link figures and reported numbers to outputs. When AI directly labels or scores data, validate against a human-labelled subset and record the model, prompts, settings, and version limitations (Abdurahman et al., 2024).
 
----
+**Understanding check.** Explain the path from analysis data to the statistic, the assumptions, how tests detect errors, and whether conclusions change across defensible analysis choices.
 
-## Part III: Claude plans and their mapping to the stages
+### 7. Interpretation, theory revision, and future research {#stage-7}
 
-### Plan overview (checked 10 September 2026)
+**Research work.** Relate behavioral and neural results to theory and literature; evaluate alternatives, confounds, and generalizability. Distinguish statistical support, psychological interpretation, and causal claims. Activity in a brain region alone does not identify a unique mental process. Plan replications, extensions, or triangulation with different methods.
 
-The table below follows Anthropic's plans page and help centre and lists only the differences relevant to research work; prices are in US dollars. Anthropic does not publish concrete usage figures (how many messages per five-hour window), only relative multiples.
+**AI assistance.** Request strong alternative explanations, gaps between results and conclusions, and evidence that would distinguish competing accounts. Compare new hypotheses and follow-up designs. Recording your own explanation and limitations first helps identify both your blind spots and the model's.
 
-| Plan | Price | Models | Research-relevant features | Data handling |
+**Risks and verification.** AI criticism can rely on invented references or unsuitable methods. Fluent explanations can also encourage reliance on erroneous judgments (Kim et al., 2025). Check each criticism and explain acceptance or rejection. Make limitations specific to this study. Mark revised hypotheses as needing confirmation and plan independent data or another study.
+
+**Understanding check.** Explain what the study changed in your thinking, the strongest alternative account, and the missing evidence. Justify rejected AI criticism too. Review AI errors and effective checks with the team before the next study.
+
+### 8. Reporting, sharing, and scientific communication {#stage-8}
+
+**Research work.** Write the paper, thesis, or report; assemble figures and supplementary materials; report planned and post hoc analyses, nonsignificant and negative results, and deviations. Share or preserve data, code, materials, and protocols within consent and applicable requirements. Respond to review and enable scrutiny, replication, and extension.
+
+**AI assistance.** Organize the argument, draft, translate, edit, check consistency, prepare READMEs and AI-use statements, and structure responses to reviewers. Researchers must reconstruct the core argument, verify generated content, and decide what to adopt.
+
+**Risks and verification.** Check each method statement against actual execution so AI does not invent procedures. Trace references to original sources or trusted indexes and numbers to analysis outputs. Label exploration and retain uncertainty. Follow submission requirements for disclosing tools, purposes, and verification. Check confidentiality before sharing review material; do not send unauthorized material to external systems. Inspect de-identification, licenses, and files before release, and ask another person to rerun the README.
+
+**Understanding check.** For any paragraph, figure, or response, identify its source, the work actually performed, and the reasoning. Others should be able to reconstruct key results from public or appropriately accessible materials.
+
+### Records and handoff across all eight stages
+
+Match record detail to AI involvement. Simple formatting may need a short note; contributions to hypotheses, code, analyses, figures, or arguments require tool and identifiable model versions, prompts, outputs, edits, and a verifier. State reproducibility limits when versions cannot be fixed. AI-use records, processing logs, and registration deviations serve distinct purposes and should cross-reference one another.
+
+Use consistent questions in meetings and before submission: Can major decisions be explained? When was the confirmatory plan formed? Are exploration and deviations marked? Can sources and numbers be traced? Is material used within its approved scope? Supervisors must support trainees with the domain knowledge and verification resources these checks require.
+
+## Part III: Claude plans and the eight research stages
+
+### Plan overview
+
+Basic prices and features were checked on 2026-09-11; prices are USD. Benefits and limitations below are judgments about research workflows, not measured model rankings. Account availability, usage limits, and promotions can change.
+
+| Plan | Price | Models / capacity | Research-related features | Benefits and limitations | Data handling |
+|---|---|---|---|---|---|
+| Free | 0 | Sonnet, Haiku; lower allowance | Search, writing, files, code execution | Useful for short trials; limited continuity for debugging | Check consumer privacy settings |
+| Pro | 20 monthly; about 17/month annually | Adds Opus; at least 5x Free per five-hour session | Projects, Research, Code, Cowork, Science, Design | Useful for regular work; session and weekly limits remain | Consumer settings |
+| Max | From 100/month | 5x or 20x Pro usage | Pro features, higher output limits | Useful for sustained stages 3, 5, 6; justify cost with observed use | Consumer settings |
+| Team | Standard 20 annually / 25 monthly; Premium 100 / 125 per seat-month | Standard exceeds Pro; Premium 5x Standard | Shared workspace, search, administration | Useful for teamwork; manage access and costs | No content training by default |
+| Enterprise | 20/seat plus usage | Model- and task-dependent billing | Team plus SCIM, audit, retention controls | Useful for governance; budget variable usage | Workspace controls |
+| Team plan for scientists | Verified groups: Standard 0; Premium 15/month for 12 months | 1–25 seats; higher Premium allowance | Science, Code, Cowork, shared projects | Lower trial cost; eligibility, places, and promotion not guaranteed | Program and workspace terms |
+| Education / API | Institutional quote / separately metered API | Contract or endpoint-specific | Campus deployment / custom batch pipelines | Integration benefits; administration or development required | Check contract, retention, and transfer conditions |
+
+Sources: [Claude pricing](https://claude.com/pricing), [Team plan for scientists](https://claude.com/programs/team-plan-for-scientists). Education and API are different adoption routes; subscription seats should not be treated as API credits.
+
+At the time checked, Fable access carried additional conditions: Pro listed usage credits, while Max listed a weekly-allowance condition. Model availability does not mean unlimited use. Model names do not establish better scientific criticism or correct analysis. Verify platform support and data flows before adopting tools such as Science.
+
+### Eight-stage feature mapping
+
+These are suggested uses of available functions, not guaranteed task counts. Capacity depends on files, model, tools, and task length.
+
+| Stage | Tasks to try with Free | Additional work with Pro / Max | Team / Enterprise use | Verify |
 |---|---|---|---|---|
-| Free | 0 | Haiku, Sonnet | Chat on web/desktop/mobile, web search, memory, file creation with code execution, artifacts, skills, connectors | Consumer terms: with the "help improve our models" setting on, data are retained in de-identified form for up to 5 years; with it off, conversations are deleted from the back end within 30 days of removal; incognito chats are not used for training |
-| Pro | 20/month (17/month billed annually) | Adds Opus and Fable | Everything in Free plus Projects, Research, Claude Code, Cowork, Claude Science (beta), Design, Microsoft 365; at least 5× Free usage; 200K context by default, up to 1M in chat with the newest models (Fable 5.1, Opus 5, Sonnet 5) | Same as Free |
-| Max | 100 or 200/month | Same as Pro | Everything in Pro, with 5× or 20× Pro usage, higher output limits, priority at peak times, early access to new features | Same as Free |
-| Team | Standard seat 20/month (annual) or 25; premium seat 100 or 125 with 5× standard usage | Same as Pro | Everything in Pro plus shared Projects, enterprise search, SSO, central billing, admin controls; no audit logs or SCIM | Not used for training by default |
-| Team plan for scientists | Standard seats 0; premium seats 15/month or 180/year; discount lasts 12 months, then regular pricing | Same as Team | Everything in Team, including Claude Science, Code and Cowork; 1–25 seats; applied for by the PI, institutional verification in about 7 business days; 10,000 seats worldwide | Not used for training by default; retention set by the admin |
-| Enterprise | 20/seat plus usage at API rates; annual billing | Same as Pro | Everything in Team plus domain capture, role-based access, SCIM, audit logs, compliance API, custom data retention, HIPAA-ready | Not used for training by default; custom retention |
-| Education | Campus-wide plan, by arrangement | — | Learning mode, campus-wide deployment, includes Code, Cowork and Science | Excluded from consumer training terms |
-| API | Per million tokens: Fable 5.1 input 10 / output 50; Opus 5 5/25; Sonnet 5 2/10; Haiku 4.5 1/5 | All | Build your own pipelines; model versions can be pinned | Deleted within 30 days by default; zero-retention agreements available |
+| 1. Research positioning and question formation | Search, theory comparison, counterarguments | Research sources; Projects for context | Shared reading and evidence | References, gaps, significance |
+| 2. Research design and planning | Design discussion, short simulations | Code tests, method documents | Approved plans and decisions | Validity, effects, balanced sequences |
+| 3. Pilot study and method confirmation | Instructions and QC drafts | Code / Science trial runs and debugging | Capacity for intensive testing | Timing, triggers, quality, pipeline |
+| 4. Registration and formal data collection | Registration templates and logs | Projects to compare plans; Code for checks | Approved data and access | Consent, deviations, backups |
+| 5. Data preparation, preprocessing, and quality control | Dictionaries and short scripts | Code / Cowork pipelines; Max for longer work | Shared code and processing records | Mappings, parameters, exclusions |
+| 6. Statistical analysis and result evaluation | Model explanations and plot drafts | Code / Science tests and sensitivity analyses | Analysis capacity and records | Leakage, numbers, confirmation boundaries |
+| 7. Interpretation, theory revision, and future research | Alternatives and criticism | Projects to compare theories and sources | Shared review and next questions | Inference and independent confirmation |
+| 8. Reporting, sharing, and scientific communication | Editing, figures, formatting | Research sources; Code for reproducibility materials | Collaborative revision and preservation | Methods, disclosure, permissions, reruns |
 
-Two notes. Claude Science (announced 30 June 2026, currently in beta) is a desktop application available only for macOS 13 and later and for Linux, so the lab's Windows machines cannot use it for now. It runs Python and R kernels in a local sandbox, can submit jobs to a compute cluster over SSH or Slurm, attaches to every result the code, environment and full conversation history that produced it, and runs a background reviewer that flags incorrect citations, untraceable numbers, and figures that do not match their code. The sixty-plus databases it connects to are mainly biological and chemical (PubMed, bioRxiv, ChEMBL, Consensus and others); the official pages do not mention neuroscience or neuroimaging, so its value for this lab lies in the provenance record and the reviewer rather than the databases. The second note concerns dual-use restrictions: Anthropic's guidance states that professional questions in biology and security are answered by Opus even when Fable is selected. Cognitive-neuroscience questions probably rarely trigger this; that is my estimate and has not been verified.
+### Tradeoffs and data responsibility
 
-### Data-handling terms and the confidentiality exception
+Iterative debugging in stages 3, 5, and 6 often consumes more capacity than brief discussion. In stages 1 and 7, evidence and judgment remain decisive. Measure interruptions, completion time, and verification effort on a real task before upgrading. Consider the scientist promotion without assuming eligibility.
 
-The first implementation note of the lab principle refers to "external systems the lab has not approved", and this is where the plans differ most. The three consumer plans — Free, Pro and Max — share one set of terms: the account is personal, the "help improve our models" setting is under the individual's control (with it on, data are retained de-identified for five years; with it off, conversations are cleared within 30 days of deletion), and conversations flagged by safety classifiers may be used for safety purposes regardless of the setting. Team and Enterprise are not used for training by default, retention is set by the administrator, and the account belongs to the workspace rather than the person. This means an "approved system" can be defined as one lab-managed Team or Enterprise workspace rather than each member's own consumer account.
+Check file permissions individually. A locally executed program may still send content to a remote model. A no-training policy and authorization to upload specific material are separate questions. Handle collaborators' materials, participant data, and review manuscripts under their approved conditions.
 
-Three kinds of material need to be kept apart. The first is a manuscript under review: no plan makes it acceptable to upload; that is the journal's rule and has nothing to do with Anthropic's terms. The second is collaborators' unpublished data and manuscripts: obtain the collaborators' consent before they enter the lab-approved workspace. The third is participant data: de-identify identifiable data regardless of plan; if a need for custom retention or HIPAA-level handling ever arises, Enterprise is the option; when AI is placed inside a data pipeline (for example batch annotation), use the API and consider a zero-retention agreement. One further point should be stated as my understanding: Claude Code, Cowork and Claude Science execute code on the local machine, but the model still runs on Anthropic's servers, and the file contents these tools read are sent there for processing; "runs locally" is not the same as "data stay local". Anthropic's pages do not state explicitly whether Claude Science keeps data local end to end, so confirm with them before pointing any tool at a folder containing participant data.
+## Part IV: OpenAI / ChatGPT plans and the eight research stages
 
-### Mapping to the stages
+### Plan overview
 
-| Stage | Possible on Free | Added by Pro / Max | Added by Team / Enterprise (lab level) | Watch out for |
+Basic prices and Work/Codex capacity were checked on 2026-09-11. Chat, deep research, file tools, and Work/Codex can have different availability and limits. Multipliers below concern Codex capacity, not every ChatGPT model or feature.
+
+| Plan | Price | Models / capacity | Research-related features | Benefits and limitations | Data handling |
+|---|---|---|---|---|---|
+| Free | 0 | Short tasks; account tool limits | Chat and lightweight Work/Codex | Suitable for initial trials; monitor long-task limits | Check personal settings |
+| Go | Official listing: 8/month | Lightweight capacity | Everyday and small coding tasks | Lower cost; do not assume all Plus research features | Personal settings |
+| Plus | 20/month | Paid baseline Work/Codex allowance | File and coding workflows; available research tools | Starting point for individual work; limits remain | Personal settings |
+| Pro | 100 or 200/month | Codex 5x or 20x Plus | Higher-capacity multistep work | Useful for intensive debugging; not all models unlimited | Personal settings |
+| Business | Standard 20 annually / 25 monthly per seat-month; higher capacity by quote | Seat allowances, optional credits | Workspace, Work/Codex, SSO/MFA | Team administration; budget seats and usage | Business data not trained on by default |
+| Enterprise / Edu | Contact sales | Contract and permission-dependent | Central administration, audit, retention | Institutional governance; not automatic analytical improvement | Institutional agreement |
+| API | Separately metered | Separate from ChatGPT subscription | Custom batch annotation, scoring, pipelines | Programmable records; development and validation needed | Check endpoint data controls |
+
+Source: [official Work/Codex pricing](https://learn.chatgpt.com/docs/pricing). Check the product for your account's actual models and features; this table does not guarantee rollout in every region or workspace.
+
+### Understanding research functions and usage
+
+Chat can clarify questions, compare explanations, and inspect text. Source-based search or deep research can support reading, but citations still require original-source checks. Context features such as Projects can hold questions, plans, and documents where available.
+
+Work supports multistep information organization and document creation. Codex supports reading code, modifying pipelines, debugging, running tests, and recording changes. These research applications are workflow recommendations, not certification of neuroimaging or statistical correctness. [Product overview](https://learn.chatgpt.com/docs/overview), [Work usage and cost](https://learn.chatgpt.com/docs/enterprise/chatgpt-work-usage-and-cost).
+
+Work and Codex share usage. Models, input length, reasoning effort, tools, and local/cloud tasks can consume different amounts. Institutional credits may also be shared with other features. Distinguish subscriptions, purchased allocations, and additional invoices. Measure a complete stage 3, 5, or 6 task rather than comparing one nominal message count.
+
+### Eight-stage feature mapping
+
+Use these tasks only within actual feature availability and allowances. Institutional plans primarily add collaboration, permissions, and governance.
+
+| Stage | Tasks to try with Free / Go | Additional work with Plus / Pro | Business / Enterprise / Edu use | Verify |
 |---|---|---|---|---|
-| 1 Forming the question | Adversarial dialogue (Sonnet), web search, citation checking through connectors such as Scite and Consensus | Research for cited deep literature scans; Projects for the question memo and the lab reading list; stricter opposition from Opus/Fable | Shared Projects give the whole lab one reading list; Learning mode under Education suits students | Write the question yourself first; verify every reference the model gives |
-| 2 Experimental design | Code execution for power simulations | Claude Code for task code with tests; Projects for methods documents and reporting guidelines; Research for methodological literature | Design documents containing collaborators' unpublished material go in the approved workspace | Verify every suggestion by simulation; test hardware timing by hand |
-| 3 Conducting the experiment | General script drafts | Claude Code / Cowork for local QC and file organisation; Science's local sandbox and provenance record (beta, macOS/Linux) | Work involving participant data in the approved workspace; custom retention or HIPAA → Enterprise; pipelines → API with zero retention | De-identify first; what a tool reads is uploaded |
-| 4 Data analysis | Short code questions | Claude Code (long codebases, 1M context); long agentic analyses need the usage of Max or a Team premium seat; Science's Python/R kernels, SSH/Slurm, provenance | Premium seats for heavy analysts; API with pinned versions for AI annotation, with records | Do not run what you cannot explain; positive and negative controls; version control |
-| 5 Presenting results | File creation (docx/pptx), artifacts, figure code | Projects holding the manuscript and all sources; Research and connectors for citation checks; Science's background reviewer flagging incorrect citations, untraceable numbers and figure–code mismatches | Shared Projects for co-authors | Write conclusions yourself first; the reviewer agent is an extra check, not the only one; check journal rules |
-| 6 Critique | Any plan can red-team | Stricter critique from Opus/Fable; Projects let the critique see the whole manuscript and a data summary | — | Never upload others' manuscripts, on any plan |
-| 7 Revision | Memory | Projects as a living knowledge base; Cowork scheduled tasks for literature monitoring | A Team shared workspace holding the AI-use and provenance records | The synthesis is written by a person; review where AI erred |
+| 1. Research positioning and question formation | Concepts and candidate questions | Source search, research tools, document comparison | Approved shared readings | References, gaps, questions |
+| 2. Research design and planning | Design discussion, small scripts | Codex simulations, balancing, plan checks | Design materials and collaboration | Operationalization, effects, assumptions |
+| 3. Pilot study and method confirmation | Instructions and checklists | Codex debugging and tests | Shared tested versions | Timing, QC, complete procedure |
+| 4. Registration and formal data collection | Registration and log drafts | Plan, file, and quality checks | Approved connectors and access | Execution, deviations, personal data |
+| 5. Data preparation, preprocessing, and quality control | Dictionaries and short scripts | Work / Codex file organization and pipelines | Shared code, standards, usage controls | Mappings, parameters, exclusions |
+| 6. Statistical analysis and result evaluation | Models and plot drafts | Codex reruns; Work result organization | Capacity and records | Assumptions, numbers, leakage |
+| 7. Interpretation, theory revision, and future research | Alternatives and criticism | Cross-document comparison and design drafts | Shared reflection and context | Reverse inference, evidence, new tests |
+| 8. Reporting, sharing, and scientific communication | Editing and formatting | Work documents; Codex reproducibility materials | Collaboration, access, preservation | Methods, citations, disclosure, reruns |
 
-A pattern is visible in the table. Free is already enough for the most important work at stages 1 and 6 (adversarial dialogue), because those stages call for judgment rather than features. Pro's Projects, Research and Claude Code make a real difference at stages 2, 4 and 5. Team and Enterprise differ not in features but in data terms and a shared workspace — that is, in whether the first (confidentiality) and second (records) implementation notes can be enforced. Max matters only at stage 4, where long agentic analyses quickly exhaust Pro's allowance.
+### Tradeoffs and data responsibility
 
-### Recommendation for this lab
+For occasional reading, questions, and writing, first determine whether an existing account completes the work. Compare Plus and Pro capacity when coding sessions become sustained. Consider institutional plans when collaboration or governance requires them. A plan name does not establish that a tool is approved for a particular participant dataset.
 
-On current information, the most reasonable step is for the PI to apply for the Team plan for scientists, for three reasons. Its no-training default and admin-set retention let the lab define the "approved system" as this one workspace, so members need not manage the privacy settings of their own consumer accounts. Shared Projects give the records required by the second implementation note a fixed home. Standard seats are free and premium seats cost 15 dollars a month; 25 seats are enough for this lab, and premium seats are needed only for the two or three members doing heavy analysis; the plan includes Claude Code, Cowork and Claude Science.
+Apply the same research criteria to both providers: explain adopted content, trace sources, validate code, distinguish exploration from confirmation, and use materials within authorization. Additional capacity can reduce waiting; evidence must still support conclusions.
 
-Several uncertainties should be stated first. The eligibility page lists PIs in the natural sciences, mathematics, computer science, engineering "and related fields"; I judge that cognitive neuroscience should qualify, but that is an estimate, and Anthropic's verification decides. The discounted price lasts only 12 months, after which regular Team pricing applies (standard 20, premium 100), so the plan should be reassessed after a year. Claude Science is in beta, supports only macOS and Linux, and its databases lean toward biology and chemistry; the suggestion is that one or two members on macOS or Linux trial it, focusing on its provenance record and reviewer agent, rather than adopting it lab-wide by default. The page does not say explicitly whether students can be invited as members, but since the PI creates the workspace and then invites team members, I judge that they can.
+## Sources and verification scope
 
-Until the application is approved: members on Free or Pro turn "help improve our models" off; identifiable participant data and other people's manuscripts never enter any AI tool; records of substantive use are kept in a shared lab folder for now. A campus-wide Education plan is not something the lab can decide on its own; if the university adopts one later, its Learning mode would be useful for course students and could be added then.
+The research discussion integrates the project's original lifecycle guide with `research-stage-ai-Luna-light-Fable51-Extra.md` in the adjacent research folder. References inherited from the original review are in the [annotated bibliography](annotated-bibliography-AI-accountability-epistemics-en.md); the individual studies were not re-verified for this revision. The eight-stage source additionally supplies:
 
----
+- Carp, J. (2012). On the plurality of (methodological) worlds: Estimating the analytic flexibility of fMRI experiments. *Frontiers in Neuroscience*, 6, 149. [DOI](https://doi.org/10.3389/fnins.2012.00149).
+- Botvinik-Nezer, R., et al. (2020). Variability in the analysis of a single neuroimaging dataset by many teams. *Nature*, 582, 84–88. [DOI](https://doi.org/10.1038/s41586-020-2314-9).
 
-## Sources
-
-Plan information (checked 10 September 2026):
-
-- Plans and pricing: https://claude.com/pricing
-- Models available by plan: https://academy.claude.com/tutorials/choosing-the-right-claude-model
-- Context window on paid plans: https://support.claude.com/en/articles/8606394-how-large-is-the-context-window-on-paid-claude-plans
-- Consumer data retention: https://privacy.claude.com/en/articles/10023548-how-long-do-you-store-my-data
-- Consumer terms update (scope and excluded products): https://www.anthropic.com/news/updates-to-our-consumer-terms
-- The "help improve our models" setting: https://privacy.claude.com/en/articles/12109829-how-do-i-change-my-model-improvement-privacy-settings
-- Data retention for commercial products and the API: https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-data
-- Claude Science announcement: https://www.anthropic.com/news/claude-science-ai-workbench
-- Claude Science product page: https://claude.com/product/claude-science
-- Claude Science help article: https://support.claude.com/en/articles/16563838-get-started-with-claude-science
-- Team plan for scientists, program page: https://claude.com/programs/team-plan-for-scientists
-- Team plan for scientists, help article: https://support.claude.com/en/articles/16634237-claude-team-plan-for-scientists
-- Announcement of expanded support for scientists (27 August 2026): https://www.anthropic.com/news/expanding-support-for-scientists
-- Claude for Education: https://claude.com/solutions/education
-
-Literature: see this project's [annotated bibliography](annotated-bibliography-AI-accountability-epistemics-en.md); every paper cited here is listed there with its DOI and full-text status.
+Official product sources appear beside the relevant sections and were checked on 2026-09-11. Prices, capacity, and features change. Confirm retention and deployment conditions for the actual product, account, and institution. Stage mappings and upgrade suggestions are judgments about workflows, not results of a comparative model-performance experiment.

@@ -4,14 +4,17 @@
 
 網站：https://aclicn.github.io/ai-responsibility/
 
+研究生快速指引：https://aclicn.github.io/ai-responsibility/research-stage-ai-guide.html
+
 ## 文件
 
 | 文件 | 繁體中文 | English |
 | --- | --- | --- |
 | 文獻評述 | [Markdown](AI-research-accountability-literature-review.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-research-accountability-literature-review.html) | [Markdown](AI-research-accountability-literature-review-en.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-research-accountability-literature-review-en.html) |
 | 註解書目 | [Markdown](annotated-bibliography-AI-accountability-epistemics.md) · [HTML](https://aclicn.github.io/ai-responsibility/annotated-bibliography-AI-accountability-epistemics.html) | [Markdown](annotated-bibliography-AI-accountability-epistemics-en.md) · [HTML](https://aclicn.github.io/ai-responsibility/annotated-bibliography-AI-accountability-epistemics-en.html) |
+| 研究生命週期指引 | [Markdown](AI-across-the-research-lifecycle.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-across-the-research-lifecycle.html) | [Markdown](AI-across-the-research-lifecycle-en.md) · [HTML](https://aclicn.github.io/ai-responsibility/AI-across-the-research-lifecycle-en.html) |
 
-文獻評述只保留統整觀點；英文版保留原稿較精簡的英文摘要。逐篇摘要集中在獨立註解書目，兩種語言各保留 40 篇文章及 DOI、PDF 狀態。
+文獻評述只保留統整觀點；英文版保留原稿較精簡的英文摘要。逐篇摘要集中在獨立註解書目，兩種語言各保留 40 篇文章及 DOI、PDF 狀態。研究生命週期指引統一為八階段，整合研究工作、AI 協助、風險與驗證及理解檢查；Claude 與 OpenAI 方案均對應同一套八階段（方案基本資訊查核日期 2026-09-11），中英文同步更新。
 
 原始 Markdown 為內容來源；HTML 版本保留原文。網站轉換不代表另行查核文獻或原文中的查核聲明。
 
